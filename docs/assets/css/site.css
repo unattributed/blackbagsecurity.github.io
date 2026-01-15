@@ -1,0 +1,26 @@
+/* Site-level refinements for the multi-page skeleton. */
+
+.site-main {
+  min-height: 60vh;
+}
+
+.nav {
+  flex-wrap: wrap;
+  row-gap: 8px;
+}
+
+.footer.wrap {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section__head h1 {
+  font-size: 2.1rem;
+  margin: 0;
+}
+
+.section__head h1 + p {
+  margin-top: 8px;
+  color: var(--muted);
+  max-width: 72ch;
+}
