@@ -1,277 +1,219 @@
 ---
 layout: default
-title: Black Bag Security | Offensive Security, Red Team, Vuln Research
-description: Black Bag Security, offensive security, red team operations, vulnerability research, and adversary emulation.
+title: Black Bag Security | Offensive Security and Red Team Operations
+description: Adversary-grade testing for systems that cannot fail. Offensive security, red team operations, vulnerability research, and AI/LLM security.
 ---
-  <a class="skip" href="#content">Skip to content</a>
+<a class="skip" href="#content">Skip to content</a>
 
-  <header class="topbar" role="banner">
-    <div class="wrap topbar__inner">
-      <a class="brand" href="/" aria-label="Black Bag Security home">
-        <img class="brand__mark" src="/assets/img/logo.svg" width="40" height="40" alt="" />
-        <span class="brand__text">
-          <span class="brand__name">BLACK BAG SECURITY</span>
-          <span class="brand__tag">offense-driven security, built like an adversary</span>
-        </span>
-      </a>
+<header class="site-header">
+  <div class="wrap header__inner">
+    <a class="brand" href="/" aria-label="Black Bag Security home">
+      <img class="brand__mark" src="{{ '/assets/img/logo.svg' | relative_url }}" width="36" height="36" alt="" />
+      <span class="brand__text">
+        <span class="brand__name">BLACK BAG SECURITY</span>
+        <span class="brand__tag">offense-led security for high-consequence systems</span>
+      </span>
+    </a>
 
-      <nav class="nav" aria-label="Primary navigation">
-        <a href="#services">services</a>
-        <a href="#approach">approach</a>
-        <a href="#signal">signal</a>
-        <a href="#contact" class="btn btn--ghost">contact</a>
-      </nav>
-    </div>
-  </header>
+    <nav class="nav" aria-label="Primary">
+      <a href="#capabilities">capabilities</a>
+      <a href="#engagements">engagements</a>
+      <a href="#model">model</a>
+      <a href="#contact">contact</a>
+    </nav>
+  </div>
+</header>
 
-  <main id="content" class="wrap" role="main">
-    <section class="hero" aria-label="Hero">
-      <div class="hero__grid">
-        <div class="hero__copy">
-          <p class="kicker">red team, vuln research, adversary emulation</p>
-          <h1>
-            Break systems the way
-            <span class="glitch" aria-label="real attackers do">real attackers do</span>,
-            then harden them for the real world.
-          </h1>
-          <p class="lead">
-            I work across web, cloud, firmware, ICS, and AI. When it matters, I operate like a nation-state,
-            document like an auditor, and deliver like a product team.
-          </p>
-
-          <div class="hero__cta">
-            <a class="btn" href="#contact">request an engagement</a>
-            <a class="btn btn--ghost" href="#services">view services</a>
-          </div>
-
-          <div class="hero__facts" aria-label="Highlights">
-            <div class="fact">
-              <div class="fact__num">20+ yrs</div>
-              <div class="fact__label">offensive security</div>
-            </div>
-            <div class="fact">
-              <div class="fact__num">zero-days</div>
-              <div class="fact__label">firmware, mobile, PKI</div>
-            </div>
-            <div class="fact">
-              <div class="fact__num">remote-first</div>
-              <div class="fact__label">air-gapped friendly</div>
-            </div>
-          </div>
-        </div>
-
-        <aside class="hero__panel" aria-label="Terminal panel">
-          <div class="panel">
-            <div class="panel__bar">
-              <span class="dot dot--r" aria-hidden="true"></span>
-              <span class="dot dot--y" aria-hidden="true"></span>
-              <span class="dot dot--g" aria-hidden="true"></span>
-              <span class="panel__title">ops-console</span>
-            </div>
-            <pre class="panel__body" aria-label="Terminal output"><code>$ whoami
-operator
-
-$ mission
-adversary emulation + exploit research + fix guidance
-
-$ scope
-web | cloud | k8s | firmware | scada/ics | automotive | ai
-
-$ deliverable
-evidence + reproduction + mitigation + exec briefing
-
-$ status
-ready</code></pre>
-          </div>
-
-          <div class="badge-grid" aria-label="Badges">
-            <div class="badge">MITRE ATT&amp;CK mapped</div>
-            <div class="badge">OWASP aligned</div>
-            <div class="badge">NIST-friendly outputs</div>
-            <div class="badge">supply-chain aware</div>
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <section id="services" class="section">
-      <header class="section__head">
-        <h2>Services</h2>
-        <p>Work packages that mirror how advanced operators actually compromise environments, then convert that reality into measurable risk reduction.</p>
-      </header>
-
-      <div class="cards">
-        <article class="card">
-          <h3>Red Team Operations</h3>
-          <p>Objective-based intrusion, lateral movement, and impact simulation with clean reporting and defensible evidence.</p>
-          <ul>
-            <li>adversary emulation plans</li>
-            <li>phishing or pretexting (optional)</li>
-            <li>operator tradecraft with safety rails</li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <h3>Vulnerability Research</h3>
-          <p>Deep technical discovery in complex targets where scanners stop working.</p>
-          <ul>
-            <li>firmware, RF, and embedded analysis</li>
-            <li>cloud and identity edge cases</li>
-            <li>coordinated disclosure support</li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <h3>AI and LLM Security</h3>
-          <p>Attack and harden AI systems, pipelines, and assistants, including on-prem or restricted environments.</p>
-          <ul>
-            <li>prompt injection and data egress testing</li>
-            <li>agent and toolchain abuse</li>
-            <li>guardrails and SDLC integration</li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <h3>Cloud, Web, and CI/CD</h3>
-          <p>Assessment and remediation guidance for modern delivery stacks, from nginx to Kubernetes.</p>
-          <ul>
-            <li>authn/authz breaks</li>
-            <li>secrets and build pipeline risks</li>
-            <li>security headers and TLS posture</li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <h3>ICS and Automotive</h3>
-          <p>Specialized work in environments where safety, uptime, and physical impact matter.</p>
-          <ul>
-            <li>SCADA lab style testing</li>
-            <li>CAN/UDS and embedded systems</li>
-            <li>controls for segmented networks</li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <h3>Executive Briefings</h3>
-          <p>Board-ready narratives without removing the technical truth.</p>
-          <ul>
-            <li>threat story and impact</li>
-            <li>prioritized roadmap</li>
-            <li>risk acceptance artifacts</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <section id="approach" class="section">
-      <header class="section__head">
-        <h2>Approach</h2>
-        <p>A repeatable loop that keeps the work safe, measurable, and useful to engineering and leadership.</p>
-      </header>
-
-      <div class="steps">
-        <div class="step">
-          <div class="step__num">01</div>
-          <div class="step__body">
-            <h3>Define outcomes</h3>
-            <p>Pick objectives, constraints, and “stop conditions” before testing starts.</p>
-          </div>
-        </div>
-        <div class="step">
-          <div class="step__num">02</div>
-          <div class="step__body">
-            <h3>Operate like an adversary</h3>
-            <p>Use real TTP patterns, not just checklists, then capture evidence with minimal disruption.</p>
-          </div>
-        </div>
-        <div class="step">
-          <div class="step__num">03</div>
-          <div class="step__body">
-            <h3>Convert findings into fixes</h3>
-            <p>Repro steps, root cause, and practical mitigations, mapped to frameworks when needed.</p>
-          </div>
-        </div>
-        <div class="step">
-          <div class="step__num">04</div>
-          <div class="step__body">
-            <h3>Prove closure</h3>
-            <p>Validate remediations, retest key paths, and provide a closure statement you can defend.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="signal" class="section">
-      <header class="section__head">
-        <h2>Signal</h2>
-        <p>Short, sharp points that set expectations and filter serious clients from tire-kickers.</p>
-      </header>
-
-      <div class="callouts">
-        <div class="callout">
-          <h3>Operational security matters</h3>
-          <p>No tracking pixels, no third-party analytics, no CDN dependencies. This site is designed to be boring for attackers.</p>
-        </div>
-        <div class="callout">
-          <h3>Evidence over ego</h3>
-          <p>Findings include reproduction steps, impact, and fix guidance. “Cool hacks” that do not drive risk reduction are noise.</p>
-        </div>
-        <div class="callout">
-          <h3>Remote-first delivery</h3>
-          <p>Secure access patterns, tight scoping, and clear comms. Air-gapped work is fine, if the rules are clear.</p>
-        </div>
-      </div>
-
-      <div class="note">
-        <p class="note__title">Background snapshot</p>
-        <p class="note__body">
-          20+ years across offensive security, vulnerability research, red team leadership, SCADA and ICS, automotive targets, and AI security tooling.
+<main id="content">
+  <section class="hero">
+    <div class="wrap hero__grid">
+      <div class="hero__copy">
+        <p class="eyebrow reveal" data-reveal style="--delay: 0s;">principal offensive security consultant</p>
+        <h1 class="reveal" data-reveal style="--delay: 0.05s;">
+          Red-team engagements that mirror real adversaries.
+        </h1>
+        <p class="lead reveal" data-reveal style="--delay: 0.1s;">
+          Vulnerability research, adversary emulation, and AI/LLM security for regulated systems
+          and critical infrastructure. Remote-first, air-gapped ready, evidence-driven.
         </p>
-      </div>
-    </section>
 
-    <section id="contact" class="section">
-      <header class="section__head">
+        <div class="hero__cta reveal" data-reveal style="--delay: 0.15s;">
+          <a class="btn" href="mailto:hello@blackbagsecurity.com">request engagement</a>
+          <a class="btn btn--ghost" href="#capabilities">review capabilities</a>
+        </div>
+
+        <div class="hero__stats">
+          <div class="stat reveal" data-reveal style="--delay: 0.2s;">
+            <div class="stat__value">20+ yrs</div>
+            <div class="stat__label">offensive security</div>
+          </div>
+          <div class="stat reveal" data-reveal style="--delay: 0.25s;">
+            <div class="stat__value">49+ PoCs</div>
+            <div class="stat__label">exploit research</div>
+          </div>
+          <div class="stat reveal" data-reveal style="--delay: 0.3s;">
+            <div class="stat__value">0 PHI egress</div>
+            <div class="stat__label">LLM hardening</div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="hero__panel reveal" data-reveal style="--delay: 0.25s;" aria-label="Engagement profile">
+        <div class="stamp">engagements open</div>
+        <div class="panel__title">Case file</div>
+        <dl class="panel__list">
+          <div>
+            <dt>Delivery</dt>
+            <dd>Remote-only, air-gapped friendly</dd>
+          </div>
+          <div>
+            <dt>Focus</dt>
+            <dd>Red team, vuln research, AI/LLM</dd>
+          </div>
+          <div>
+            <dt>Clearance</dt>
+            <dd>NATO SECRET, CAN TS (eligible)</dd>
+          </div>
+          <div>
+            <dt>Citizenship</dt>
+            <dd>Canada + UK</dd>
+          </div>
+          <div>
+            <dt>Availability</dt>
+            <dd>48h notice for overlap</dd>
+          </div>
+        </dl>
+        <div class="panel__note">No third-party analytics or trackers.</div>
+      </aside>
+    </div>
+  </section>
+
+  <section id="capabilities" class="section">
+    <div class="wrap">
+      <div class="section__head reveal" data-reveal>
+        <h2>Capabilities</h2>
+        <p>Engagements designed for resilient delivery, reproducible findings, and clear remediation paths.</p>
+      </div>
+
+      <div class="cap-grid">
+        <article class="cap-card reveal" data-reveal style="--delay: 0.05s;">
+          <h3>Adversary emulation</h3>
+          <p>Full-scope red team operations that stress defenses with realistic tradecraft.</p>
+          <span class="cap-tag">MITRE ATT&amp;CK aligned</span>
+        </article>
+        <article class="cap-card reveal" data-reveal style="--delay: 0.1s;">
+          <h3>Vulnerability research</h3>
+          <p>Binary, firmware, and protocol analysis with exploit path validation.</p>
+          <span class="cap-tag">reproducible PoCs</span>
+        </article>
+        <article class="cap-card reveal" data-reveal style="--delay: 0.15s;">
+          <h3>AI / LLM security</h3>
+          <p>Model hardening, prompt threat modeling, and data-leak prevention.</p>
+          <span class="cap-tag">no data egress</span>
+        </article>
+        <article class="cap-card reveal" data-reveal style="--delay: 0.2s;">
+          <h3>Embedded + critical systems</h3>
+          <p>SCADA, automotive CAN, and hardware security assessments.</p>
+          <span class="cap-tag">safety-first testing</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="engagements" class="section">
+    <div class="wrap">
+      <div class="section__head reveal" data-reveal>
+        <h2>Engagement highlights</h2>
+        <p>Selected outcomes that emphasize measurable impact, not vanity metrics.</p>
+      </div>
+
+      <div class="split">
+        <div class="stack reveal" data-reveal style="--delay: 0.05s;">
+          <h3>Selected outcomes</h3>
+          <ul class="outcomes">
+            <li>On-prem LLM migration with zero PHI egress and reduced critical findings.</li>
+            <li>Licensed red team orchestration platform with 24-hour push-button deliverables.</li>
+            <li>Full-stack medical IoT assessment with six zero-days and remediation playbook.</li>
+          </ul>
+        </div>
+        <div class="stack reveal" data-reveal style="--delay: 0.1s;">
+          <h3>Operating model</h3>
+          <ol class="steps">
+            <li><span>01 Scope</span>Define objectives, access, and stop conditions.</li>
+            <li><span>02 Operate</span>Execute tradecraft with safety rails and evidence capture.</li>
+            <li><span>03 Report</span>Deliver reproduction steps, impact, and fix guidance.</li>
+            <li><span>04 Verify</span>Retest closures and provide closure statements.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="model" class="section">
+    <div class="wrap">
+      <div class="section__head reveal" data-reveal>
+        <h2>Governance and evidence</h2>
+        <p>Board-ready narratives, compliance mapping, and deterministic proof attached to every finding.</p>
+      </div>
+
+      <div class="model-grid">
+        <article class="model-card reveal" data-reveal style="--delay: 0.05s;">
+          <h3>Evidence packs</h3>
+          <p>Reproduction steps, impact framing, and verified remediation guidance.</p>
+        </article>
+        <article class="model-card reveal" data-reveal style="--delay: 0.1s;">
+          <h3>Executive briefs</h3>
+          <p>Decision-grade reporting tuned to leadership and risk owners.</p>
+        </article>
+        <article class="model-card reveal" data-reveal style="--delay: 0.15s;">
+          <h3>Compliance mapping</h3>
+          <p>Findings mapped to common frameworks and audit evidence sets.</p>
+        </article>
+      </div>
+
+      <div class="pill-row reveal" data-reveal style="--delay: 0.2s;">
+        <span class="pill">NIST</span>
+        <span class="pill">MITRE ATT&amp;CK</span>
+        <span class="pill">OWASP</span>
+        <span class="pill">PCI-DSS</span>
+        <span class="pill">CIS</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="wrap">
+      <div class="section__head reveal" data-reveal>
         <h2>Contact</h2>
-        <p>Use email for first touch. For sensitive details, request PGP.</p>
-      </header>
+        <p>Start with email. For sensitive details, request PGP.</p>
+      </div>
 
       <div class="contact">
-        <div class="contact__card">
-          <h3>Engagement request</h3>
+        <div class="contact__card reveal" data-reveal style="--delay: 0.05s;">
+          <h3>Engagements</h3>
           <p class="mono">hello@blackbagsecurity.com</p>
-          <p class="small">If you are ready, include scope, timeline, and environment constraints.</p>
+          <p>Include scope, constraints, and timeline.</p>
         </div>
-
-        <div class="contact__card">
+        <div class="contact__card reveal" data-reveal style="--delay: 0.1s;">
           <h3>Security</h3>
-          <p class="small">
-            Vulnerability disclosure details live in <span class="mono">/.well-known/security.txt</span>.
-          </p>
-          <a class="btn btn--ghost" href="/.well-known/security.txt">view security.txt</a>
+          <p>Disclosure details:</p>
+          <p><a class="mono" href="/.well-known/security.txt">/.well-known/security.txt</a></p>
         </div>
-
-        <div class="contact__card">
-          <h3>Blog</h3>
-          <p class="small">
-            Long-form writeups and technical notes.
-          </p>
-          <a class="btn btn--ghost" href="https://unattributed.blog" rel="noopener noreferrer" target="_blank">open blog</a>
+        <div class="contact__card reveal" data-reveal style="--delay: 0.15s;">
+          <h3>Links</h3>
+          <p><a class="mono" href="https://unattributed.blog" rel="noopener noreferrer" target="_blank">unattributed.blog</a></p>
+          <p><a class="mono" href="https://github.com/unattributed" rel="noopener noreferrer" target="_blank">github.com/unattributed</a></p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <footer class="footer" role="contentinfo">
-      <div class="footer__inner">
-        <div class="footer__left">
-          <img src="/assets/img/logo.svg" class="footer__mark" width="28" height="28" alt="" />
-          <span class="small">© <span id="year"></span> Black Bag Security</span>
-        </div>
-        <div class="footer__right small">
-          <a href="/security.txt">security.txt</a>
-          <span aria-hidden="true">|</span>
-          <a href="/robots.txt">robots</a>
-        </div>
-      </div>
-    </footer>
-  </main>
+  <div class="wrap footer">
+    <span>© <span id="year"></span> Black Bag Security</span>
+    <div>
+      <a href="/security.txt">security.txt</a>
+      <span aria-hidden="true"> | </span>
+      <a href="/robots.txt">robots</a>
+    </div>
+  </div>
+</main>
