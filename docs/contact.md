@@ -26,7 +26,7 @@ permalink: /contact/
       <div class="contact__card reveal" data-reveal style="--delay: 0.15s;">
         <h3>General</h3>
         <p>Request availability windows or a short introductory call.</p>
-        <p class="mono"><a href="{{ '/services/' | relative_url }}">Review services →</a></p>
+        <p class="mono"><a href="{{ '/services/' | relative_url }}">Review services -></a></p>
       </div>
     </div>
   </div>
