@@ -60,6 +60,34 @@ permalink: /methodology/
 <section class="section">
   <div class="wrap">
     <div class="section__head reveal" data-reveal>
+      <h2>Engagement transparency</h2>
+      <p>Work is visible, traceable, and aligned to client-approved execution plans.</p>
+    </div>
+
+    <div class="split">
+      <div class="stack reveal delay-1" data-reveal>
+        <h3>Operational transparency</h3>
+        <ul class="outcomes">
+          <li>SOW execution plan approved before kickoff.</li>
+          <li>Daily testing itinerary shared with assigned stakeholders.</li>
+          <li>End-of-day progress updates with findings and blockers.</li>
+        </ul>
+      </div>
+      <div class="stack reveal delay-2" data-reveal>
+        <h3>Audit-ready evidence</h3>
+        <ul class="outcomes">
+          <li>Secure client dashboard with 24/7 access to activity logs and artifacts.</li>
+          <li>Vulnerability candidates validated into proven findings with reproducible PoC chains.</li>
+          <li>On-demand reporting: executive summaries or technical detail.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section__head reveal" data-reveal>
       <h2>Secure delivery</h2>
       <p>We keep communication and evidence handling aligned to your security requirements.</p>
     </div>
