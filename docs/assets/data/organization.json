@@ -1,0 +1,11 @@
+---
+---
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": {{ site.title | jsonify }},
+  "url": {{ site.url | jsonify }},
+  "logo": {{ '/assets/img/logo.svg' | absolute_url | jsonify }},
+  "email": "hello@blackbagsecurity.com",
+  "sameAs": []
+}
