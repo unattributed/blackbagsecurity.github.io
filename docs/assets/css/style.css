@@ -677,6 +677,26 @@ img { max-width: 100%; display: block; }
   --stack-accent: var(--accent-4);
 }
 
+.stack--lifecycle {
+  --stack-icon: url("../img/icon-lifecycle.svg");
+  --stack-accent: var(--accent-2);
+}
+
+.stack--scope {
+  --stack-icon: url("../img/icon-scope.svg");
+  --stack-accent: var(--accent);
+}
+
+.stack--operating {
+  --stack-icon: url("../img/icon-model.svg");
+  --stack-accent: var(--accent-3);
+}
+
+.stack--principles {
+  --stack-icon: url("../img/icon-principles.svg");
+  --stack-accent: var(--accent-4);
+}
+
 .stack h3 {
   margin: 0 0 12px;
 }

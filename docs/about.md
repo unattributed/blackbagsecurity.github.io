@@ -12,12 +12,12 @@ permalink: /about/
     </div>
 
     <div class="split">
-      <div class="stack reveal delay-1" data-reveal>
+      <div class="stack stack--signal stack--operating reveal delay-1" data-reveal>
         <h3>Operating model</h3>
         <p>Senior-led delivery with direct operator involvement from scoping through retest.</p>
         <p>Engagements prioritize evidence integrity, confidentiality, and realistic adversary tradecraft.</p>
       </div>
-      <div class="stack reveal delay-2" data-reveal>
+      <div class="stack stack--signal stack--principles reveal delay-2" data-reveal>
         <h3>Principles</h3>
         <ul class="outcomes">
           <li>Scoped, risk-aligned objectives with clear stop conditions.</li>

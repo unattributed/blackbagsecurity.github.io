@@ -12,7 +12,7 @@ permalink: /methodology/
     </div>
 
     <div class="split">
-      <div class="stack reveal delay-1" data-reveal>
+      <div class="stack stack--signal stack--lifecycle reveal delay-1" data-reveal>
         <h3>Engagement lifecycle</h3>
         <ol class="steps">
           <li><span>01 Align</span>Define objectives, access paths, and stop conditions.</li>
@@ -21,7 +21,7 @@ permalink: /methodology/
           <li><span>04 Retest</span>Validate closures and document closure statements.</li>
         </ol>
       </div>
-      <div class="stack reveal delay-2" data-reveal>
+      <div class="stack stack--signal stack--scope reveal delay-2" data-reveal>
         <h3>Scope control</h3>
         <ul class="outcomes">
           <li>Rules of engagement with escalation paths and stop conditions.</li>
