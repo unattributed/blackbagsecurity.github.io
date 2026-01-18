@@ -11,8 +11,6 @@ permalink: /trust/
       <p>Governance-minded delivery with evidence integrity, confidentiality, and operational safety.</p>
     </div>
 
-    <div class="graphic-panel graphic-panel--trust reveal delay-1" data-reveal aria-hidden="true"></div>
-
     <div class="model-grid">
       <article class="model-card model-card--evidence reveal delay-1" data-reveal>
         <h3>Evidence integrity</h3>

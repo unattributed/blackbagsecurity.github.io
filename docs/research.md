@@ -11,8 +11,6 @@ permalink: /research/
       <p>Deep technical research for systems where generic scanning is not enough.</p>
     </div>
 
-    <div class="graphic-panel graphic-panel--research reveal delay-1" data-reveal aria-hidden="true"></div>
-
     <div class="split">
       <div class="stack stack--signal stack--focus reveal delay-1" data-reveal>
         <h3>Focus areas</h3>

@@ -501,40 +501,6 @@ img { max-width: 100%; display: block; }
   max-width: 72ch;
 }
 
-.graphic-panel {
-  position: relative;
-  margin: 18px 0 26px;
-  min-height: 160px;
-  border: 1px solid rgba(148, 163, 184, 0.25);
-  border-radius: var(--radius);
-  background: var(--surface-2);
-  box-shadow: var(--shadow);
-  overflow: hidden;
-}
-
-.graphic-panel::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: var(--panel-graphic) no-repeat center / cover;
-  opacity: 0.75;
-}
-
-.graphic-panel::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(120deg, rgba(77, 225, 255, 0.12), transparent 60%);
-  opacity: 0.8;
-}
-
-.graphic-panel--trust {
-  --panel-graphic: url("../img/trust-diagram.svg");
-}
-
-.graphic-panel--research {
-  --panel-graphic: url("../img/research-diagram.svg");
-}
 
 .cap-grid {
   margin-top: 22px;
@@ -963,7 +929,6 @@ img { max-width: 100%; display: block; }
   .nav { display: none; }
   .footer { flex-direction: column; align-items: flex-start; }
   .hero::after { opacity: 0.2; right: -140px; }
-  .graphic-panel { min-height: 140px; }
 }
 
 @media (max-width: 700px) {
@@ -971,5 +936,4 @@ img { max-width: 100%; display: block; }
   .cap-card { padding-left: 56px; }
   .cap-card::before { top: 18px; left: 16px; width: 24px; height: 24px; }
   .stack--signal { padding-left: 54px; }
-  .graphic-panel { min-height: 120px; }
 }
