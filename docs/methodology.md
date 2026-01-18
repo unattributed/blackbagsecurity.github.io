@@ -11,6 +11,10 @@ permalink: /methodology/
       <p>Every engagement follows a strict operating model with explicit scope control, safety rails, and evidence capture.</p>
     </div>
 
+    <figure class="methodology-diagram reveal delay-1" data-reveal>
+      <img class="methodology-diagram__img" src="{{ '/assets/img/methodology-wheel.svg' | relative_url }}" alt="" />
+    </figure>
+
     <div class="split">
       <div class="stack reveal delay-1" data-reveal>
         <h3>Engagement lifecycle</h3>

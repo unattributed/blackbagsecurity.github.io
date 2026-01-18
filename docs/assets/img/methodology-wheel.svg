@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" fill="none">
+  <circle cx="300" cy="300" r="250" stroke="#6ad8ff" stroke-opacity="0.35" stroke-width="2" />
+  <circle cx="300" cy="300" r="150" stroke="#6ad8ff" stroke-opacity="0.25" stroke-width="2" />
+
+  <path d="M406 406L476 476" stroke="#6ad8ff" stroke-opacity="0.35" stroke-width="2" />
+  <path d="M194 406L124 476" stroke="#6ad8ff" stroke-opacity="0.35" stroke-width="2" />
+  <path d="M194 194L124 124" stroke="#6ad8ff" stroke-opacity="0.35" stroke-width="2" />
+  <path d="M406 194L476 124" stroke="#6ad8ff" stroke-opacity="0.35" stroke-width="2" />
+
+  <circle cx="300" cy="300" r="90" stroke="#b6ff3b" stroke-opacity="0.35" stroke-width="2" />
+
+  <path d="M250 285h90" stroke="#e6edf5" stroke-opacity="0.85" stroke-width="6" stroke-linecap="round" />
+  <path d="M340 285l-12-12" stroke="#e6edf5" stroke-opacity="0.85" stroke-width="6" stroke-linecap="round" />
+  <path d="M340 285l-12 12" stroke="#e6edf5" stroke-opacity="0.85" stroke-width="6" stroke-linecap="round" />
+  <path d="M350 315h-90" stroke="#e6edf5" stroke-opacity="0.85" stroke-width="6" stroke-linecap="round" />
+  <path d="M260 315l12-12" stroke="#e6edf5" stroke-opacity="0.85" stroke-width="6" stroke-linecap="round" />
+  <path d="M260 315l12 12" stroke="#e6edf5" stroke-opacity="0.85" stroke-width="6" stroke-linecap="round" />
+
+  <text x="300" y="96" text-anchor="middle" fill="#e6edf5" font-size="20" font-family="Space Grotesk, Arial, sans-serif" font-weight="600">01 Align</text>
+  <text x="300" y="122" text-anchor="middle" fill="#9aa6b2" font-size="12" font-family="Space Grotesk, Arial, sans-serif">
+    <tspan x="300" dy="0">Define objectives, access</tspan>
+    <tspan x="300" dy="16">paths, and stop conditions.</tspan>
+  </text>
+
+  <text x="470" y="270" text-anchor="middle" fill="#e6edf5" font-size="20" font-family="Space Grotesk, Arial, sans-serif" font-weight="600">02 Operate</text>
+  <text x="470" y="296" text-anchor="middle" fill="#9aa6b2" font-size="12" font-family="Space Grotesk, Arial, sans-serif">
+    <tspan x="470" dy="0">Execute tradecraft with</tspan>
+    <tspan x="470" dy="16">safety rails and logging.</tspan>
+  </text>
+
+  <text x="300" y="498" text-anchor="middle" fill="#e6edf5" font-size="20" font-family="Space Grotesk, Arial, sans-serif" font-weight="600">03 Report</text>
+  <text x="300" y="524" text-anchor="middle" fill="#9aa6b2" font-size="12" font-family="Space Grotesk, Arial, sans-serif">
+    <tspan x="300" dy="0">Deliver reproduction steps,</tspan>
+    <tspan x="300" dy="16">impact, and fix guidance.</tspan>
+  </text>
+
+  <text x="130" y="270" text-anchor="middle" fill="#e6edf5" font-size="20" font-family="Space Grotesk, Arial, sans-serif" font-weight="600">04 Retest</text>
+  <text x="130" y="296" text-anchor="middle" fill="#9aa6b2" font-size="12" font-family="Space Grotesk, Arial, sans-serif">
+    <tspan x="130" dy="0">Validate closures and document</tspan>
+    <tspan x="130" dy="16">closure statements.</tspan>
+  </text>
+</svg>
