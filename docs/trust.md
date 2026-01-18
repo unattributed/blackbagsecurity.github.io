@@ -11,16 +11,18 @@ permalink: /trust/
       <p>Governance-minded delivery with evidence integrity, confidentiality, and operational safety.</p>
     </div>
 
+    <div class="graphic-panel graphic-panel--trust reveal delay-1" data-reveal aria-hidden="true"></div>
+
     <div class="model-grid">
-      <article class="model-card reveal delay-1" data-reveal>
+      <article class="model-card model-card--evidence reveal delay-1" data-reveal>
         <h3>Evidence integrity</h3>
         <p>Reproduction steps and proof artifacts attached to every finding.</p>
       </article>
-      <article class="model-card reveal delay-2" data-reveal>
+      <article class="model-card model-card--confidential reveal delay-2" data-reveal>
         <h3>Confidential handling</h3>
         <p>Minimal data capture and controlled storage aligned to retention policies.</p>
       </article>
-      <article class="model-card reveal delay-3" data-reveal>
+      <article class="model-card model-card--safety reveal delay-3" data-reveal>
         <h3>Operational safety</h3>
         <p>Explicit stop conditions and production safety checks.</p>
       </article>
@@ -36,7 +38,7 @@ permalink: /trust/
     </div>
 
     <div class="split">
-      <div class="stack reveal delay-1" data-reveal>
+      <div class="stack stack--signal stack--secure reveal delay-1" data-reveal>
         <h3>Secure communication</h3>
         <ul class="outcomes">
           <li>Email by default, PGP on request.</li>
@@ -44,7 +46,7 @@ permalink: /trust/
           <li>No third-party analytics or tracking scripts.</li>
         </ul>
       </div>
-      <div class="stack reveal delay-2" data-reveal>
+      <div class="stack stack--signal stack--data reveal delay-2" data-reveal>
         <h3>Data handling</h3>
         <ul class="outcomes">
           <li>We collect only what is needed to prove impact.</li>
@@ -63,7 +65,7 @@ permalink: /trust/
       <p>Coordinated disclosure aligned to client constraints and vendor timelines.</p>
     </div>
 
-    <div class="stack reveal delay-1" data-reveal>
+    <div class="stack stack--signal stack--disclosure reveal delay-1" data-reveal>
       <ul class="outcomes">
         <li>We do not publish client findings without explicit approval.</li>
         <li>Vendor coordination follows your legal and policy requirements.</li>

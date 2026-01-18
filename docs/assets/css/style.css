@@ -501,6 +501,41 @@ img { max-width: 100%; display: block; }
   max-width: 72ch;
 }
 
+.graphic-panel {
+  position: relative;
+  margin: 18px 0 26px;
+  min-height: 160px;
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  border-radius: var(--radius);
+  background: var(--surface-2);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.graphic-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--panel-graphic) no-repeat center / cover;
+  opacity: 0.75;
+}
+
+.graphic-panel::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, rgba(77, 225, 255, 0.12), transparent 60%);
+  opacity: 0.8;
+}
+
+.graphic-panel--trust {
+  --panel-graphic: url("../img/trust-diagram.svg");
+}
+
+.graphic-panel--research {
+  --panel-graphic: url("../img/research-diagram.svg");
+}
+
 .cap-grid {
   margin-top: 22px;
   display: grid;
@@ -630,6 +665,51 @@ img { max-width: 100%; display: block; }
   pointer-events: none;
 }
 
+.stack--signal {
+  --stack-icon: url("../img/icon-doc.svg");
+  --stack-accent: var(--accent-2);
+  padding-left: 64px;
+}
+
+.stack--signal::after {
+  content: "";
+  position: absolute;
+  left: 22px;
+  top: 22px;
+  width: 26px;
+  height: 26px;
+  background: var(--stack-accent);
+  mask: var(--stack-icon) center / contain no-repeat;
+  -webkit-mask: var(--stack-icon) center / contain no-repeat;
+  opacity: 0.85;
+  filter: drop-shadow(0 0 8px rgba(77, 225, 255, 0.35));
+}
+
+.stack--secure {
+  --stack-icon: url("../img/icon-shield.svg");
+  --stack-accent: var(--accent);
+}
+
+.stack--data {
+  --stack-icon: url("../img/icon-doc.svg");
+  --stack-accent: var(--accent-2);
+}
+
+.stack--disclosure {
+  --stack-icon: url("../img/icon-target.svg");
+  --stack-accent: var(--accent-3);
+}
+
+.stack--focus {
+  --stack-icon: url("../img/icon-chip.svg");
+  --stack-accent: var(--accent-2);
+}
+
+.stack--outputs {
+  --stack-icon: url("../img/icon-flask.svg");
+  --stack-accent: var(--accent-4);
+}
+
 .stack h3 {
   margin: 0 0 12px;
 }
@@ -702,6 +782,8 @@ img { max-width: 100%; display: block; }
 }
 
 .model-card {
+  --model-icon: url("../img/icon-doc.svg");
+  --model-accent: var(--accent-2);
   position: relative;
   border: 1px solid rgba(148, 163, 184, 0.2);
   border-radius: var(--radius);
@@ -718,6 +800,27 @@ img { max-width: 100%; display: block; }
   background: linear-gradient(130deg, rgba(77, 225, 255, 0.08), transparent 40%);
   opacity: 0.8;
   pointer-events: none;
+  z-index: 0;
+}
+
+.model-card::after {
+  content: "";
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 26px;
+  height: 26px;
+  background: var(--model-accent);
+  mask: var(--model-icon) center / contain no-repeat;
+  -webkit-mask: var(--model-icon) center / contain no-repeat;
+  opacity: 0.75;
+  filter: drop-shadow(0 0 8px rgba(77, 225, 255, 0.35));
+  z-index: 1;
+}
+
+.model-card > * {
+  position: relative;
+  z-index: 2;
 }
 
 .model-card h3 {
@@ -727,6 +830,36 @@ img { max-width: 100%; display: block; }
 .model-card p {
   margin: 0;
   color: var(--muted);
+}
+
+.model-card--evidence {
+  --model-icon: url("../img/icon-doc.svg");
+  --model-accent: var(--accent-2);
+}
+
+.model-card--confidential {
+  --model-icon: url("../img/icon-shield.svg");
+  --model-accent: var(--accent);
+}
+
+.model-card--safety {
+  --model-icon: url("../img/icon-target.svg");
+  --model-accent: var(--accent-3);
+}
+
+.model-card--exploit {
+  --model-icon: url("../img/icon-target.svg");
+  --model-accent: var(--accent-2);
+}
+
+.model-card--tradecraft {
+  --model-icon: url("../img/icon-code.svg");
+  --model-accent: var(--accent-4);
+}
+
+.model-card--hardening {
+  --model-icon: url("../img/icon-shield.svg");
+  --model-accent: var(--accent-3);
 }
 
 .pill-row {
@@ -830,10 +963,13 @@ img { max-width: 100%; display: block; }
   .nav { display: none; }
   .footer { flex-direction: column; align-items: flex-start; }
   .hero::after { opacity: 0.2; right: -140px; }
+  .graphic-panel { min-height: 140px; }
 }
 
 @media (max-width: 700px) {
   .hero { padding: 68px 0 44px; }
   .cap-card { padding-left: 56px; }
   .cap-card::before { top: 18px; left: 16px; width: 24px; height: 24px; }
+  .stack--signal { padding-left: 54px; }
+  .graphic-panel { min-height: 120px; }
 }
