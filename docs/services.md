@@ -57,12 +57,12 @@ permalink: /services/
       </article>
 
       <article class="cap-card reveal delay-5" data-reveal>
-        <h3>Secure code review (SAST/DAST)</h3>
+        <h3>Application security</h3>
         <ul class="outcomes">
-          <li><span class="mono">What it is:</span> Manual review plus SAST/DAST coverage for critical paths, embedded in red team or standalone.</li>
+          <li><span class="mono">What it is:</span> Secure code review plus secure software bill of materials (SBOM) analysis for critical paths, embedded in red team or standalone.</li>
           <li><span class="mono">What you get:</span> Findings with prioritization, remediation guidance, and retest support.</li>
           <li><span class="mono">Typical timeline:</span> 2 to 6 weeks, codebase dependent.</li>
-          <li><span class="mono">What we need from you:</span> Repo access, build context, test data handling rules, and environment access.</li>
+          <li><span class="mono">What we need from you:</span> Repo access, build context, dependency manifests, test data handling rules, and environment access.</li>
           <li><span class="mono">How findings are delivered:</span> Evidence pack and secure report, using IDPRO and other best-of-breed tooling.</li>
         </ul>
       </article>
