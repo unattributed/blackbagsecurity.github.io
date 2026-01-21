@@ -1,0 +1,15 @@
+---
+---
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Offensive security services",
+  "serviceType": "Offensive security, red team operations, penetration testing, vulnerability research, and application security",
+  "description": "Objective-based offensive security engagements for high-consequence systems, delivered with evidence-driven reporting and remediation guidance.",
+  "provider": {
+    "@type": "Organization",
+    "name": {{ site.title | jsonify }},
+    "url": {{ site.url | jsonify }}
+  },
+  "areaServed": "Global"
+}

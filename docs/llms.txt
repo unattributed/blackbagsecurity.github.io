@@ -1,0 +1,21 @@
+# Black Bag Security
+
+Site: https://www.blackbagsecurity.com
+Description: Offensive security, adversary simulation, and vulnerability research for high-consequence systems.
+
+## Primary pages
+- https://www.blackbagsecurity.com/services/
+- https://www.blackbagsecurity.com/methodology/
+- https://www.blackbagsecurity.com/industries/
+- https://www.blackbagsecurity.com/trust/
+- https://www.blackbagsecurity.com/research/
+- https://www.blackbagsecurity.com/about/
+- https://www.blackbagsecurity.com/contact/
+
+## Security and disclosure
+- https://www.blackbagsecurity.com/.well-known/security.txt
+- https://www.blackbagsecurity.com/security.txt
+
+## Notes
+- No third-party tracking or analytics.
+- Canonical domain: https://www.blackbagsecurity.com

@@ -29,6 +29,10 @@
   <link rel="icon" href="{{ '/assets/img/logo.svg' | relative_url }}" type="image/svg+xml" />
 
   <script type="application/ld+json" src="{{ '/assets/data/organization.json' | relative_url }}"></script>
+  <script type="application/ld+json" src="{{ '/assets/data/website.json' | relative_url }}"></script>
+  {% if page.url == '/services/' %}
+  <script type="application/ld+json" src="{{ '/assets/data/service.json' | relative_url }}"></script>
+  {% endif %}
 </head>
 <body>
   <a class="skip" href="#content">Skip to content</a>
