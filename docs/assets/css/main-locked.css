@@ -10,7 +10,7 @@
   --muted:#a8b5bd;
   --micro:#78909f;
   --lime:#d7ff22;
-  --max:1067px;
+  --max:1320px;
   --serif: Georgia, "Times New Roman", Times, serif;
   --sans: Arial, Helvetica, sans-serif;
 }
@@ -46,7 +46,8 @@ a{color:inherit;text-decoration:none}
   color:#d7dfe4;font-size:7px;font-weight:700;letter-spacing:.16em;text-transform:uppercase
 }
 .nav a.active::after{
-  content:"";position:absolute;left:6px;right:-23px;bottom:0;height:2px;background:var(--lime)
+  content:"";position:absolute;left:50%;right:auto;bottom:0;width:calc(100% + 12px);height:2px;
+  transform:translateX(-50%);background:var(--lime)
 }
 .philosophy{
   justify-self:end;color:#8ca0ac;font-size:6.7px;font-weight:700;letter-spacing:.18em;white-space:nowrap
@@ -207,26 +208,31 @@ a:focus-visible{outline:2px solid var(--lime);outline-offset:3px}
 .service-card:hover,.cap-card:hover{transform:translateY(-2px);border-color:#5e8497}
 .btn:hover{filter:brightness(1.06)}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
-@media(max-width:900px){
+@media(max-width:1099px){
   .main-shell{width:100%;border-left:0;border-right:0}
   .header{grid-template-columns:1fr auto;padding:0 16px}
-  .philosophy{display:none}.nav{gap:14px;transform:none}
+  .brand{font-size:13px}.philosophy{display:none}.nav{gap:14px;transform:none}.nav a{font-size:10.5px}
   .hero{height:auto;min-height:650px}
   .hero-media{height:350px;top:auto;bottom:0;object-position:65% 50%}
   .hero::after{background:linear-gradient(180deg,#06121b 0,#06121b 43%,rgba(6,18,27,.72) 62%,rgba(6,18,27,.05) 100%)}
   .hero-copy{position:relative;left:auto;top:auto;width:auto;padding:32px 24px 390px}
   .hero h1{width:min(100%,600px);font-size:clamp(42px,8vw,64px)}
+  .eyebrow{font-size:10.5px}.hero-lead{font-size:16px}.btn{font-size:13px}
   .hero-editorial{display:none}
   .trust-row{width:100%;max-width:500px}
+  .trust{font-size:10px}
   .assurance{height:auto;grid-template-columns:1fr 1fr}
   .assurance-item{min-height:74px;border-bottom:1px solid var(--line)}
+  .assurance-item strong,.assurance-item h2{font-size:14px}.assurance-item span,.assurance-item p{font-size:11px}
   .services,.capability,.lower,.footer{height:auto}
   .service-grid{grid-template-columns:repeat(2,1fr)}
   .service-card{height:270px;grid-template-rows:160px 1fr}.service-card img{height:160px}
+  .section-label{font-size:10.5px}.section-meta{font-size:9.5px}.service-body h3{font-size:15px}.service-body p{font-size:12.5px}
   .cap-grid{height:auto;grid-template-columns:1fr 1fr}
-  .cap-intro{grid-column:1/-1;padding-bottom:20px}.cap-card{height:220px}
+  .cap-intro{grid-column:1/-1;padding-bottom:20px}.cap-intro p{font-size:13px}.cap-link{font-size:11px}.cap-card{height:240px}.cap-body h3{font-size:14px}.cap-body p{font-size:12px}
   .lower{grid-template-columns:1fr}.about-panel{min-height:220px;border-right:0;border-bottom:1px solid var(--line)}.contact-panel{min-height:220px}
   .footer{padding:20px;gap:18px;grid-template-columns:1fr}
+  .lower-label{font-size:10.5px}.lower p{font-size:13px}.story{font-size:11px}.footer-brand{font-size:13px}.footer-mid{font-size:10px}.footer-nav{font-size:10px}
   .footer-mid,.footer-nav{justify-self:start}
 }
 @media(max-width:560px){
@@ -251,8 +257,113 @@ a:focus-visible{outline:2px solid var(--lime);outline-offset:3px}
 .hero-editorial{margin:0}
 .trust{margin:0}
 .section-label,.section-meta,.lower-label,.side-trust{margin-top:0;margin-bottom:0}
-@media(min-width:901px){.main-shell{height:1340px;margin-bottom:30px}.footer{height:63px}}
+@media(min-width:1100px){.main-shell{margin-bottom:30px}}
 
 
 .section-label{margin:0}
-@media(max-width:900px){.hero-media{left:0;width:100%;object-fit:cover}}
+@media(max-width:1099px){.hero-media{left:0;width:100%;object-fit:cover}}
+
+/* Production desktop presentation standard. Mockup pixels remain compositional coordinates. */
+@media(min-width:1100px){
+  .main-shell{
+    width:min(92vw,var(--max));
+    height:auto;
+    container-type:inline-size;
+  }
+  .header{
+    height:64px;
+    grid-template-columns:230px 1fr 280px;
+    padding:0 32px;
+  }
+  .brand{font-size:14px;letter-spacing:.16em}
+  .nav{gap:clamp(22px,2.2cqw,34px);transform:none}
+  .nav a{font-size:12px;letter-spacing:.12em}
+  .nav a.active::after{
+    left:50%;right:auto;width:calc(100% + 12px);height:2px;
+    transform:translateX(-50%);
+  }
+  .philosophy{font-size:10px;letter-spacing:.15em;transform:none}
+
+  .hero{height:clamp(500px,39.4cqw,520px)}
+  .hero-media{
+    left:clamp(210px,20.6cqw,272px);top:7px;
+    width:clamp(800px,75.4cqw,995px);
+  }
+  .hero-copy{left:36px;top:36px;width:520px}
+  .eyebrow{gap:16px;height:20px;font-size:11px;letter-spacing:.16em}
+  .eyebrow::before{width:28px}
+  .hero h1{
+    width:505px;margin-top:12px;
+    font-size:clamp(52px,4.4cqw,58px);line-height:.96;
+  }
+  .hero-lead{width:490px;margin-top:18px;font-size:17px;line-height:1.4}
+  .actions{gap:16px;margin-top:22px}
+  .btn{height:46px;min-width:220px;padding:0 20px;font-size:13px}
+  .actions .btn.secondary{min-width:202px}
+  .trust-row{width:515px;margin-top:22px}
+  .trust{min-height:36px;padding:0 15px;font-size:10px;line-height:1.45;letter-spacing:.1em}
+  .trust:first-child{padding-left:13px}
+  .hero-editorial{font-size:10px;letter-spacing:.14em}
+  .hero-editorial.adversary{right:24px;top:44px;width:104px}
+  .hero-editorial.reality{right:24px;top:214px;width:98px}
+  .hero-editorial.secure{right:24px;top:324px;width:96px}
+  .secure-mark{left:12px;width:34px;height:34px}
+
+  .assurance{height:110px}
+  .assurance-item{grid-template-columns:54px 1fr;padding:0 26px}
+  .assurance-item:nth-child(n){padding-left:clamp(24px,2.5cqw,34px)}
+  .assurance-icon{width:38px;height:38px}
+  .assurance-item strong,.assurance-item h2{font-size:15px}
+  .assurance-item span,.assurance-item p{margin-top:7px;font-size:12px;white-space:normal}
+
+  .services{height:360px;padding:22px 20px 20px}
+  .section-top{height:32px;padding:0 3px}
+  .section-label{gap:14px;font-size:11px;letter-spacing:.14em}
+  .services .section-label::after,.capability .section-label::after{width:30px;transform:none}
+  .section-meta{font-size:10px;letter-spacing:.13em}
+  .section-meta a{margin-left:28px}
+  .service-grid{gap:12px}
+  .service-card{height:285px;grid-template-rows:168px 1fr}
+  .service-card img{height:168px}
+  .service-body{padding:13px 15px}
+  .service-body h3{font-size:15px;line-height:1.18}
+  .service-body p{margin-top:7px;font-size:13px;line-height:1.3;padding-right:4px}
+  .circle-arrow{left:15px;bottom:12px;width:28px;height:28px;font-size:16px}
+
+  .capability{height:360px;padding:18px 20px 0}
+  .cap-top{height:30px;padding:0 3px}
+  .cap-grid{
+    height:300px;
+    grid-template-columns:minmax(200px,1.2fr) repeat(5,minmax(0,1fr));
+    gap:12px;
+  }
+  .cap-intro{padding:15px 8px 0}
+  .cap-intro h3{font-size:34px;line-height:1.04}
+  .cap-intro p{width:95%;margin-top:14px;font-size:13px;line-height:1.4}
+  .cap-link{margin-top:18px;font-size:11px}
+  .cap-card{height:300px;grid-template-rows:124px 1fr}
+  .cap-card img{height:124px}
+  .cap-body{padding:12px 13px}
+  .cap-body h3{font-size:14px;line-height:1.15}
+  .cap-body p{margin-top:8px;padding-right:2px;font-size:12px;line-height:1.32}
+  .cap-card .circle-arrow{left:13px;bottom:11px;width:27px;height:27px;font-size:15px}
+
+  .lower{height:260px;grid-template-columns:51.4% 1fr}
+  .lower-copy{padding:24px 32px}
+  .lower-label{gap:14px;font-size:11px;letter-spacing:.11em}
+  .about-panel .lower-label::after,.contact-panel .lower-label::after{width:28px;transform:none}
+  .lower h2{margin-top:14px;font-size:37px;line-height:1}
+  .lower p{margin-top:14px;font-size:13px;line-height:1.4}
+  .story{margin-top:18px;font-size:11px}
+  .contact-panel{padding-right:170px}
+  .contact-panel .lower-copy{padding-left:42px}
+  .contact-visual{right:165px;top:30px;width:170px;height:170px}
+  .contact-panel .btn{width:230px;height:44px;margin-top:17px}
+  .side-trust{right:82px;top:120px;font-size:10px}
+
+  .footer{height:82px;padding:0 30px}
+  .footer-brand{font-size:13px}
+  .footer-mid{font-size:10px}
+  .footer-nav{gap:22px;font-size:10.5px;letter-spacing:.08em}
+  .footer-nav::after{width:30px;margin-left:12px}
+}
