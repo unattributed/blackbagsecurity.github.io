@@ -1,68 +1,85 @@
 ---
-layout: marketing
+layout: services-locked
 title: Services | Black Bag Security
-description: Penetration testing, red teaming, secure code review, reverse engineering, and secure engineering for high-consequence systems.
+description: Specialist offensive security and secure engineering for organizations that cannot afford vague findings or weak evidence.
 permalink: /services/
 lang: en
 ref: services
-social_image: /assets/img/services/services-engagement-recommendation-v58.png
-social_image_alt: Black Bag Security specialist security services
+social_image: /assets/img/services-locked/services-hero.webp
+social_image_alt: A secure systems path progressing through layered controls to a protected server environment
 ---
-<div class="v-page">
-  <section class="v-section v-hero v-services-hero" aria-labelledby="services-title">
-    <div class="v-hero__bg" aria-hidden="true"></div>
-    <div class="v-wrap v-hero__content">
-      <div class="v-hero__copy" data-reveal>
-        <p class="v-eyebrow">Specialist Security Services</p>
-        <h1 id="services-title" class="v-title">Services built for real exposure, not checkbox security.</h1>
-        <p class="v-lead">Specialist offensive security and secure engineering for organizations that cannot afford vague findings or weak evidence.</p>
-        <div class="v-actions"><a class="v-btn" href="mailto:hello@blackbagsecurity.com">Request a Review</a><a class="v-btn v-btn--ghost" href="#service-lines">Explore Services</a></div>
-        <div class="v-kickers"><span>Trusted by confidential clients</span><span>Global reach, discreet delivery</span><span>Real-world impact, measurable outcomes</span></div>
-      </div>
+<section class="services-hero" aria-labelledby="services-title">
+  <img class="services-hero__media" src="{{ '/assets/img/services-locked/services-hero.webp' | relative_url }}" width="1100" height="620" alt="A secure systems path progressing from an endpoint through layered controls to a protected server environment." fetchpriority="high" decoding="async">
+  <img class="services-hero__media services-hero__media--terminal" src="{{ '/assets/img/services-locked/services-hero.webp' | relative_url }}" width="1100" height="620" alt="" aria-hidden="true" decoding="async">
+  <div class="services-hero__copy">
+    <p class="services-eyebrow">Specialist Security Services</p>
+    <h1 id="services-title">Services built for <br>real exposure, not <br>checkbox security.</h1>
+    <p class="services-hero__lead">Specialist offensive security and secure engineering <br>for organizations that cannot afford vague findings <br>or weak evidence.</p>
+    <div class="services-actions">
+      <a class="services-button services-button--primary" href="{{ '/about/#contact' | relative_url }}">Request a Review <span aria-hidden="true">→</span></a>
+      <a class="services-button services-button--secondary" href="#service-cards">Explore Services <span aria-hidden="true">→</span></a>
     </div>
-  </section>
+    <div class="services-trust" role="list" aria-label="Service trust signals">
+      <p role="listitem">Trusted by <br>Confidential Clients</p>
+      <p role="listitem">Global Reach <br>Discreet Delivery</p>
+      <p role="listitem">Real-World Impact <br>Measurable Outcomes</p>
+    </div>
+  </div>
+  <p class="services-hero__editorial services-hero__editorial--visibility">Deeper <br>Visibility <br>Stronger <br>Defenses</p>
+  <p class="services-hero__editorial services-hero__editorial--adversary">Adversaries <br>Exist. <br>Better <br>Defenses <br>Too.</p>
+</section>
 
-  <section class="v-section v-section-pad" id="service-lines" aria-labelledby="service-lines-title">
-    <div class="v-wrap">
-      <div class="v-section-head"><div><p class="v-eyebrow">Our Services</p></div><span class="v-section-note">Specialist security services for a more resilient tomorrow.</span></div>
-      <div class="v-service-grid" data-reveal>
-        <article class="v-card"><div class="v-card__image"><img src="{{ '/assets/img/services/services-application-api-v57.png' | relative_url }}" alt="Penetration testing" loading="lazy"></div><div class="v-card__body"><h3>Penetration Testing</h3><p>Find and prove what others miss.</p></div></article>
-        <article class="v-card"><div class="v-card__image"><img src="{{ '/assets/img/services/services-adversary-validation-v57.png' | relative_url }}" alt="Red teaming" loading="lazy"></div><div class="v-card__body"><h3>Red Teaming</h3><p>Challenge readiness under realistic pressure.</p></div></article>
-        <article class="v-card"><div class="v-card__image"><img src="{{ '/assets/img/services/services-ai-security-v57.png' | relative_url }}" alt="Secure code review" loading="lazy"></div><div class="v-card__body"><h3>Secure Code Review</h3><p>Reduce risk before it reaches production.</p></div></article>
-        <article class="v-card"><div class="v-card__image"><img src="{{ '/assets/img/services/services-engagement-synthesis-v57.png' | relative_url }}" alt="Reverse engineering" loading="lazy"></div><div class="v-card__body"><h3>Reverse Engineering</h3><p>Reveal how systems really behave.</p></div></article>
-        <article class="v-card"><div class="v-card__image"><img src="{{ '/assets/img/services/services-secure-systems-engineering-v57.png' | relative_url }}" alt="Secure engineering" loading="lazy"></div><div class="v-card__body"><h3>Secure Engineering</h3><p>Design and validate resilience by default.</p></div></article>
-      </div>
-    </div>
-  </section>
+<section class="services-band services-offerings" aria-labelledby="offerings-title">
+  <div class="services-section-head">
+    <h2 id="offerings-title">Our Services</h2>
+    <p>Specialist security services for a more resilient tomorrow. <a href="#service-cards">View All Services <span aria-hidden="true">→</span></a></p>
+  </div>
+  <div class="services-offerings__grid" id="service-cards">
+    <article class="services-card">
+      <img src="{{ '/assets/img/services-locked/services-card-penetration-testing.webp' | relative_url }}" width="720" height="430" alt="A protected systems path used to represent penetration testing." loading="lazy" decoding="async">
+      <div class="services-card__body"><h3>Penetration Testing</h3><p>Find and prove what others miss.</p><a class="services-circle-arrow" href="{{ '/services/application-api-security/' | relative_url }}" aria-label="Explore penetration testing"><span aria-hidden="true">→</span></a></div>
+    </article>
+    <article class="services-card">
+      <img src="{{ '/assets/img/services-locked/services-card-red-teaming.webp' | relative_url }}" width="720" height="430" alt="A global adversary map used to represent red teaming." loading="lazy" decoding="async">
+      <div class="services-card__body"><h3>Red Teaming</h3><p>Challenge readiness under realistic pressure.</p><a class="services-circle-arrow" href="{{ '/services/adversary-validation/' | relative_url }}" aria-label="Explore red teaming"><span aria-hidden="true">→</span></a></div>
+    </article>
+    <article class="services-card">
+      <img src="{{ '/assets/img/services-locked/services-card-secure-code-review.webp' | relative_url }}" width="720" height="430" alt="A code validation interface used to represent secure code review." loading="lazy" decoding="async">
+      <div class="services-card__body"><h3>Secure Code Review</h3><p>Reduce risk before it reaches production.</p><a class="services-circle-arrow" href="{{ '/services/application-api-security/' | relative_url }}" aria-label="Explore secure code review"><span aria-hidden="true">→</span></a></div>
+    </article>
+    <article class="services-card">
+      <img src="{{ '/assets/img/services-locked/services-card-reverse-engineering.webp' | relative_url }}" width="720" height="430" alt="An exploded hardware assembly used to represent reverse engineering." loading="lazy" decoding="async">
+      <div class="services-card__body"><h3>Reverse Engineering</h3><p>Reveal how systems really behave.</p><a class="services-circle-arrow" href="{{ '/about/#contact' | relative_url }}" aria-label="Discuss reverse engineering"><span aria-hidden="true">→</span></a></div>
+    </article>
+    <article class="services-card">
+      <img src="{{ '/assets/img/services-locked/services-card-secure-engineering.webp' | relative_url }}" width="720" height="430" alt="Layered protected infrastructure used to represent secure engineering." loading="lazy" decoding="async">
+      <div class="services-card__body"><h3>Secure Engineering</h3><p>Design and validate resilience by default.</p><a class="services-circle-arrow" href="{{ '/services/secure-systems-engineering/' | relative_url }}" aria-label="Explore secure engineering"><span aria-hidden="true">→</span></a></div>
+    </article>
+  </div>
+</section>
 
-  <section class="v-section v-section-pad" aria-labelledby="engage-title">
-    <div class="v-wrap">
-      <div class="v-section-head"><div><p class="v-eyebrow">How We Engage</p></div><span class="v-section-note">Flexible engagement models. Constant focus on outcomes.</span></div>
-      <div class="v-models" data-reveal>
-        <div class="v-mini"><i>▤</i><div><strong id="engage-title">Fixed Scope</strong><span>Defined objectives. Clear deliverables.</span></div></div>
-        <div class="v-mini"><i>◎</i><div><strong>Objective-Based</strong><span>Tailored to your risks and environment.</span></div></div>
-        <div class="v-mini"><i>◉</i><div><strong>Retainer</strong><span>Ongoing support for evolving threats.</span></div></div>
-      </div>
-    </div>
-  </section>
+<section class="services-band services-engagement" aria-labelledby="engagement-title">
+  <div class="services-section-head"><h2 id="engagement-title">How We Engage</h2><p>Flexible engagement models. Constant focus on outcomes.</p></div>
+  <div class="services-engagement__grid">
+    <article class="services-engagement-card"><svg class="services-engagement-card__icon" viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M10 5h16l6 6v24H10zM26 5v7h7M15 18h12M15 23h12M15 28h9"/></svg><div><h3>Fixed Scope</h3><p>Defined objectives. Clear deliverables.</p></div></article>
+    <article class="services-engagement-card"><svg class="services-engagement-card__icon" viewBox="0 0 40 40" fill="none" aria-hidden="true"><circle cx="20" cy="20" r="14"/><circle cx="20" cy="20" r="5"/></svg><div><h3>Objective-Based</h3><p>Tailored to your risks and environment.</p></div></article>
+    <article class="services-engagement-card"><svg class="services-engagement-card__icon" viewBox="0 0 40 40" fill="none" aria-hidden="true"><circle cx="14" cy="15" r="5"/><circle cx="26" cy="15" r="5"/><path d="M5 33v-5c0-5 4-8 9-8s9 3 9 8v5M20 33v-5c0-4 3-7 7-7 5 0 8 3 8 8v4"/></svg><div><h3>Retainer</h3><p>Ongoing support for evolving threats.</p></div></article>
+  </div>
+</section>
 
-  <section class="v-section v-section-pad" aria-labelledby="receive-title">
-    <div class="v-wrap">
-      <div class="v-section-head"><div><p class="v-eyebrow">What You Receive</p></div><span class="v-section-note">Evidence that drives decisions.</span></div>
-      <div class="v-deliver-grid" data-reveal>
-        <article class="v-card"><div class="v-card__image"><img src="{{ '/assets/img/data-preserve-v34.svg' | relative_url }}" alt="Evidence pack" loading="lazy"></div><div class="v-card__body"><h3 id="receive-title">Evidence Pack</h3><p>Detailed findings, proof and context.</p></div></article>
-        <article class="v-card"><div class="v-card__image"><img src="{{ '/assets/img/proof-reporting-evidence-v35.svg' | relative_url }}" alt="Executive brief" loading="lazy"></div><div class="v-card__body"><h3>Executive Brief</h3><p>Clear outcomes for technical and business stakeholders.</p></div></article>
-        <article class="v-card"><div class="v-card__image"><img src="{{ '/assets/img/icon-deliverables.svg' | relative_url }}" alt="Remediation guidance" loading="lazy"></div><div class="v-card__body"><h3>Remediation Guidance</h3><p>Prioritized, practical next steps.</p></div></article>
-        <article class="v-card"><div class="v-card__image"><img src="{{ '/assets/img/lifecycle-retest-v33.svg' | relative_url }}" alt="Retest support" loading="lazy"></div><div class="v-card__body"><h3>Retest Support</h3><p>Validate fixes and close the loop.</p></div></article>
-      </div>
-    </div>
-  </section>
+<section class="services-band services-deliverables" aria-labelledby="deliverables-title">
+  <div class="services-section-head"><h2 id="deliverables-title">What You Receive</h2><p>Evidence that drives decisions.</p></div>
+  <div class="services-deliverables__grid">
+    <article class="services-deliverable-card"><img src="{{ '/assets/img/services-locked/services-deliverable-evidence-pack.webp' | relative_url }}" width="620" height="360" alt="A sealed evidence package with a verified chain of custody." loading="lazy" decoding="async"><div class="services-deliverable-card__body"><h3>Evidence Pack</h3><p>Detailed findings, proof and context.</p><a class="services-circle-arrow" href="{{ '/about/#contact' | relative_url }}" aria-label="Discuss the evidence pack"><span aria-hidden="true">→</span></a></div></article>
+    <article class="services-deliverable-card"><img src="{{ '/assets/img/services-locked/services-deliverable-executive-brief.webp' | relative_url }}" width="620" height="360" alt="Layered reports and charts used to represent an executive brief." loading="lazy" decoding="async"><div class="services-deliverable-card__body"><h3>Executive Brief</h3><p>Clear outcomes for technical and business stakeholders.</p><a class="services-circle-arrow" href="{{ '/about/#contact' | relative_url }}" aria-label="Discuss the executive brief"><span aria-hidden="true">→</span></a></div></article>
+    <article class="services-deliverable-card"><img src="{{ '/assets/img/services-locked/services-deliverable-remediation-guidance.webp' | relative_url }}" width="620" height="360" alt="A prioritized finding list used to represent remediation guidance." loading="lazy" decoding="async"><div class="services-deliverable-card__body"><h3>Remediation Guidance</h3><p>Prioritized, practical next steps.</p><a class="services-circle-arrow" href="{{ '/about/#contact' | relative_url }}" aria-label="Discuss remediation guidance"><span aria-hidden="true">→</span></a></div></article>
+    <article class="services-deliverable-card"><img src="{{ '/assets/img/services-locked/services-deliverable-retest-support.webp' | relative_url }}" width="620" height="360" alt="A verified check used to represent retest support." loading="lazy" decoding="async"><div class="services-deliverable-card__body"><h3>Retest Support</h3><p>Validate fixes and close the loop.</p><a class="services-circle-arrow" href="{{ '/about/#contact' | relative_url }}" aria-label="Discuss retest support"><span aria-hidden="true">→</span></a></div></article>
+  </div>
+</section>
 
-  <section class="v-section v-close">
-    <div class="v-wrap v-close__grid" data-reveal>
-      <div><p class="v-eyebrow">Need the right engagement, not just the loudest one?</p><h2>We shape the work around the risk.</h2></div>
-      <p>Tell us the goal, constraints and consequence. We will recommend the right approach.</p>
-      <a class="v-btn" href="mailto:hello@blackbagsecurity.com">Request Engagement Review</a>
-    </div>
-  </section>
-</div>
+<section class="services-closing" aria-labelledby="closing-title">
+  <h2 id="closing-title">Need the right engagement, <br>not just the loudest one?</h2>
+  <p>Talk to our team about your goals, constraints <br>and risk. We’ll recommend the right approach.</p>
+  <a class="services-button services-button--primary" href="{{ '/about/#contact' | relative_url }}">Request Engagement Review <span aria-hidden="true">→</span></a>
+  <p class="services-closing__stack">Discreet <br>Expert <br>Objective <br>Together</p>
+</section>
