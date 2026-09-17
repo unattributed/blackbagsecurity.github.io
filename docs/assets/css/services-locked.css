@@ -331,7 +331,7 @@ a:focus-visible { outline: 2px solid var(--services-lime); outline-offset: 2px; 
   .services-closing {
     height: 10.538642cqw;
     padding: 0 2.341920cqw;
-    grid-template-columns: 35.597190cqw 26.229508cqw 25.175644cqw 1fr;
+    grid-template-columns: 34.826698cqw 27cqw 25.175644cqw 1fr;
   }
   .services-closing h2 {
     width: 32.201405cqw;
