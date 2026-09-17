@@ -37,7 +37,7 @@ social_image_alt: A secure systems path progressing through layered controls to 
   <div class="services-offerings__grid" id="service-cards">
     <article class="services-card">
       <img src="{{ '/assets/img/services-locked/services-card-penetration-testing.webp' | relative_url }}" width="720" height="430" alt="A protected systems path used to represent penetration testing." loading="lazy" decoding="async">
-      <div class="services-card__body"><h3>Penetration Testing</h3><p>Find and prove what others miss.</p><a class="services-circle-arrow" href="{{ '/services/application-api-security/' | relative_url }}" aria-label="Explore penetration testing"><span aria-hidden="true">→</span></a></div>
+      <div class="services-card__body"><h3>Penetration Testing</h3><p>Find and prove what others miss.</p><a class="services-circle-arrow" href="{{ '/services/penetration-testing/' | relative_url }}" aria-label="Explore penetration testing"><span aria-hidden="true">→</span></a></div>
     </article>
     <article class="services-card">
       <img src="{{ '/assets/img/services-locked/services-card-red-teaming.webp' | relative_url }}" width="720" height="430" alt="A global adversary map used to represent red teaming." loading="lazy" decoding="async">

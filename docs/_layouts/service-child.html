@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ page.description | default: site.description | strip | escape }}">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; object-src 'none'; form-action 'self'">
+  <meta name="theme-color" content="#06111a">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <title>{{ page.title | default: site.title }}</title>
+  <meta property="og:title" content="{{ page.title | default: site.title | escape }}">
+  <meta property="og:description" content="{{ page.description | default: site.description | strip | escape }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:site_name" content="{{ site.title | escape }}">
+  <meta property="og:image" content="{{ page.social_image | absolute_url }}">
+  <meta property="og:image:alt" content="{{ page.social_image_alt | escape }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preload" href="{{ page.hero_image | relative_url }}" as="image" type="image/webp" fetchpriority="high">
+  <link rel="stylesheet" href="{{ '/assets/css/service-child.css' | relative_url }}">
+  <link rel="icon" href="{{ '/assets/img/logo-bag.svg' | relative_url }}" type="image/svg+xml">
+  <script type="application/ld+json" src="{{ '/assets/data/organization.json' | relative_url }}"></script>
+  <script type="application/ld+json" src="{{ '/assets/data/website.json' | relative_url }}"></script>
+  <script type="application/ld+json" src="{{ '/assets/data/service.json' | relative_url }}"></script>
+</head>
+<body>
+  <a class="child-skip" href="#child-content">Skip to content</a>
+  <div class="child-shell">
+    <header class="child-header">
+      <a class="child-brand" href="{{ '/' | relative_url }}" aria-label="Black Bag Security home">BLACK BAG SECURITY</a>
+      <nav class="child-nav" aria-label="Primary navigation">
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <a class="is-active" aria-current="page" href="{{ '/services/' | relative_url }}">Services</a>
+        <a href="{{ '/capability/' | relative_url }}">Capability</a>
+        <a href="{{ '/about/' | relative_url }}">About</a>
+        <a href="{{ '/about/#contact' | relative_url }}">Contact</a>
+      </nav>
+      <div class="child-philosophy">PEOPLE&nbsp; / &nbsp;PERSPECTIVE&nbsp; / &nbsp;PROGRESS</div>
+    </header>
+    <main id="child-content">{{ content }}</main>
+    <footer class="child-footer">
+      <div class="child-footer__brand">BLACK BAG SECURITY</div>
+      <div class="child-footer__philosophy">PEOPLE&nbsp; / &nbsp;PERSPECTIVE&nbsp; / &nbsp;PROGRESS</div>
+      <nav class="child-footer__nav" aria-label="Footer navigation">
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <a aria-current="page" href="{{ '/services/' | relative_url }}">Services</a>
+        <a href="{{ '/capability/' | relative_url }}">Capability</a>
+        <a href="{{ '/about/' | relative_url }}">About</a>
+        <a href="{{ '/about/#contact' | relative_url }}">Contact</a>
+      </nav>
+    </footer>
+  </div>
+</body>
+</html>
