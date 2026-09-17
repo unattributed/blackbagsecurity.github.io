@@ -61,9 +61,9 @@ social_image_alt: A secure systems path progressing through layered controls to 
 <section class="services-band services-engagement" aria-labelledby="engagement-title">
   <div class="services-section-head"><h2 id="engagement-title">How We Engage</h2><p>Flexible engagement models. Constant focus on outcomes.</p></div>
   <div class="services-engagement__grid">
-    <article class="services-engagement-card"><svg class="services-engagement-card__icon" viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M10 5h16l6 6v24H10zM26 5v7h7M15 18h12M15 23h12M15 28h9"/></svg><div><h3>Fixed Scope</h3><p>Defined objectives. Clear deliverables.</p></div></article>
-    <article class="services-engagement-card"><svg class="services-engagement-card__icon" viewBox="0 0 40 40" fill="none" aria-hidden="true"><circle cx="20" cy="20" r="14"/><circle cx="20" cy="20" r="5"/></svg><div><h3>Objective-Based</h3><p>Tailored to your risks and environment.</p></div></article>
-    <article class="services-engagement-card"><svg class="services-engagement-card__icon" viewBox="0 0 40 40" fill="none" aria-hidden="true"><circle cx="14" cy="15" r="5"/><circle cx="26" cy="15" r="5"/><path d="M5 33v-5c0-5 4-8 9-8s9 3 9 8v5M20 33v-5c0-4 3-7 7-7 5 0 8 3 8 8v4"/></svg><div><h3>Retainer</h3><p>Ongoing support for evolving threats.</p></div></article>
+    <article class="services-engagement-card"><svg class="services-engagement-card__icon" viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M10 5h16l6 6v24H10zM26 5v7h7M15 18h12M15 23h12M15 28h9"/></svg><div><h3>Requirements-Led Engineering</h3><p>Built to client requirements, constraints and acceptance criteria.</p></div></article>
+    <article class="services-engagement-card"><svg class="services-engagement-card__icon" viewBox="0 0 40 40" fill="none" aria-hidden="true"><circle cx="20" cy="20" r="14"/><circle cx="20" cy="20" r="5"/></svg><div><h3>Targeted Security Assurance</h3><p>Focused testing against the systems, risks and outcomes that matter.</p></div></article>
+    <article class="services-engagement-card"><svg class="services-engagement-card__icon" viewBox="0 0 40 40" fill="none" aria-hidden="true"><circle cx="14" cy="15" r="5"/><circle cx="26" cy="15" r="5"/><path d="M5 33v-5c0-5 4-8 9-8s9 3 9 8v5M20 33v-5c0-4 3-7 7-7 5 0 8 3 8 8v4"/></svg><div><h3>Embedded Security Partnership</h3><p>Continuity of senior expertise as systems and priorities evolve.</p></div></article>
   </div>
 </section>
 

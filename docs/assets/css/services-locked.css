@@ -397,7 +397,7 @@ a:focus-visible { outline: 2px solid var(--services-lime); outline-offset: 2px; 
   .services-card p, .services-deliverable-card p { font-size: 13px; line-height: 1.3; }
   .services-engagement-card h3 { font-size: 15px; }
   .services-engagement-card p { font-size: 13px; line-height: 1.3; }
-  .services-closing > p:not(.services-closing__stack) { font-size: 12px; }
+  .services-closing > p:not(.services-closing__stack) { font-size: 15.5px; line-height: 1.4; }
   .services-closing__stack { font-size: 10px; }
 
   .services-footer { min-height: 82px; border-bottom: 1px solid #294655; }
