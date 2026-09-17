@@ -181,3 +181,185 @@ a:focus-visible { outline: 2px solid var(--services-lime); outline-offset: 2px; 
   .services-deliverable-card { height: 280px; grid-template-rows: 178px 1fr; }
   .services-deliverable-card > img { height: 178px; }
 }
+
+@media (min-width: 911px) {
+  .services-shell { width: min(1067px, calc(100vw - 55px)); container-type: inline-size; }
+
+  .services-header {
+    height: 3.981265cqw;
+    grid-template-columns: 29.274005cqw 1fr 27.517564cqw;
+    padding: 0 1.873536cqw;
+  }
+  .services-brand { font-size: 1.112412cqw; }
+  .services-nav { gap: 2.693208cqw; transform: translateX(-1.053864cqw); }
+  .services-nav a { font-size: 0.749415cqw; }
+  .services-philosophy { font-size: 0.737705cqw; }
+
+  .services-hero { height: 37.119438cqw; }
+  .services-hero::before {
+    width: 26.697892cqw;
+    background-size: 100.234192cqw 56.557377cqw;
+  }
+  .services-hero__media {
+    top: 0.819672cqw;
+    left: 26.580796cqw;
+    width: 63.114754cqw;
+    height: 35.597190cqw;
+  }
+  .services-hero__copy {
+    top: 3.044496cqw;
+    left: 2.459016cqw;
+    width: 38.641686cqw;
+  }
+  .services-eyebrow { gap: 1.522248cqw; font-size: 0.737705cqw; }
+  .services-eyebrow::before { width: 2.341920cqw; }
+  .services-hero h1 {
+    width: 35.128806cqw;
+    margin-top: 0.936768cqw;
+    font-size: 4.332553cqw;
+  }
+  .services-hero__lead {
+    width: 37.353630cqw;
+    margin-top: 1.170960cqw;
+    font-size: 1.311475cqw;
+  }
+  .services-actions { gap: 1.405152cqw; margin-top: 2.341920cqw; }
+  .services-button {
+    height: 3.864169cqw;
+    min-width: 17.330211cqw;
+    padding: 0 1.873536cqw;
+    border-radius: 0.234192cqw;
+    font-size: 1.018735cqw;
+  }
+  .services-button span { font-size: 1.522248cqw; }
+  .services-button--secondary { min-width: 16.276347cqw; }
+  .services-trust { width: 38.524590cqw; margin-top: 2.224824cqw; }
+  .services-trust p {
+    min-height: 3.044496cqw;
+    padding: 0 1.170960cqw;
+    font-size: 0.620609cqw;
+  }
+  .services-trust p:first-child { padding-left: 1.053864cqw; }
+  .services-hero__editorial {
+    right: 1.522248cqw;
+    font-size: 0.679157cqw;
+  }
+  .services-hero__editorial::before {
+    width: 2.341920cqw;
+    margin-bottom: 0.936768cqw;
+  }
+  .services-hero__editorial--visibility { top: 2.107728cqw; width: 5.971897cqw; }
+  .services-hero__editorial--adversary { top: 23.887588cqw; width: 5.971897cqw; }
+
+  .services-section-head h2 { gap: 1.170960cqw; font-size: 0.772834cqw; }
+  .services-section-head h2::after { width: 2.576112cqw; }
+  .services-section-head > p { font-size: 0.690867cqw; }
+  .services-section-head > p a { margin-left: 2.341920cqw; }
+
+  .services-offerings {
+    height: 30.210773cqw;
+    padding: 1.405152cqw 1.639344cqw 1.288056cqw;
+  }
+  .services-offerings .services-section-head { height: 2.459016cqw; }
+  .services-offerings__grid { gap: 0.936768cqw; }
+  .services-card {
+    height: 25.058548cqw;
+    grid-template-rows: 15.105386cqw 1fr;
+    border-radius: 0.468384cqw;
+  }
+  .services-card > img { height: 15.105386cqw; }
+  .services-card__body { padding: 1.053864cqw 1.170960cqw; }
+  .services-card h3, .services-deliverable-card h3 { font-size: 1.252927cqw; }
+  .services-card p, .services-deliverable-card p {
+    margin-top: 0.585480cqw;
+    padding-right: 0.585480cqw;
+    font-size: 0.913349cqw;
+  }
+  .services-circle-arrow {
+    bottom: 0.936768cqw;
+    left: 1.170960cqw;
+    width: 2.341920cqw;
+    height: 2.341920cqw;
+    font-size: 1.405152cqw;
+  }
+
+  .services-engagement {
+    height: 12.997658cqw;
+    padding: 1.405152cqw 1.522248cqw 1.288056cqw 1.639344cqw;
+  }
+  .services-engagement .services-section-head { height: 2.341920cqw; }
+  .services-engagement__grid {
+    grid-template-columns: 31.733021cqw 31.498829cqw 31.498829cqw;
+    gap: 1.053864cqw;
+  }
+  .services-engagement-card {
+    height: 7.845433cqw;
+    grid-template-columns: 6.908665cqw 1fr;
+    padding: 0 1.639344cqw;
+    border-radius: 0.351288cqw;
+  }
+  .services-engagement-card__icon { width: 4.449649cqw; height: 4.449649cqw; }
+  .services-engagement-card h3 { font-size: 1.252927cqw; }
+  .services-engagement-card p { margin-top: 0.585480cqw; font-size: 0.913349cqw; }
+
+  .services-deliverables {
+    height: 25.292740cqw;
+    padding: 1.288056cqw 1.639344cqw 1.522248cqw 1.756440cqw;
+  }
+  .services-deliverables .services-section-head { height: 2.224824cqw; }
+  .services-deliverables__grid {
+    grid-template-columns: 23.653396cqw 23.302108cqw 23.302108cqw 23.536300cqw;
+    gap: 0.936768cqw;
+  }
+  .services-deliverable-card {
+    height: 20.140515cqw;
+    grid-template-rows: 11.475410cqw 1fr;
+    border-radius: 0.468384cqw;
+  }
+  .services-deliverable-card > img { height: 11.475410cqw; }
+  .services-deliverable-card__body { padding: 0.936768cqw 1.170960cqw; }
+  .services-deliverable-card h3 { font-size: 1.252927cqw; }
+  .services-deliverable-card p { font-size: 0.889930cqw; }
+  .services-deliverable-card .services-circle-arrow {
+    bottom: 0.819672cqw;
+    left: 1.288056cqw;
+    width: 2.341920cqw;
+    height: 2.341920cqw;
+    font-size: 1.288056cqw;
+  }
+
+  .services-closing {
+    height: 10.538642cqw;
+    padding: 0 2.341920cqw;
+    grid-template-columns: 35.597190cqw 26.229508cqw 25.175644cqw 1fr;
+  }
+  .services-closing h2 {
+    width: 32.201405cqw;
+    font-size: 2.576112cqw;
+  }
+  .services-closing h2::before {
+    top: -1.522248cqw;
+    left: 0.234192cqw;
+    width: 2.107728cqw;
+  }
+  .services-closing > p:not(.services-closing__stack) { font-size: 0.913349cqw; }
+  .services-closing .services-button { width: 22.950820cqw; height: 3.981265cqw; }
+  .services-closing__stack { font-size: 0.690867cqw; }
+  .services-closing__stack::before {
+    width: 2.107728cqw;
+    margin-bottom: 0.819672cqw;
+  }
+
+  .services-footer {
+    height: 4.918033cqw;
+    padding: 0 2.224824cqw;
+    grid-template-columns: 14.402810cqw 1fr auto;
+  }
+  .services-footer__brand { font-size: 0.866511cqw; }
+  .services-footer__philosophy { font-size: 0.608899cqw; }
+  .services-footer__nav { gap: 2.107728cqw; font-size: 0.562061cqw; }
+  .services-footer__nav::after {
+    width: 2.341920cqw;
+    margin: 0.468384cqw 0 0 1.405152cqw;
+  }
+}
