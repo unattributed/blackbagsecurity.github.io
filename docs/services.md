@@ -41,7 +41,7 @@ social_image_alt: A secure systems path progressing through layered controls to 
     </article>
     <article class="services-card">
       <img src="{{ '/assets/img/services-locked/services-card-red-teaming.webp' | relative_url }}" width="720" height="430" alt="A global adversary map used to represent red teaming." loading="lazy" decoding="async">
-      <div class="services-card__body"><h3>Red Teaming</h3><p>Challenge readiness under realistic pressure.</p><a class="services-circle-arrow" href="{{ '/services/adversary-validation/' | relative_url }}" aria-label="Explore red teaming"><span aria-hidden="true">→</span></a></div>
+      <div class="services-card__body"><h3>Red Teaming</h3><p>Challenge readiness under realistic pressure.</p><a class="services-circle-arrow" href="{{ '/services/red-teaming/' | relative_url }}" aria-label="Explore red teaming"><span aria-hidden="true">→</span></a></div>
     </article>
     <article class="services-card">
       <img src="{{ '/assets/img/services-locked/services-card-secure-code-review.webp' | relative_url }}" width="720" height="430" alt="A code validation interface used to represent secure code review." loading="lazy" decoding="async">
