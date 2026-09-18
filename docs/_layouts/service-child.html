@@ -19,7 +19,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="preload" href="{{ page.hero_image | relative_url }}" as="image" type="image/webp" fetchpriority="high">
   <link rel="stylesheet" href="{{ '/assets/css/service-child.css' | relative_url }}">
-  {% if page.ref == 'red-teaming' or page.ref == 'secure-code-review' or page.ref == 'reverse-engineering' %}<link rel="icon" href="data:,">{% else %}<link rel="icon" href="{{ '/assets/img/logo-bag.svg' | relative_url }}" type="image/svg+xml">{% endif %}
+  {% if page.ref == 'red-teaming' or page.ref == 'secure-code-review' or page.ref == 'reverse-engineering' or page.ref == 'secure-engineering' %}<link rel="icon" href="data:,">{% else %}<link rel="icon" href="{{ '/assets/img/logo-bag.svg' | relative_url }}" type="image/svg+xml">{% endif %}
   <script type="application/ld+json" src="{{ '/assets/data/organization.json' | relative_url }}"></script>
   <script type="application/ld+json" src="{{ '/assets/data/website.json' | relative_url }}"></script>
   <script type="application/ld+json" src="{{ '/assets/data/service.json' | relative_url }}"></script>
@@ -28,7 +28,11 @@
   <a class="child-skip" href="#child-content">Skip to content</a>
   <div class="child-shell">
     <header class="child-header">
+      {% if page.ref == 'secure-engineering' %}
+      <div class="se-brand-lockup"><a class="child-brand" href="{{ '/' | relative_url }}" aria-label="Black Bag Security home">BLACK BAG SECURITY</a><span>RESEARCH | ENGINEERING | OPERATIONS</span></div>
+      {% else %}
       <a class="child-brand" href="{{ '/' | relative_url }}" aria-label="Black Bag Security home">BLACK BAG SECURITY</a>
+      {% endif %}
       <nav class="child-nav" aria-label="Primary navigation">
         <a href="{{ '/' | relative_url }}">Home</a>
         <a class="is-active" aria-current="page" href="{{ '/services/' | relative_url }}">Services</a>
@@ -36,7 +40,7 @@
         <a href="{{ '/about/' | relative_url }}">About</a>
         <a href="{{ '/about/#contact' | relative_url }}">Contact</a>
       </nav>
-      <div class="child-philosophy">PEOPLE&nbsp; / &nbsp;PERSPECTIVE&nbsp; / &nbsp;PROGRESS</div>
+      {% unless page.ref == 'secure-engineering' %}<div class="child-philosophy">PEOPLE&nbsp; / &nbsp;PERSPECTIVE&nbsp; / &nbsp;PROGRESS</div>{% endunless %}
     </header>
     <main id="child-content">{{ content }}</main>
     {% if page.ref == 'red-teaming' %}
@@ -47,6 +51,17 @@
         <a href="{{ '/policies/' | relative_url }}">Privacy</a>
         <a href="{{ '/policies/' | relative_url }}">Terms</a>
         <span>&copy; {{ 'now' | date: '%Y' }}</span>
+      </nav>
+    </footer>
+    {% elsif page.ref == 'secure-engineering' %}
+    <footer class="child-footer se-footer">
+      <div class="se-footer__lockup"><div class="child-footer__brand">BLACK BAG SECURITY</div><div class="child-footer__philosophy">RESEARCH | ENGINEERING | OPERATIONS</div></div>
+      <nav class="child-footer__nav" aria-label="Footer navigation">
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <a aria-current="page" href="{{ '/services/' | relative_url }}">Services</a>
+        <a href="{{ '/capability/' | relative_url }}">Capability</a>
+        <a href="{{ '/about/' | relative_url }}">About</a>
+        <a href="{{ '/about/#contact' | relative_url }}">Contact</a>
       </nav>
     </footer>
     {% else %}

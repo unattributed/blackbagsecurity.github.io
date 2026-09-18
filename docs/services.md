@@ -53,7 +53,7 @@ social_image_alt: A secure systems path progressing through layered controls to 
     </article>
     <article class="services-card">
       <img src="{{ '/assets/img/services-locked/services-card-secure-engineering.webp' | relative_url }}" width="720" height="430" alt="Layered protected infrastructure used to represent secure engineering." loading="lazy" decoding="async">
-      <div class="services-card__body"><h3>Secure Engineering</h3><p>Design and validate resilience by default.</p><a class="services-circle-arrow" href="{{ '/services/secure-systems-engineering/' | relative_url }}" aria-label="Explore secure engineering"><span aria-hidden="true">→</span></a></div>
+      <div class="services-card__body"><h3>Secure Engineering</h3><p>Design and validate resilience by default.</p><a class="services-circle-arrow" href="{{ '/services/secure-engineering/' | relative_url }}" aria-label="Explore secure engineering"><span aria-hidden="true">→</span></a></div>
     </article>
   </div>
 </section>
