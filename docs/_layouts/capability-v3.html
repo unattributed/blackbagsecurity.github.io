@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="{{ page.description | default: site.description | strip | escape }}" />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+  <meta name="msvalidate.01" content="1FE51893A5AC95D625ED3C04BA06D71C" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; object-src 'none'; frame-ancestors 'none'; form-action 'self'" />
+  <meta name="theme-color" content="#030b11" />
+  <link rel="canonical" href="{{ page.url | absolute_url }}" />
+  <title>{{ page.title | default: site.title }}</title>
+  <meta property="og:title" content="{{ page.title | default: site.title | escape }}" />
+  <meta property="og:description" content="{{ page.description | default: site.description | strip | escape }}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ page.url | absolute_url }}" />
+  <meta property="og:site_name" content="{{ site.title | escape }}" />
+  <meta property="og:image" content="{{ page.social_image | absolute_url }}" />
+  <meta property="og:image:alt" content="{{ page.social_image_alt | escape }}" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preload" href="{{ '/assets/css/style.css' | relative_url }}" as="style" />
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
+  <link rel="stylesheet" href="{{ '/assets/css/capability-v3.css' | relative_url }}" />
+  <link rel="icon" href="{{ '/assets/img/logo-bag.svg' | relative_url }}" type="image/svg+xml" />
+  <script type="application/ld+json" src="{{ '/assets/data/organization.json' | relative_url }}"></script>
+  <script type="application/ld+json" src="{{ '/assets/data/website.json' | relative_url }}"></script>
+</head>
+<body class="capability-v3-site">
+  <a class="cap-skip" href="#content">Skip to content</a>
+  <header class="cap-header">
+    <div class="cap-shell cap-header__inner">
+      <a class="cap-brand" href="{{ '/' | relative_url }}" aria-label="Black Bag Security home">
+        <strong>BLACK BAG SECURITY</strong>
+        <span>RESEARCH <i>|</i> ENGINEERING <i>|</i> OPERATIONS</span>
+      </a>
+      <nav class="cap-nav" aria-label="Primary navigation">
+        <a href="{{ '/' | relative_url }}">HOME</a>
+        <a href="{{ '/services/' | relative_url }}">SERVICES</a>
+        <a class="is-active" aria-current="page" href="{{ '/capability/' | relative_url }}">CAPABILITY</a>
+        <a href="{{ '/about/' | relative_url }}">ABOUT</a>
+        <a href="{{ '/about/#contact' | relative_url }}">CONTACT</a>
+      </nav>
+    </div>
+  </header>
+  <main id="content">{{ content }}</main>
+  <footer class="cap-footer">
+    <div class="cap-shell cap-footer__inner">
+      <a class="cap-brand cap-brand--footer" href="{{ '/' | relative_url }}" aria-label="Black Bag Security home">
+        <strong>BLACK BAG SECURITY</strong>
+        <span>RESEARCH <i>|</i> ENGINEERING <i>|</i> OPERATIONS</span>
+      </a>
+      <nav class="cap-nav cap-nav--footer" aria-label="Footer navigation">
+        <a href="{{ '/' | relative_url }}">HOME</a>
+        <a href="{{ '/services/' | relative_url }}">SERVICES</a>
+        <a class="is-active" aria-current="page" href="{{ '/capability/' | relative_url }}">CAPABILITY</a>
+        <a href="{{ '/about/' | relative_url }}">ABOUT</a>
+        <a href="{{ '/about/#contact' | relative_url }}">CONTACT</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
