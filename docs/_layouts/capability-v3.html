@@ -18,8 +18,6 @@
   <meta property="og:image" content="{{ page.social_image | absolute_url }}" />
   <meta property="og:image:alt" content="{{ page.social_image_alt | escape }}" />
   <meta name="twitter:card" content="summary_large_image" />
-  <link rel="preload" href="{{ '/assets/css/style.css' | relative_url }}" as="style" />
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
   <link rel="stylesheet" href="{{ '/assets/css/capability-v3.css' | relative_url }}" />
   <link rel="icon" href="{{ '/assets/img/logo-bag.svg' | relative_url }}" type="image/svg+xml" />
   <script type="application/ld+json" src="{{ '/assets/data/organization.json' | relative_url }}"></script>
@@ -27,36 +25,30 @@
 </head>
 <body class="capability-v3-site">
   <a class="cap-skip" href="#content">Skip to content</a>
-  <header class="cap-header">
-    <div class="cap-shell cap-header__inner">
-      <a class="cap-brand" href="{{ '/' | relative_url }}" aria-label="Black Bag Security home">
-        <strong>BLACK BAG SECURITY</strong>
-        <span>RESEARCH <i>|</i> ENGINEERING <i>|</i> OPERATIONS</span>
-      </a>
+  <div class="cap-site-shell">
+    <header class="cap-header">
+      <a class="cap-brand" href="{{ '/' | relative_url }}" aria-label="Black Bag Security home">BLACK BAG SECURITY</a>
       <nav class="cap-nav" aria-label="Primary navigation">
-        <a href="{{ '/' | relative_url }}">HOME</a>
-        <a href="{{ '/services/' | relative_url }}">SERVICES</a>
-        <a class="is-active" aria-current="page" href="{{ '/capability/' | relative_url }}">CAPABILITY</a>
-        <a href="{{ '/about/' | relative_url }}">ABOUT</a>
-        <a href="{{ '/about/#contact' | relative_url }}">CONTACT</a>
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <a href="{{ '/services/' | relative_url }}">Services</a>
+        <a class="is-active" aria-current="page" href="{{ '/capability/' | relative_url }}">Capability</a>
+        <a href="{{ '/about/' | relative_url }}">About</a>
+        <a href="{{ '/about/#contact' | relative_url }}">Contact</a>
       </nav>
-    </div>
-  </header>
-  <main id="content">{{ content }}</main>
-  <footer class="cap-footer">
-    <div class="cap-shell cap-footer__inner">
-      <a class="cap-brand cap-brand--footer" href="{{ '/' | relative_url }}" aria-label="Black Bag Security home">
-        <strong>BLACK BAG SECURITY</strong>
-        <span>RESEARCH <i>|</i> ENGINEERING <i>|</i> OPERATIONS</span>
-      </a>
+      <div class="cap-philosophy">PEOPLE&nbsp; / &nbsp;PERSPECTIVE&nbsp; / &nbsp;PROGRESS</div>
+    </header>
+    <main id="content">{{ content }}</main>
+    <footer class="cap-footer">
+      <div class="cap-footer__brand">BLACK BAG SECURITY</div>
+      <div class="cap-footer__philosophy">PEOPLE&nbsp; / &nbsp;PERSPECTIVE&nbsp; / &nbsp;PROGRESS</div>
       <nav class="cap-nav cap-nav--footer" aria-label="Footer navigation">
-        <a href="{{ '/' | relative_url }}">HOME</a>
-        <a href="{{ '/services/' | relative_url }}">SERVICES</a>
-        <a class="is-active" aria-current="page" href="{{ '/capability/' | relative_url }}">CAPABILITY</a>
-        <a href="{{ '/about/' | relative_url }}">ABOUT</a>
-        <a href="{{ '/about/#contact' | relative_url }}">CONTACT</a>
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <a href="{{ '/services/' | relative_url }}">Services</a>
+        <a class="is-active" aria-current="page" href="{{ '/capability/' | relative_url }}">Capability</a>
+        <a href="{{ '/about/' | relative_url }}">About</a>
+        <a href="{{ '/about/#contact' | relative_url }}">Contact</a>
       </nav>
-    </div>
-  </footer>
+    </footer>
+  </div>
 </body>
 </html>
