@@ -45,7 +45,7 @@ social_image_alt: A secure systems path progressing through layered controls to 
     </article>
     <article class="services-card">
       <img src="{{ '/assets/img/services-locked/services-card-secure-code-review.webp' | relative_url }}" width="720" height="430" alt="A code validation interface used to represent secure code review." loading="lazy" decoding="async">
-      <div class="services-card__body"><h3>Secure Code Review</h3><p>Reduce risk before it reaches production.</p><a class="services-circle-arrow" href="{{ '/services/application-api-security/' | relative_url }}" aria-label="Explore secure code review"><span aria-hidden="true">→</span></a></div>
+      <div class="services-card__body"><h3>Secure Code Review</h3><p>Reduce risk before it reaches production.</p><a class="services-circle-arrow" href="{{ '/services/secure-code-review/' | relative_url }}" aria-label="Explore secure code review"><span aria-hidden="true">→</span></a></div>
     </article>
     <article class="services-card">
       <img src="{{ '/assets/img/services-locked/services-card-reverse-engineering.webp' | relative_url }}" width="720" height="430" alt="An exploded hardware assembly used to represent reverse engineering." loading="lazy" decoding="async">

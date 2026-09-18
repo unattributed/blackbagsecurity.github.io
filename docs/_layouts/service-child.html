@@ -19,7 +19,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="preload" href="{{ page.hero_image | relative_url }}" as="image" type="image/webp" fetchpriority="high">
   <link rel="stylesheet" href="{{ '/assets/css/service-child.css' | relative_url }}">
-  {% unless page.ref == 'red-teaming' %}<link rel="icon" href="{{ '/assets/img/logo-bag.svg' | relative_url }}" type="image/svg+xml">{% endunless %}
+  {% unless page.ref == 'red-teaming' or page.ref == 'secure-code-review' %}<link rel="icon" href="{{ '/assets/img/logo-bag.svg' | relative_url }}" type="image/svg+xml">{% endunless %}
   <script type="application/ld+json" src="{{ '/assets/data/organization.json' | relative_url }}"></script>
   <script type="application/ld+json" src="{{ '/assets/data/website.json' | relative_url }}"></script>
   <script type="application/ld+json" src="{{ '/assets/data/service.json' | relative_url }}"></script>
