@@ -20,7 +20,7 @@ body.capability-v3-site{margin:0;background:radial-gradient(circle at 50% 14%,#1
 .cap-nav a:focus-visible,.cap-button:focus-visible,.cap-product-card a:focus-visible{outline:2px solid #fff;outline-offset:4px}
 .cap-philosophy{justify-self:end;white-space:nowrap;color:#8ca0ac;font-size:10px;font-weight:700;letter-spacing:.15em}
 .cap-page{background:linear-gradient(90deg,#020a10,#04111a 50%,#020a10)}
-.cap-hero{height:416px;border-bottom:1px solid var(--cap-line);background-image:linear-gradient(90deg,#020a10 0%,rgba(2,10,16,.98) 31%,rgba(2,10,16,.62) 50%,rgba(2,10,16,.08) 77%,rgba(2,10,16,.2)),url('/assets/img/main-locked/main-hero-operations-command-centre.webp');background-position:center,center;background-size:cover}
+.cap-hero{height:416px;border-bottom:1px solid var(--cap-line);background-image:linear-gradient(90deg,#020a10 0%,rgba(2,10,16,.98) 31%,rgba(2,10,16,.62) 50%,rgba(2,10,16,.08) 77%,rgba(2,10,16,.2)),url('/assets/img/capability-v3/capability-v3-hero.webp');background-position:center,center;background-size:cover}
 .cap-hero__inner{height:100%;display:flex;align-items:center;justify-content:space-between;position:relative}
 .cap-hero__copy{width:505px;margin-top:-2px}
 .cap-eyebrow,.cap-label{margin:0 0 11px;color:var(--cap-lime);font-size:11px;font-weight:600;letter-spacing:.03em}
