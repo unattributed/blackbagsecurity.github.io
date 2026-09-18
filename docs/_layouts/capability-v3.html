@@ -19,7 +19,7 @@
   <meta property="og:image:alt" content="{{ page.social_image_alt | escape }}" />
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="stylesheet" href="{{ '/assets/css/capability-v3.css' | relative_url }}" />
-  <link rel="icon" href="{{ '/assets/img/logo-bag.svg' | relative_url }}" type="image/svg+xml" />
+  <link rel="icon" href="data:," />
   <script type="application/ld+json" src="{{ '/assets/data/organization.json' | relative_url }}"></script>
   <script type="application/ld+json" src="{{ '/assets/data/website.json' | relative_url }}"></script>
 </head>
@@ -27,7 +27,10 @@
   <a class="cap-skip" href="#content">Skip to content</a>
   <div class="cap-site-shell">
     <header class="cap-header">
-      <a class="cap-brand" href="{{ '/' | relative_url }}" aria-label="Black Bag Security home">BLACK BAG SECURITY</a>
+      <a class="cap-brand-lockup" href="{{ '/' | relative_url }}" aria-label="Black Bag Security home">
+        <span class="cap-brand">BLACK BAG SECURITY</span>
+        <span class="cap-brand__descriptor">RESEARCH&nbsp; | &nbsp;ENGINEERING&nbsp; | &nbsp;OPERATIONS</span>
+      </a>
       <nav class="cap-nav" aria-label="Primary navigation">
         <a href="{{ '/' | relative_url }}">Home</a>
         <a href="{{ '/services/' | relative_url }}">Services</a>
@@ -35,12 +38,13 @@
         <a href="{{ '/about/' | relative_url }}">About</a>
         <a href="{{ '/about/#contact' | relative_url }}">Contact</a>
       </nav>
-      <div class="cap-philosophy">PEOPLE&nbsp; / &nbsp;PERSPECTIVE&nbsp; / &nbsp;PROGRESS</div>
     </header>
     <main id="content">{{ content }}</main>
     <footer class="cap-footer">
-      <div class="cap-footer__brand">BLACK BAG SECURITY</div>
-      <div class="cap-footer__philosophy">PEOPLE&nbsp; / &nbsp;PERSPECTIVE&nbsp; / &nbsp;PROGRESS</div>
+      <div class="cap-footer__brand-lockup">
+        <div class="cap-footer__brand">BLACK BAG SECURITY</div>
+        <div class="cap-footer__descriptor">RESEARCH&nbsp; | &nbsp;ENGINEERING&nbsp; | &nbsp;OPERATIONS</div>
+      </div>
       <nav class="cap-nav cap-nav--footer" aria-label="Footer navigation">
         <a href="{{ '/' | relative_url }}">Home</a>
         <a href="{{ '/services/' | relative_url }}">Services</a>
