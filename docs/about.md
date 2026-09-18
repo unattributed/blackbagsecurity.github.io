@@ -1,58 +1,91 @@
 ---
-layout: marketing
+layout: about-v3
 title: About | Black Bag Security
-description: Black Bag Security is a senior-led security engineering practice built around practical experience, disciplined delivery, defensible evidence, and direct accountability.
+description: Black Bag Security is a practitioner-led security engineering practice grounded in real-world experience, disciplined delivery, and measurable outcomes.
 permalink: /about/
 lang: en
 ref: about
-social_image: /assets/img/principal-silhouette-approved.png
-social_image_alt: Black Bag Security operator-led security engineering practice
+social_image: /assets/img/about-v3/about-v3-practitioner.webp
+social_image_alt: A security practitioner working in a professional offensive security environment
 ---
-<div class="v-page">
-  <section class="v-section v-hero v-about-hero" aria-labelledby="about-title">
-    <div class="v-hero__bg" aria-hidden="true"></div>
-    <div class="v-wrap v-hero__content">
-      <div class="v-hero__copy" data-reveal>
-        <p class="v-eyebrow">About</p>
-        <h1 id="about-title" class="v-title">Small by design. Institutional in delivery.</h1>
-        <p class="v-lead">Practical security for a more resilient world.</p>
-        <p class="v-copy">Black Bag Security is led by Duncan Stirling, an independent security professional focused on penetration testing, secure engineering, offensive research, reverse engineering, and AI security.</p>
-        <p class="v-copy">The work is grounded in real-world experience, a disciplined engineering approach, and measurable outcomes that help organizations reduce risk and operate with greater confidence.</p>
-        <div class="v-actions"><a class="v-btn" href="{{ '/services/' | relative_url }}">Our Services</a><a class="v-btn v-btn--ghost" href="mailto:hello@blackbagsecurity.com">Get in Touch</a></div>
+<div class="about-page">
+  <section class="about-hero" aria-labelledby="about-title">
+    <span class="about-sr-only" role="img" aria-label="A mature security practitioner working at a laptop in a professional offensive security environment."></span>
+    <div class="about-inner about-hero__inner">
+      <div class="about-hero__copy">
+        <p class="about-eyebrow">ABOUT</p>
+        <h1 id="about-title">Small by design.<br>Institutional in delivery.</h1>
+        <p class="about-subline">PRACTICAL SECURITY FOR A MORE RESILIENT WORLD.</p>
+        <p>Black Bag Security is led by Duncan Stirling, an independent security professional focused on penetration testing, security engineering, and offensive research.</p>
+        <p>The work is grounded in real-world experience, a disciplined engineering approach, and a commitment to practical, measurable outcomes that help organizations reduce risk and operate with greater confidence.</p>
+        <div class="about-actions">
+          <a class="about-button about-button--primary" href="{{ '/services/' | relative_url }}">Our Services <span aria-hidden="true">→</span></a>
+          <a class="about-button about-button--secondary" href="#contact">Get in Touch <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+      <p class="about-editorial about-editorial--hero" aria-hidden="true"><span>REAL</span><span>THREATS</span><span>CLEARER</span><span>ANSWERS</span></p>
+    </div>
+  </section>
+
+  <section class="about-approach" aria-labelledby="approach-title">
+    <div class="about-inner">
+      <p class="about-eyebrow">THE APPROACH</p>
+      <h2 id="approach-title">Experience. Discipline. Better Outcomes.</h2>
+      <div class="about-principles">
+        <article>
+          <svg aria-hidden="true"><use href="{{ '/assets/img/about-v3/about-v3-icons.svg#shield' | relative_url }}"></use></svg>
+          <h3>REAL-WORLD<br>EXPERIENCE</h3>
+          <p>Practical experience across complex environments and high-consequence systems.</p>
+        </article>
+        <article>
+          <svg aria-hidden="true"><use href="{{ '/assets/img/about-v3/about-v3-icons.svg#document' | relative_url }}"></use></svg>
+          <h3>ENGINEERING<br>MINDSET</h3>
+          <p>Custom tooling, repeatable methods, and evidence-driven results.</p>
+        </article>
+        <article>
+          <svg aria-hidden="true"><use href="{{ '/assets/img/about-v3/about-v3-icons.svg#target' | relative_url }}"></use></svg>
+          <h3>ADVERSARY<br>PERSPECTIVE</h3>
+          <p>Offensive research informs stronger defensive outcomes.</p>
+        </article>
+        <article>
+          <svg aria-hidden="true"><use href="{{ '/assets/img/about-v3/about-v3-icons.svg#impact' | relative_url }}"></use></svg>
+          <h3>MEASURABLE<br>IMPACT</h3>
+          <p>Clear, actionable findings that support risk reduction and more resilient organizations.</p>
+        </article>
       </div>
     </div>
   </section>
 
-  <section class="v-section v-section-pad" aria-labelledby="approach-title">
-    <div class="v-wrap">
-      <div class="v-section-head"><div><p class="v-eyebrow">The Approach</p><h2 id="approach-title" class="v-h2">Experience. Discipline. Better Outcomes.</h2></div></div>
-      <div class="v-about-principles" data-reveal>
-        <div class="v-principle"><i>◇</i><strong>Real-World Experience</strong><p>Practical experience across complex environments and high-consequence systems.</p></div>
-        <div class="v-principle"><i>▤</i><strong>Engineering Mindset</strong><p>Custom tooling, repeatable methods, and evidence-driven results.</p></div>
-        <div class="v-principle"><i>◎</i><strong>Adversary Perspective</strong><p>Offensive research informs stronger defensive outcomes.</p></div>
-        <div class="v-principle"><i>▥</i><strong>Measurable Impact</strong><p>Clear, actionable findings that support risk reduction and more resilient organizations.</p></div>
+  <section class="about-accountability" aria-labelledby="accountability-title">
+    <span class="about-sr-only" role="img" aria-label="A dark panorama of rugged alpine peaks beneath storm clouds."></span>
+    <div class="about-inner about-accountability__inner">
+      <div class="about-accountability__copy">
+        <p class="about-eyebrow">SENIOR ACCOUNTABILITY</p>
+        <h2 id="accountability-title">Led by a practitioner.<br>Focused on what matters.</h2>
+        <p>I'm Duncan Stirling, founder of Black Bag Security. I believe security should be practical, transparent, and geared toward real outcomes. The goal is not just to find problems, but to help organizations build stronger, more resilient systems, teams, and decisions.</p>
+        <p class="about-signature">—&nbsp; Duncan Stirling</p>
+        <p class="about-role">FOUNDER, BLACK BAG SECURITY</p>
       </div>
+      <p class="about-editorial about-editorial--accountability" aria-hidden="true"><span>HIGHER</span><span>STANDARDS</span><span>A MORE</span><span>RESILIENT WORLD</span></p>
     </div>
   </section>
 
-  <section class="v-section" aria-labelledby="accountability-title">
-    <div class="v-wrap v-about-feature">
-      <div class="v-about-feature__copy" data-reveal>
-        <p class="v-eyebrow">Senior Accountability</p>
-        <h2 id="accountability-title" class="v-h2">Led by a practitioner. Focused on what matters.</h2>
-        <p class="v-copy">Black Bag is founder-led, with senior technical judgment remaining close to engagement strategy, difficult attack paths, engineering decisions, evidence quality, and client outcomes.</p>
-        <p class="v-copy">The goal is not simply to find problems. It is to help organizations build stronger systems, make clearer decisions, and verify that the condition that mattered is actually closed.</p>
-        <p class="v-copy"><strong>— Duncan Stirling</strong><br><span class="v-section-note">Founder, Black Bag Security</span></p>
+  <section class="about-contact" id="contact" aria-labelledby="contact-title">
+    <div class="about-inner about-contact__grid">
+      <div class="about-contact__heading">
+        <p class="about-eyebrow">WORK TOGETHER</p>
+        <h2 id="contact-title">A more resilient tomorrow<br>starts with a conversation.</h2>
       </div>
-      <div class="v-about-feature__visual" aria-label="Black Bag Security engineering and offensive security practice"></div>
-    </div>
-  </section>
-
-  <section class="v-section v-close" id="contact" aria-labelledby="contact-title">
-    <div class="v-wrap v-close__grid" data-reveal>
-      <div><p class="v-eyebrow">Work Together</p><h2 id="contact-title">A more resilient tomorrow starts with a conversation.</h2></div>
-      <p>Tell us about your environment, your challenges, and what better looks like. We will find the right way to engage.</p>
-      <a class="v-btn" href="mailto:hello@blackbagsecurity.com">Start the Conversation</a>
+      <div class="about-contact__action">
+        <p>Tell us about your environment, your challenges, and what better looks like. We'll find the right way to engage.</p>
+        <a class="about-button about-button--primary" href="mailto:hello@blackbagsecurity.com">Start the Conversation <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="about-contact__tiles" aria-hidden="true">
+        <span><svg><use href="{{ '/assets/img/about-v3/about-v3-icons.svg#mail' | relative_url }}"></use></svg></span>
+        <span><svg><use href="{{ '/assets/img/about-v3/about-v3-icons.svg#calendar' | relative_url }}"></use></svg></span>
+        <span><svg><use href="{{ '/assets/img/about-v3/about-v3-icons.svg#chat' | relative_url }}"></use></svg></span>
+      </div>
+      <p class="about-editorial about-editorial--contact" aria-hidden="true"><span>DISCREET</span><span>EXPERT</span><span>OBJECTIVE</span><span>TOGETHER</span></p>
     </div>
   </section>
 </div>
