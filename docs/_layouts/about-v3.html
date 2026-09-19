@@ -23,24 +23,13 @@
   <script type="application/ld+json" src="{{ '/assets/data/organization.json' | relative_url }}"></script>
   <script type="application/ld+json" src="{{ '/assets/data/website.json' | relative_url }}"></script>
   <link rel="stylesheet" href="{{ '/assets/css/site-design-system-v1.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/site-design-system-v1-header.css' | relative_url }}">
+  <script src="{{ '/assets/js/site-design-system-v1-header.js' | relative_url }}" defer></script>
 </head>
 <body class="about-v3-site">
   <a class="about-skip" href="#content">Skip to content</a>
   <div class="about-site-shell ds-v1-shell">
-    <header class="about-header">
-      <a class="about-brand-lockup" href="{{ '/' | relative_url }}" aria-label="Black Bag Security home">
-        <span class="about-brand">BLACK BAG SECURITY</span>
-        <span class="about-brand__rule" aria-hidden="true"></span>
-        <span class="about-brand__descriptor">SECURITY ENGINEERING<br>FOR A MORE RESILIENT WORLD</span>
-      </a>
-      <nav class="about-nav" aria-label="Primary navigation">
-        <a href="{{ '/' | relative_url }}">Home</a>
-        <a href="{{ '/services/' | relative_url }}">Services</a>
-        <a href="{{ '/capability/' | relative_url }}">Capability</a>
-        <a class="is-active" aria-current="page" href="{{ '/about/' | relative_url }}">About</a>
-        <a href="{{ '/about/#contact' | relative_url }}">Contact</a>
-      </nav>
-    </header>
+    {% include site-design-system-v1-header.html %}
     <main id="content">{{ content }}</main>
     <footer class="about-footer">
       <div class="about-footer__brand">BLACK BAG SECURITY</div>

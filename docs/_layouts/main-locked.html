@@ -19,25 +19,17 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="preload" href="{{ '/assets/img/main-locked/main-hero-operations-command-centre.webp' | relative_url }}" as="image" type="image/webp" fetchpriority="high">
   <link rel="stylesheet" href="{{ '/assets/css/main-locked.css' | relative_url }}">
-  <link rel="icon" href="{{ '/assets/img/logo-bag.svg' | relative_url }}" type="image/svg+xml">
+  <link rel="icon" href="data:,">
   <script type="application/ld+json" src="{{ '/assets/data/organization.json' | relative_url }}"></script>
   <script type="application/ld+json" src="{{ '/assets/data/website.json' | relative_url }}"></script>
   <link rel="stylesheet" href="{{ '/assets/css/site-design-system-v1.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/site-design-system-v1-header.css' | relative_url }}">
+  <script src="{{ '/assets/js/site-design-system-v1-header.js' | relative_url }}" defer></script>
 </head>
 <body>
   <a class="main-skip" href="#main-content">Skip to content</a>
   <div class="main-shell ds-v1-shell" id="top">
-    <header class="header">
-      <a class="brand" href="{{ '/' | relative_url }}" aria-label="Black Bag Security home">BLACK BAG SECURITY</a>
-      <nav class="nav" aria-label="Primary navigation">
-        <a class="active" aria-current="page" href="{{ '/' | relative_url }}">Home</a>
-        <a href="{{ '/services/' | relative_url }}">Services</a>
-        <a href="{{ '/capability/' | relative_url }}">Capability</a>
-        <a href="{{ '/about/' | relative_url }}">About</a>
-        <a href="{{ '/about/#contact' | relative_url }}">Contact</a>
-      </nav>
-      <div class="philosophy">PEOPLE&nbsp; / &nbsp;PERSPECTIVE&nbsp; / &nbsp;PROGRESS</div>
-    </header>
+    {% include site-design-system-v1-header.html %}
     <main id="main-content">{{ content }}</main>
     <footer class="footer">
       <div class="footer-brand">BLACK BAG SECURITY</div>

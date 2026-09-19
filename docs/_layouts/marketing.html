@@ -26,29 +26,19 @@
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
   <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}" />
   <link rel="stylesheet" href="{{ '/assets/css/marketing.css' | relative_url }}" />
-  <link rel="icon" href="{{ '/assets/img/logo-bag.svg' | relative_url }}" type="image/svg+xml" />
+  <link rel="icon" href="data:,">
   <script type="application/ld+json" src="{{ '/assets/data/organization.json' | relative_url }}"></script>
   <script type="application/ld+json" src="{{ '/assets/data/website.json' | relative_url }}"></script>
   {% if page.ref == 'services' %}<script type="application/ld+json" src="{{ '/assets/data/service.json' | relative_url }}"></script>{% endif %}
   <link rel="stylesheet" href="{{ '/assets/css/site-design-system-v1.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/site-design-system-v1-header.css' | relative_url }}">
+  <script src="{{ '/assets/js/site-design-system-v1-header.js' | relative_url }}" defer></script>
 </head>
 <body class="marketing-site page-{{ page.ref | default: 'general' | slugify }}">
   <a class="skip" href="#content">Skip to content</a>
 
   <div class="ds-v1-shell ds-v1-shell--new">
-  <header class="marketing-header">
-    <div class="marketing-wrap marketing-header__inner">
-      <a class="marketing-brand" href="{{ '/' | relative_url }}" aria-label="Black Bag Security home">
-        <span><strong>BLACK BAG SECURITY</strong><small>SECURITY ENGINEERING FOR A MORE RESILIENT WORLD</small></span>
-      </a>
-      <nav class="marketing-nav" aria-label="Primary navigation">
-        <a{% if page.ref == 'home' %} class="is-active" aria-current="page"{% endif %} href="{{ '/' | relative_url }}">Home</a>
-        <a{% if page.ref == 'services' %} class="is-active" aria-current="page"{% endif %} href="{{ '/services/' | relative_url }}">Services</a>
-        <a{% if page.ref == 'capability' %} class="is-active" aria-current="page"{% endif %} href="{{ '/capability/' | relative_url }}">Capability</a>
-        <a{% if page.ref == 'about' %} class="is-active" aria-current="page"{% endif %} href="{{ '/about/' | relative_url }}">About</a>
-      </nav>
-    </div>
-  </header>
+  {% include site-design-system-v1-header.html %}
 
   <main id="content" class="marketing-main">{{ content }}</main>
 

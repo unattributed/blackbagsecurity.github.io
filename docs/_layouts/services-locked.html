@@ -19,26 +19,18 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="preload" href="{{ '/assets/img/services-locked/services-hero.webp' | relative_url }}" as="image" type="image/webp" fetchpriority="high">
   <link rel="stylesheet" href="{{ '/assets/css/services-locked.css' | relative_url }}">
-  <link rel="icon" href="{{ '/assets/img/logo-bag.svg' | relative_url }}" type="image/svg+xml">
+  <link rel="icon" href="data:,">
   <script type="application/ld+json" src="{{ '/assets/data/organization.json' | relative_url }}"></script>
   <script type="application/ld+json" src="{{ '/assets/data/website.json' | relative_url }}"></script>
   <script type="application/ld+json" src="{{ '/assets/data/service.json' | relative_url }}"></script>
   <link rel="stylesheet" href="{{ '/assets/css/site-design-system-v1.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/site-design-system-v1-header.css' | relative_url }}">
+  <script src="{{ '/assets/js/site-design-system-v1-header.js' | relative_url }}" defer></script>
 </head>
 <body>
   <a class="services-skip" href="#services-content">Skip to content</a>
   <div class="services-shell ds-v1-shell">
-    <header class="services-header">
-      <a class="services-brand" href="{{ '/' | relative_url }}" aria-label="Black Bag Security home">BLACK BAG SECURITY</a>
-      <nav class="services-nav" aria-label="Primary navigation">
-        <a href="{{ '/' | relative_url }}">Home</a>
-        <a class="is-active" aria-current="page" href="{{ '/services/' | relative_url }}">Services</a>
-        <a href="{{ '/capability/' | relative_url }}">Capability</a>
-        <a href="{{ '/about/' | relative_url }}">About</a>
-        <a href="{{ '/about/#contact' | relative_url }}">Contact</a>
-      </nav>
-      <div class="services-philosophy">PEOPLE&nbsp; / &nbsp;PERSPECTIVE&nbsp; / &nbsp;PROGRESS</div>
-    </header>
+    {% include site-design-system-v1-header.html %}
     <main id="services-content">{{ content }}</main>
     <footer class="services-footer">
       <div class="services-footer__brand">BLACK BAG SECURITY</div>
