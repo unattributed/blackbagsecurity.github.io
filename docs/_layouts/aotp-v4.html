@@ -23,18 +23,33 @@
   <link rel="icon" href="data:,">
   <script type="application/ld+json" src="{{ '/assets/data/organization.json' | relative_url }}"></script>
   <script type="application/ld+json" src="{{ '/assets/data/website.json' | relative_url }}"></script>
-  <link rel="stylesheet" href="{{ '/assets/css/site-design-system-v1.css' | relative_url }}">
-  <link rel="stylesheet" href="{{ '/assets/css/site-design-system-v1-header.css' | relative_url }}">
-  <script src="{{ '/assets/js/site-design-system-v1-header.js' | relative_url }}" defer></script>
-  <link rel="stylesheet" href="{{ '/assets/css/site-design-system-v1-footer.css' | relative_url }}">
-  <script src="{{ '/assets/js/site-design-system-v1-footer.js' | relative_url }}" defer></script>
 </head>
 <body class="aotp-v4-site">
   <a class="v4-skip" href="#content">Skip to content</a>
-  <div class="v4-shell ds-v1-shell">
-    {% include site-design-system-v1-header.html %}
+  <div class="v4-shell">
+    <header class="v4-header">
+      <a class="v4-brand" href="{{ '/' | relative_url }}" aria-label="Black Bag Security home">BLACK BAG SECURITY</a>
+      <nav class="v4-nav" aria-label="Primary navigation">
+        <a href="{{ '/' | relative_url }}">HOME</a>
+        <a href="{{ '/services/' | relative_url }}">SERVICES</a>
+        <a class="is-active" aria-current="page" href="{{ '/capability/' | relative_url }}">CAPABILITY</a>
+        <a href="{{ '/about/' | relative_url }}">ABOUT</a>
+        <a href="{{ '/about/#contact' | relative_url }}">CONTACT</a>
+      </nav>
+    </header>
     <main id="content">{{ content }}</main>
-    {% include site-design-system-v1-footer.html %}
+    <footer class="v4-footer">
+      <div class="v4-footer__brand">BLACK BAG SECURITY</div>
+      <div class="v4-footer__philosophy">PEOPLE <span>/</span> PERSPECTIVE <span>/</span> PROGRESS</div>
+      <nav class="v4-footer__nav" aria-label="Footer navigation">
+        <a href="{{ '/' | relative_url }}">HOME</a>
+        <a href="{{ '/services/' | relative_url }}">SERVICES</a>
+        <a aria-current="page" href="{{ '/capability/' | relative_url }}">CAPABILITY</a>
+        <a href="{{ '/about/' | relative_url }}">ABOUT</a>
+        <a href="{{ '/about/#contact' | relative_url }}">CONTACT</a>
+      </nav>
+      <span class="v4-footer__rule" aria-hidden="true"></span>
+    </footer>
   </div>
 </body>
 </html>
