@@ -1,0 +1,102 @@
+/* S1.1C / G08: one footer chassis. Content exceptions never alter geometry. */
+.ds-footer {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 200px minmax(0, 1fr) auto;
+  column-gap: 22px;
+  align-items: center;
+  min-height: 82px;
+  padding: 0 30px;
+  margin: 0;
+  border: 0;
+  border-top: 1px solid var(--ds-border-structural);
+  background: var(--ds-surface-chrome);
+  color: var(--ds-color-muted);
+  font-family: var(--ds-font-sans);
+}
+.ds-footer__brand {
+  min-width: 0;
+  color: var(--ds-color-text);
+  font: 700 13px/1.2 var(--ds-font-sans);
+  letter-spacing: .16em;
+  overflow-wrap: anywhere;
+}
+.ds-footer__descriptor {
+  min-width: 0;
+  font: 400 10px/1.4 var(--ds-font-sans);
+  letter-spacing: .15em;
+  overflow-wrap: anywhere;
+}
+.ds-footer__links {
+  min-width: 0;
+  max-width: 512px;
+  padding-block: 6px;
+}
+.ds-footer .ds-footer__nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 22px;
+  margin: 0;
+  padding: 6px;
+  font: 400 10.5px/1.4 var(--ds-font-sans);
+  letter-spacing: .08em;
+}
+.ds-footer .ds-footer__nav a {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+  color: var(--ds-color-muted);
+  font: inherit;
+  letter-spacing: inherit;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.ds-footer .ds-footer__nav a:hover,
+.ds-footer .ds-footer__nav a[aria-current] {
+  color: var(--ds-color-lime);
+}
+.ds-footer .ds-footer__nav a[aria-current]::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  left: -6px;
+  right: -6px;
+  bottom: 0;
+  background: var(--ds-color-lime);
+}
+.ds-footer .ds-footer__nav a:focus-visible {
+  outline: var(--ds-focus-ring);
+  outline-offset: var(--ds-focus-offset);
+}
+.ds-footer__legal {
+  padding-inline: 6px;
+  font: 400 10.5px/1.4 var(--ds-font-sans);
+  letter-spacing: .08em;
+}
+.ds-footer__rule {
+  display: block;
+  flex: 0 0 32px;
+  width: 32px;
+  height: 2px;
+  margin-inline-start: auto;
+  background: var(--ds-color-lime);
+}
+@media (max-width: 1099px) {
+  .ds-footer {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 13px;
+    padding: 20px 16px;
+  }
+  .ds-footer__links {
+    max-width: 100%;
+  }
+}

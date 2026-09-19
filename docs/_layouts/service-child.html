@@ -26,46 +26,15 @@
   <link rel="stylesheet" href="{{ '/assets/css/site-design-system-v1.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/site-design-system-v1-header.css' | relative_url }}">
   <script src="{{ '/assets/js/site-design-system-v1-header.js' | relative_url }}" defer></script>
+  <link rel="stylesheet" href="{{ '/assets/css/site-design-system-v1-footer.css' | relative_url }}">
+  <script src="{{ '/assets/js/site-design-system-v1-footer.js' | relative_url }}" defer></script>
 </head>
 <body{% if page.body_class %} class="{{ page.body_class }}"{% endif %}>
   <a class="child-skip" href="#child-content">Skip to content</a>
   <div class="child-shell ds-v1-shell">
     {% include site-design-system-v1-header.html %}
     <main id="child-content">{{ content }}</main>
-    {% if page.ref == 'red-teaming' %}
-    <footer class="child-footer rt-footer">
-      <div class="child-footer__brand">BLACK BAG SECURITY</div>
-      <div class="child-footer__philosophy">DEEP EXPERTISE. PRACTICAL OUTCOMES. A MORE SECURE TOMORROW.</div>
-      <nav class="child-footer__nav" aria-label="Legal navigation">
-        <a href="{{ '/policies/' | relative_url }}">Privacy</a>
-        <a href="{{ '/policies/' | relative_url }}">Terms</a>
-        <span>&copy; {{ 'now' | date: '%Y' }}</span>
-      </nav>
-    </footer>
-    {% elsif page.ref == 'secure-engineering' %}
-    <footer class="child-footer se-footer">
-      <div class="se-footer__lockup"><div class="child-footer__brand">BLACK BAG SECURITY</div><div class="child-footer__philosophy">RESEARCH | ENGINEERING | OPERATIONS</div></div>
-      <nav class="child-footer__nav" aria-label="Footer navigation">
-        <a href="{{ '/' | relative_url }}">Home</a>
-        <a aria-current="page" href="{{ '/services/' | relative_url }}">Services</a>
-        <a href="{{ '/capability/' | relative_url }}">Capability</a>
-        <a href="{{ '/about/' | relative_url }}">About</a>
-        <a href="{{ '/about/#contact' | relative_url }}">Contact</a>
-      </nav>
-    </footer>
-    {% else %}
-    <footer class="child-footer">
-      <div class="child-footer__brand">BLACK BAG SECURITY</div>
-      <div class="child-footer__philosophy">PEOPLE&nbsp; / &nbsp;PERSPECTIVE&nbsp; / &nbsp;PROGRESS</div>
-      <nav class="child-footer__nav" aria-label="Footer navigation">
-        <a href="{{ '/' | relative_url }}">Home</a>
-        <a aria-current="page" href="{{ '/services/' | relative_url }}">Services</a>
-        <a href="{{ '/capability/' | relative_url }}">Capability</a>
-        <a href="{{ '/about/' | relative_url }}">About</a>
-        <a href="{{ '/about/#contact' | relative_url }}">Contact</a>
-      </nav>
-    </footer>
-    {% endif %}
+    {% include site-design-system-v1-footer.html %}
   </div>
 </body>
 </html>

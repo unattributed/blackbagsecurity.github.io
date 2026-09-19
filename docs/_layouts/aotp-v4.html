@@ -26,24 +26,15 @@
   <link rel="stylesheet" href="{{ '/assets/css/site-design-system-v1.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/site-design-system-v1-header.css' | relative_url }}">
   <script src="{{ '/assets/js/site-design-system-v1-header.js' | relative_url }}" defer></script>
+  <link rel="stylesheet" href="{{ '/assets/css/site-design-system-v1-footer.css' | relative_url }}">
+  <script src="{{ '/assets/js/site-design-system-v1-footer.js' | relative_url }}" defer></script>
 </head>
 <body class="aotp-v4-site">
   <a class="v4-skip" href="#content">Skip to content</a>
   <div class="v4-shell ds-v1-shell">
     {% include site-design-system-v1-header.html %}
     <main id="content">{{ content }}</main>
-    <footer class="v4-footer">
-      <div class="v4-footer__brand">BLACK BAG SECURITY</div>
-      <div class="v4-footer__philosophy">PEOPLE <span>/</span> PERSPECTIVE <span>/</span> PROGRESS</div>
-      <nav class="v4-footer__nav" aria-label="Footer navigation">
-        <a href="{{ '/' | relative_url }}">HOME</a>
-        <a href="{{ '/services/' | relative_url }}">SERVICES</a>
-        <a aria-current="page" href="{{ '/capability/' | relative_url }}">CAPABILITY</a>
-        <a href="{{ '/about/' | relative_url }}">ABOUT</a>
-        <a href="{{ '/about/#contact' | relative_url }}">CONTACT</a>
-      </nav>
-      <span class="v4-footer__rule" aria-hidden="true"></span>
-    </footer>
+    {% include site-design-system-v1-footer.html %}
   </div>
 </body>
 </html>

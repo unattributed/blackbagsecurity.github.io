@@ -86,6 +86,8 @@
   <link rel="stylesheet" href="{{ '/assets/css/site-design-system-v1.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/site-design-system-v1-header.css' | relative_url }}">
   <script src="{{ '/assets/js/site-design-system-v1-header.js' | relative_url }}" defer></script>
+  <link rel="stylesheet" href="{{ '/assets/css/site-design-system-v1-footer.css' | relative_url }}">
+  <script src="{{ '/assets/js/site-design-system-v1-footer.js' | relative_url }}" defer></script>
 </head>
 <body class="home-v2{% if page.services_v2 %} services-v2-body{% endif %}{% if page.methodology_v2 %} methodology-v2-body{% endif %}{% if page.arsenal_v2 %} arsenal-v2-body{% endif %}{% if page.supporting_v2 %} supporting-v2-body{% endif %}{% if page.marketing_v3 %} marketing-v3-body visual-site-v24{% endif %}{% if page.ref %} page-ref-{{ page.ref | slugify }}{% endif %}">
   <a class="skip" href="#content">Skip to content</a>
@@ -100,19 +102,7 @@
     {{ content }}
   </main>
 
-  <footer class="footer-v2">
-    <div class="wrap footer-v2__inner">
-      <div>&copy; <span id="year"></span> Black Bag Security. All rights reserved.</div>
-      <nav aria-label="Footer">
-        <a href="{{ '/services/' | relative_url }}">Services</a>
-        <a href="{{ '/methodology/' | relative_url }}">Method</a>
-        <a href="{{ '/arsenal/' | relative_url }}">Proof</a>
-        <a href="{{ '/about/' | relative_url }}">About</a>
-        <a href="{{ '/contact/' | relative_url }}">Contact</a>
-        <a href="{{ '/security.txt' | relative_url }}">Security</a>
-      </nav>
-    </div>
-  </footer>
+    {% include site-design-system-v1-footer.html legal="legacy" %}
   </div>
 
   <script src="{{ '/assets/js/app.js' | relative_url }}" defer></script>

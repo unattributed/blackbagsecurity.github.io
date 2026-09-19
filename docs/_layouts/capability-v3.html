@@ -25,25 +25,15 @@
   <link rel="stylesheet" href="{{ '/assets/css/site-design-system-v1.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/site-design-system-v1-header.css' | relative_url }}">
   <script src="{{ '/assets/js/site-design-system-v1-header.js' | relative_url }}" defer></script>
+  <link rel="stylesheet" href="{{ '/assets/css/site-design-system-v1-footer.css' | relative_url }}">
+  <script src="{{ '/assets/js/site-design-system-v1-footer.js' | relative_url }}" defer></script>
 </head>
 <body class="capability-v3-site">
   <a class="cap-skip" href="#content">Skip to content</a>
   <div class="cap-site-shell ds-v1-shell">
     {% include site-design-system-v1-header.html %}
     <main id="content">{{ content }}</main>
-    <footer class="cap-footer">
-      <div class="cap-footer__brand-lockup">
-        <div class="cap-footer__brand">BLACK BAG SECURITY</div>
-        <div class="cap-footer__descriptor">RESEARCH&nbsp; | &nbsp;ENGINEERING&nbsp; | &nbsp;OPERATIONS</div>
-      </div>
-      <nav class="cap-nav cap-nav--footer" aria-label="Footer navigation">
-        <a href="{{ '/' | relative_url }}">Home</a>
-        <a href="{{ '/services/' | relative_url }}">Services</a>
-        <a class="is-active" aria-current="page" href="{{ '/capability/' | relative_url }}">Capability</a>
-        <a href="{{ '/about/' | relative_url }}">About</a>
-        <a href="{{ '/about/#contact' | relative_url }}">Contact</a>
-      </nav>
-    </footer>
+    {% include site-design-system-v1-footer.html %}
   </div>
 </body>
 </html>

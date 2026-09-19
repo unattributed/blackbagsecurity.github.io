@@ -1,0 +1,44 @@
+{% comment %}G08: shared geometry; EX-002 and EX-004 vary content only.{% endcomment %}
+{% assign ds_footer_parts = page.url | split: '/' %}
+{% assign ds_footer_current = '' %}
+{% assign ds_footer_kind = 'location' %}
+{% case page.url %}
+  {% when '/' %}{% assign ds_footer_current = 'Home' %}{% assign ds_footer_kind = 'page' %}
+  {% when '/services/' %}{% assign ds_footer_current = 'Services' %}{% assign ds_footer_kind = 'page' %}
+  {% when '/capability/' %}{% assign ds_footer_current = 'Capability' %}{% assign ds_footer_kind = 'page' %}
+  {% when '/about/' %}{% assign ds_footer_current = 'About' %}{% assign ds_footer_kind = 'page' %}
+  {% else %}
+    {% if ds_footer_parts[1] == 'services' %}{% assign ds_footer_current = 'Services' %}{% endif %}
+    {% if ds_footer_parts[1] == 'arsenal' %}{% assign ds_footer_current = 'Capability' %}{% endif %}
+{% endcase %}
+<footer class="ds-footer">
+  <div class="ds-footer__brand">BLACK BAG SECURITY</div>
+  <div class="ds-footer__descriptor">{% if page.url == '/services/red-teaming/' %}DEEP EXPERTISE. PRACTICAL OUTCOMES. A MORE SECURE TOMORROW.{% elsif page.url == '/capability/' or page.url == '/services/secure-engineering/' %}RESEARCH | ENGINEERING | OPERATIONS{% else %}PEOPLE / PERSPECTIVE / PROGRESS{% endif %}</div>
+  <div class="ds-footer__links">
+    {% if page.url == '/services/red-teaming/' %}
+    <nav class="ds-footer__nav" aria-label="Legal navigation">
+      <a href="{{ '/policies/' | relative_url }}">Privacy</a>
+      <a href="{{ '/policies/' | relative_url }}">Terms</a>
+      <span>&copy; {{ 'now' | date: '%Y' }}</span>
+      <span class="ds-footer__rule" aria-hidden="true"></span>
+    </nav>
+    {% else %}
+    <nav class="ds-footer__nav" aria-label="Footer navigation">
+      {% assign ds_footer_labels = 'Home,Services,Capability,About,Contact' | split: ',' %}
+      {% assign ds_footer_urls = '/,/services/,/capability/,/about/,/about/#contact' | split: ',' %}
+      {% for ds_footer_label in ds_footer_labels %}
+      <a href="{{ ds_footer_urls[forloop.index0] | relative_url }}"{% if ds_footer_current == ds_footer_label %} aria-current="{{ ds_footer_kind }}"{% endif %}>{{ ds_footer_label }}</a>
+      {% endfor %}
+      {% if include.legal %}
+      <a href="{{ '/security.txt' | relative_url }}">Security</a>
+      {% endif %}
+      <span class="ds-footer__rule" aria-hidden="true"></span>
+    </nav>
+    {% if include.legal == 'legacy' %}
+    <div class="ds-footer__legal">&copy; <span id="year"></span> Black Bag Security. All rights reserved.</div>
+    {% elsif include.legal == 'marketing' %}
+    <div class="ds-footer__legal">&copy; <span id="year"></span> Black Bag Security.</div>
+    {% endif %}
+    {% endif %}
+  </div>
+</footer>
