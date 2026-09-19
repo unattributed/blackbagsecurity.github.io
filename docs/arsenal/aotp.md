@@ -1,182 +1,139 @@
 ---
-layout: aotp-v3
+layout: aotp-v4
 title: AOTP | Agentic Offensive Testing Platform | Black Bag Security
-description: Governed, evidence-first operator workflows for authorized offensive security testing with deterministic campaign authority and human review.
+description: AOTP helps security teams run governed, evidence-first offensive testing with AI-enabled workflows, operator control and human review.
 permalink: /arsenal/aotp/
 lang: en
 ref: arsenal-aotp
-social_image: /assets/img/home/aotp-dashboard-main-v59.png
-social_image_alt: A governed AOTP operator workspace showing campaign authority, evidence, findings and reporting controls
+social_image: /assets/img/aotp-v4/aotp-v4-ux-targets.webp
+social_image_alt: The AOTP Operator Workspace showing governed target scope and readiness
 ---
-<div class="aotp-page">
-  <section class="aotp-hero" aria-labelledby="aotp-title">
-    <div class="aotp-wrap aotp-hero__grid">
-      <div class="aotp-hero__copy">
-        <p class="aotp-eyebrow">CAPABILITY / AOTP</p>
-        <h1 id="aotp-title">AOTP</h1>
-        <p class="aotp-product-name">Agentic Offensive Testing Platform</p>
-        <h2>Scale offensive security without surrendering control.</h2>
-        <p class="aotp-lead">AOTP combines AI-assisted reasoning with deterministic campaign authority, controlled execution, retained evidence, replayable validation, and human-reviewed reporting.</p>
-        <p class="aotp-supporting">Secure, evidence-first operator workflows for authorized offensive security testing.</p>
-        <div class="aotp-actions">
-          <a class="aotp-button aotp-button--primary" href="{{ '/about/#contact' | relative_url }}">DISCUSS AOTP <span aria-hidden="true">→</span></a>
-          <a class="aotp-button" href="{{ '/capability/' | relative_url }}">BACK TO CAPABILITY <span aria-hidden="true">→</span></a>
-        </div>
-      </div>
-      <div class="aotp-hero-visual" role="img" aria-label="Governed AOTP platform connecting campaign authority, agentic orchestration, evidence and a protected operator workspace">
-        <div class="aotp-hero-visual__top"><span>AOTP / OPERATOR WORKSPACE</span><span class="aotp-status"><i></i> PROTECTED</span></div>
-        <div class="aotp-hero-visual__body">
-          <div class="aotp-visual-rail" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
-          <div class="aotp-visual-canvas">
-            <div class="aotp-visual-meta"><span>CAMPAIGN 01</span><span>AUTHORIZED</span></div>
-            <div class="aotp-orbit">
-              <span class="aotp-orbit__node aotp-orbit__node--authority">AUTHORITY</span>
-              <span class="aotp-orbit__node aotp-orbit__node--evidence">EVIDENCE</span>
-              <span class="aotp-orbit__node aotp-orbit__node--review">HUMAN REVIEW</span>
-              <div class="aotp-orbit__core"><b>AOTP</b><span>GOVERNED<br>ORCHESTRATION</span></div>
-            </div>
-            <div class="aotp-visual-telemetry"><span>STATE / CONTROLLED</span><span>EVIDENCE / RETAINED</span><span>STOP CONDITIONS / ACTIVE</span></div>
-          </div>
-        </div>
-        <p class="aotp-hero-visual__editorial"><span>AI ASSISTED</span><span>HUMAN GOVERNED</span><span>EVIDENCE FIRST</span><span>CONTROLLED EXECUTION</span></p>
+<div class="v4-page">
+  <section class="v4-hero" aria-labelledby="aotp-title">
+    <img class="v4-hero__visual" src="{{ '/assets/img/aotp-v4/aotp-v4-hero-operator-workspace.webp' | relative_url }}" width="624" height="316" alt="AOTP Operator Workspace displayed in a secure operations environment" fetchpriority="high">
+    <div class="v4-hero__shade" aria-hidden="true"></div>
+    <div class="v4-hero__copy">
+      <p class="v4-eyebrow">CAPABILITY</p>
+      <h1 id="aotp-title"><strong>AOTP</strong><span>Agentic Offensive<br>Testing Platform</span></h1>
+      <h2>Scale offensive security without<br>surrendering control.</h2>
+      <p>AOTP helps security teams run governed, evidence-first<br>offensive testing with AI-enabled workflows — from initial<br>access to validated findings.</p>
+      <div class="v4-actions">
+        <a class="v4-button v4-button--primary" href="{{ '/about/#contact' | relative_url }}">Request a Demo <span aria-hidden="true">→</span></a>
+        <a class="v4-button" href="#operator-workspace">Explore the Platform <span aria-hidden="true">→</span></a>
       </div>
     </div>
   </section>
 
-  <section class="aotp-assurance" aria-label="AOTP assurance principles">
-    <div class="aotp-wrap aotp-assurance__grid">
-      <article><span class="aotp-mark">01</span><div><h2>AUTHORIZED ONLY</h2><p>Scope and campaign authority remain explicit.</p></div></article>
-      <article><span class="aotp-mark">02</span><div><h2>EVIDENCE BY DESIGN</h2><p>Actions, observations and outcomes stay reviewable.</p></div></article>
-      <article><span class="aotp-mark">03</span><div><h2>HUMAN GOVERNED</h2><p>Operators retain consequential authority and judgment.</p></div></article>
-      <article><span class="aotp-mark">04</span><div><h2>PROTECTED WORKSPACE</h2><p>Authentication, state and workflow controls are part of the platform.</p></div></article>
+  <section class="v4-assurance" aria-label="AOTP assurance principles">
+    <article><span class="v4-line-icon" aria-hidden="true">▣</span><div><h2>Authorized Only</h2><p>Built for approved targets<br>and governed campaigns.</p></div></article>
+    <article><span class="v4-line-icon" aria-hidden="true">▤</span><div><h2>Evidence by Design</h2><p>Actions and outcomes captured<br>for validation, review and reporting.</p></div></article>
+    <article><span class="v4-line-icon" aria-hidden="true">♧</span><div><h2>Human Governed</h2><p>Operator control at every stage.<br>AI amplifies, people decide.</p></div></article>
+    <article><span class="v4-line-icon" aria-hidden="true">◇</span><div><h2>Protected Workspace</h2><p>Secure by default, with<br>tenant-aware isolation<br>and data protection.</p></div></article>
+  </section>
+
+  <section class="v4-why" aria-labelledby="why-title">
+    <div class="v4-intro">
+      <p class="v4-kicker">WHY AOTP</p>
+      <h2 id="why-title">Real offensive security<br>for modern teams.</h2>
+      <p>Security teams face growing complexity, tighter<br>timelines and higher expectations. AOTP delivers<br>a practical way to run more thorough, consistent<br>offensive testing — with full governance, transparency<br>and operator control.</p>
+      <a class="v4-direction" href="#operator-workspace">A MORE EFFECTIVE APPROACH <span aria-hidden="true">→</span></a>
+    </div>
+    <img src="{{ '/assets/img/aotp-v4/aotp-v4-why-operations.webp' | relative_url }}" width="577" height="170" alt="An operator reviewing a multi-screen security operations workspace" loading="lazy">
+    <aside><b>TURN<br>CAPABILITY<br>INTO<br>CONFIDENCE.</b><span></span><small>MORE COVERAGE<br>CLEARER INSIGHTS<br>FASTER RESULTS<br>STRONGER DEFENSES</small></aside>
+  </section>
+
+  <section class="v4-workspace" id="operator-workspace" aria-labelledby="workspace-title">
+    <div class="v4-intro v4-intro--workspace">
+      <p class="v4-kicker">OPERATOR WORKSPACE</p>
+      <h2 id="workspace-title">Everything you need.<br>In one place.</h2>
+      <p>A unified workspace for planning, execution,<br>evidence, and reporting. Purpose-built for<br>offensive security, designed for real-world use.</p>
+      <a class="v4-button v4-button--primary" href="#workspace-cards">Explore the Workspace <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="v4-workspace__cards" id="workspace-cards">
+      <article><img src="{{ '/assets/img/aotp-v4/aotp-v4-ux-targets.webp' | relative_url }}" width="1000" height="563" alt="AOTP Targets workspace"><h3>Targets</h3><p>Plan and scope<br>your assessment.</p><span aria-hidden="true">→</span></article>
+      <article><img src="{{ '/assets/img/aotp-v4/aotp-v4-ux-evidence.webp' | relative_url }}" width="1000" height="563" alt="AOTP Evidence workspace"><h3>Evidence</h3><p>Review activity, artifacts<br>and results.</p><span aria-hidden="true">→</span></article>
+      <article><img src="{{ '/assets/img/aotp-v4/aotp-v4-ux-findings.webp' | relative_url }}" width="1000" height="563" alt="AOTP Findings workspace"><h3>Findings</h3><p>Triage, validate<br>and prioritize.</p><span aria-hidden="true">→</span></article>
+      <article><img src="{{ '/assets/img/aotp-v4/aotp-v4-ux-retests.webp' | relative_url }}" width="1000" height="563" alt="AOTP Retests workspace"><h3>Retests</h3><p>Confirm fixes<br>and close the loop.</p><span aria-hidden="true">→</span></article>
+      <article><img src="{{ '/assets/img/aotp-v4/aotp-v4-ux-settings.webp' | relative_url }}" width="1000" height="563" alt="AOTP Settings workspace"><h3>Settings</h3><p>Configure your<br>environment.</p><span aria-hidden="true">→</span></article>
     </div>
   </section>
 
-  <section class="aotp-section aotp-why" aria-labelledby="aotp-why-title">
-    <div class="aotp-wrap aotp-split">
-      <div class="aotp-section-copy">
-        <p class="aotp-kicker">WHY AOTP EXISTS</p>
-        <h2 id="aotp-why-title">Agentic testing needs stronger controls than ordinary automation.</h2>
-        <p>An agent can plan, adapt, choose tools and continue. AOTP is designed so that capability remains bounded by authorization, scope, policy, budgets, stop conditions, approvals, evidence requirements and human review.</p>
-      </div>
-      <div class="aotp-control-model">
-        <article><span>AUTHORITY</span><h3>Campaign Authority</h3><p>Targets, rules, budgets, approvals and stop conditions are executable constraints.</p></article>
-        <article><span>EXECUTION</span><h3>Governed Execution</h3><p>AI assists reasoning and workflow while deterministic state governs what may execute.</p></article>
-        <article><span>EVIDENCE</span><h3>Evidence Before Findings</h3><p>Candidates must trace to retained evidence, replay, validation and accountable review.</p></article>
-      </div>
+  <section class="v4-workflow" aria-labelledby="workflow-title">
+    <div class="v4-intro v4-intro--compact">
+      <p class="v4-kicker">FROM PLAN TO PROOF</p>
+      <h2 id="workflow-title">A structured<br>path to results.</h2>
+      <p>A repeatable workflow designed for<br>real-world engagements.</p>
+    </div>
+    <ol>
+      <li><i aria-hidden="true">▢</i><b>01</b><h3>Authorize</h3><p>Define scope,<br>rules and guardrails.</p></li>
+      <li><i aria-hidden="true">▥</i><b>02</b><h3>Plan</h3><p>Configure targets<br>and strategy.</p></li>
+      <li><i aria-hidden="true">△</i><b>03</b><h3>Execute</h3><p>Run AI-enabled<br>testing workflows.</p></li>
+      <li><i aria-hidden="true">A</i><b>04</b><h3>Capture</h3><p>Collect and<br>preserve evidence.</p></li>
+      <li><i aria-hidden="true">▧</i><b>05</b><h3>Validate</h3><p>Review, confirm<br>and prioritize.</p></li>
+      <li><i aria-hidden="true">▣</i><b>06</b><h3>Report</h3><p>Generate clear,<br>actionable findings.</p></li>
+      <li><i aria-hidden="true">↗</i><b>07</b><h3>Retest</h3><p>Verify fixes and<br>measure progress.</p></li>
+    </ol>
+  </section>
+
+  <section class="v4-controls" aria-labelledby="controls-title">
+    <div class="v4-intro v4-intro--compact">
+      <p class="v4-kicker">SECURITY CONTROLS FROM FIRST USE</p>
+      <h2 id="controls-title">Secure by default.<br>Built for trust.</h2>
+      <p>AOTP is designed with security, governance<br>and operational control from day one.</p>
+    </div>
+    <div class="v4-controls__grid">
+      <article><i aria-hidden="true">▱</i><h3>Local-Only Bootstrap</h3><p>Secure, local<br>setup tied to your<br>environment.</p></article>
+      <article><i aria-hidden="true">♢</i><h3>TOTP Authentication</h3><p>Short-lived codes<br>for all operator logins.</p></article>
+      <article><i aria-hidden="true">⌁</i><h3>Recovery Codes</h3><p>Generate and securely<br>store recovery codes<br>at setup.</p></article>
+      <article><i aria-hidden="true">◇</i><h3>Protected by Default</h3><p>Hardened workspace<br>with controlled access<br>and isolation.</p></article>
+      <article><i aria-hidden="true">▤</i><h3>Deterministic Evaluation</h3><p>Consistent, repeatable<br>results you can trust<br>and audit.</p></article>
+      <article><i aria-hidden="true">♧</i><h3>Human Review</h3><p>Operators validate<br>findings and make<br>the call.</p></article>
     </div>
   </section>
 
-  <section class="aotp-section aotp-workflow" aria-labelledby="aotp-workflow-title">
-    <div class="aotp-wrap">
-      <div class="aotp-section-head"><div><p class="aotp-kicker">GOVERNED WORKFLOW</p><h2 id="aotp-workflow-title">From Objective to Verified Closure</h2></div><p>Human authority remains present from scope through final disposition.</p></div>
-      <ol class="aotp-workflow__steps">
-        <li><span>01</span><h3>Authorize</h3><p>Define target, scope, rules and campaign authority.</p></li>
-        <li><span>02</span><h3>Plan</h3><p>Use AI-assisted reasoning to prioritize useful testing paths.</p></li>
-        <li><span>03</span><h3>Execute</h3><p>Run governed tools and adapters inside allowed campaign state.</p></li>
-        <li><span>04</span><h3>Capture</h3><p>Preserve evidence, provenance and relevant execution state.</p></li>
-        <li><span>05</span><h3>Validate</h3><p>Replay and challenge candidates before promoting findings.</p></li>
-        <li><span>06</span><h3>Report &amp; Retest</h3><p>Human-reviewed reporting, remediation state and verified closure.</p></li>
-      </ol>
+  <section class="v4-deployment" aria-labelledby="deployment-title">
+    <div class="v4-intro v4-intro--deployment">
+      <p class="v4-kicker">FLEXIBLE OPERATORS, GOVERNED BACKEND</p>
+      <h2 id="deployment-title">On-premise. Not a service.<br>Operate with confidence.</h2>
+      <p>AOTP is a licensed, on-premise solution<br>delivered as a VM or appliance. Designed<br>for secure, multi-operator engagements<br>across your environment.</p>
+    </div>
+    <div class="v4-architecture" aria-label="AOTP on-premise deployment architecture">
+      <article class="v4-architecture__clients"><h3>Operator Clients</h3><small>(Any Device)</small><i aria-hidden="true">▱ &nbsp; ▱</i><b>BYOD</b><p>Secure operator access.</p></article>
+      <div class="v4-channel"><b>HTTPS (TLS 1.3)</b><span>Encrypted</span></div>
+      <article class="v4-architecture__backend"><h3>Provisioned AOTP Backend</h3><ul><li>AOTP Application</li><li>AI &amp; Analysis Engines</li><li>Evidence Storage</li><li>Audit &amp; Observability</li></ul><p>On-premise • VM or Appliance • Licensed</p></article>
+      <span class="v4-bidirectional" aria-hidden="true">↔</span>
+      <article class="v4-architecture__targets"><h3>Authorized Targets</h3><i aria-hidden="true">▤ &nbsp; ◎</i><ul><li>Web Apps</li><li>APIs</li><li>Infrastructure</li><li>Cloud</li></ul></article>
+    </div>
+    <aside><span></span>YOUR<br>ENVIRONMENT.<br>YOUR CONTROL.<br>GOVERNED.<br>SECURE.<br>READY.</aside>
+  </section>
+
+  <section class="v4-engines" aria-labelledby="engines-title">
+    <div class="v4-intro v4-intro--compact">
+      <p class="v4-kicker">CONTEXTUAL ENGINES</p>
+      <h2 id="engines-title">Deeper context.<br>Stronger results.</h2>
+      <p>Purpose-built engines for real-world<br>environments and complex targets.</p>
+    </div>
+    <div class="v4-engines__grid">
+      <article class="v4-engine--red"><h3><i aria-hidden="true">⌁</i> Red Team Mode</h3><p>Cross-Engine Coordinator<br>Adversarial Mindset Engaged<br>Real World Attacks</p></article>
+      <article><h3><i aria-hidden="true">◎</i> Web &amp; API Testing</h3><p>Modern web applications<br>and APIs.</p><span aria-hidden="true">→</span></article>
+      <article><h3><i aria-hidden="true">☁</i> IaaS Environments</h3><p>Identity and workload<br>cloud security checks.</p><span aria-hidden="true">→</span></article>
+      <article><h3><i aria-hidden="true">◭</i> Azure Environments</h3><p>Assess Azure<br>configurations and services.</p><span aria-hidden="true">→</span></article>
+      <article><h3><i aria-hidden="true">●</i> Google Cloud Platform</h3><p>Test GCP environments<br>and integrations.</p><span aria-hidden="true">→</span></article>
+      <article><h3><i aria-hidden="true">&lt;/&gt;</i> Source Code Review</h3><p>Analyze code for<br>vulnerabilities and risk.</p><span aria-hidden="true">→</span></article>
     </div>
   </section>
 
-  <section class="aotp-section aotp-security" aria-labelledby="aotp-security-title">
-    <div class="aotp-wrap">
-      <div class="aotp-section-head"><div><p class="aotp-kicker">SECURE FIRST USE</p><h2 id="aotp-security-title">Security Controls from First Use</h2></div><p>Bootstrap authority closes as the protected operator workflow takes over.</p></div>
-      <div class="aotp-security__grid">
-        <article><span class="aotp-control-icon" aria-hidden="true">⌂</span><div><h3>Local-Only Bootstrap</h3><p>First-use setup is bound to the local operator environment.</p></div></article>
-        <article><span class="aotp-control-icon" aria-hidden="true">◷</span><div><h3>Short-Lived Setup Authority</h3><p>Bootstrap authorization is limited and consumed after setup.</p></div></article>
-        <article><span class="aotp-control-icon" aria-hidden="true">◇</span><div><h3>Strong Authentication</h3><p>TOTP protects normal operator login.</p></div></article>
-        <article><span class="aotp-control-icon" aria-hidden="true">↺</span><div><h3>Recovery Resilience</h3><p>One-time recovery codes support controlled administrative recovery.</p></div></article>
-        <article><span class="aotp-control-icon" aria-hidden="true">▣</span><div><h3>Protected-by-Default Workflow</h3><p>Campaign authority, workspace state and security controls stay connected.</p></div></article>
-        <article><span class="aotp-control-icon" aria-hidden="true">✓</span><div><h3>Deterministic Evaluation</h3><p>Supported workflow decisions use explicit PASS / FAIL / N/A discipline where applicable.</p></div></article>
-      </div>
-      <div class="aotp-bootstrap" aria-label="Protected first-use sequence"><span>LOCAL BOOTSTRAP</span><i></i><span>ADMIN CREATED</span><i></i><span>TOTP VERIFIED</span><i></i><span>RECOVERY SEALED</span><i></i><span>WORKSPACE PROTECTED</span></div>
-    </div>
+  <section class="v4-focus" aria-labelledby="focus-title">
+    <div><p class="v4-kicker">OUR CURRENT FOCUS</p><h2 id="focus-title">Measured progress.<br>Real-world impact.</h2></div>
+    <p class="v4-focus__body">AOTP is an active development with a working local operator<br>workspace and governed campaign execution against<br>authorized, local OWASP targets.</p>
+    <article><h3>What’s Implemented</h3><ul><li>Local operator workspace (MVP)</li><li>Secure authentication and onboarding</li><li>Core testing workflows and evidence capture</li></ul></article>
+    <article><h3>Current Scope</h3><ul><li>Authorized local OWASP targets</li><li>Controlled campaign execution</li><li>Iterative review and validation</li></ul></article>
+    <article><h3>What’s Next</h3><ul class="v4-focus__next"><li>Expanded target integrations</li><li>Additional engines and capabilities</li><li>Broader deployment options</li></ul></article>
   </section>
 
-  <section class="aotp-section aotp-workspace" aria-labelledby="aotp-workspace-title">
-    <div class="aotp-wrap">
-      <div class="aotp-section-head"><div><p class="aotp-kicker">OPERATOR WORKSPACE</p><h2 id="aotp-workspace-title">One Workspace for the Campaign Lifecycle</h2></div><p>The operator workspace keeps campaign authority, evidence, candidates, findings, reporting and retest state connected instead of scattering them across unrelated tools.</p></div>
-      <div class="aotp-workspace-ui" role="img" aria-label="AOTP operator workspace with campaign navigation, authority status, evidence state, findings, reports and retests">
-        <div class="aotp-workspace-ui__bar"><span>AOTP / CAMPAIGN CONTROL</span><span><i></i> WORKSPACE PROTECTED</span></div>
-        <div class="aotp-workspace-ui__body">
-          <nav class="aotp-workspace-ui__nav" aria-label="Illustrative operator workspace capabilities">
-            <span class="is-current">Dashboard</span><span>Campaigns</span><span>Scope &amp; Authority</span><span>Targets</span><span>Evidence</span><span>Candidates</span><span>Findings</span><span>Reports</span><span>Exports</span><span>Retests</span><span>Settings</span>
-          </nav>
-          <div class="aotp-workspace-ui__main">
-            <div class="aotp-workspace-ui__context"><div><small>ACTIVE CAMPAIGN</small><strong>Authorized Local Assessment</strong></div><span>AUTHORITY VALID</span></div>
-            <div class="aotp-metrics"><article><small>AUTHORITY</small><b>ACTIVE</b><span>Scope locked</span></article><article><small>EVIDENCE</small><b>VERIFIED</b><span>Integrity healthy</span></article><article><small>CANDIDATES</small><b>REVIEW</b><span>Human decision</span></article><article><small>RETESTS</small><b>READY</b><span>Closure tracked</span></article></div>
-            <div class="aotp-workspace-ui__panels"><article><div><small>CAMPAIGN LIFECYCLE</small><span>LIVE</span></div><ol><li class="done">Authority</li><li class="done">Plan</li><li class="active">Execute</li><li>Validate</li><li>Report</li></ol></article><article><div><small>REVIEW QUEUE</small><span>CONTROLLED</span></div><p>Evidence-linked candidates remain separated from reportable findings until validation and accountable review.</p><div class="aotp-mini-ledger"><span>PROVENANCE</span><b>BOUND</b><span>REPLAY</span><b>READY</b><span>DECISION</span><b>HUMAN</b></div></article></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="aotp-section aotp-deployment" aria-labelledby="aotp-deployment-title">
-    <div class="aotp-wrap">
-      <div class="aotp-section-head"><div><p class="aotp-kicker">CONTROLLED DEPLOYMENT</p><h2 id="aotp-deployment-title">Flexible Operators. Governed Backend.</h2></div><p>AOTP project materials describe controlled operator workspaces connecting over encrypted channels to governed AI and evidence services, supporting multi-operator and concurrent campaign patterns while keeping operator identity, authority and campaign state explicit.</p></div>
-      <div class="aotp-architecture" aria-label="AOTP deployment model">
-        <article><span class="aotp-node-icon" aria-hidden="true">▱</span><div><h3>Operator Workspaces</h3><p>Controlled operator-owned workstations or VMs.</p></div></article>
-        <span class="aotp-architecture__path"><b>AUTHENTICATED</b><i></i><b>HTTPS / TLS</b></span>
-        <article class="aotp-architecture__core"><span class="aotp-node-icon" aria-hidden="true">◎</span><div><h3>Governed AI Backend</h3><p>Model inference, orchestration, evidence services and controlled data processing.</p></div></article>
-        <span class="aotp-architecture__path"><b>AUTHORIZED</b><i></i><b>EVIDENCE BOUND</b></span>
-        <article><span class="aotp-node-icon" aria-hidden="true">◇</span><div><h3>Targets &amp; Evidence</h3><p>Campaign state and outputs remain connected to explicit authority.</p></div></article>
-      </div>
-      <article class="aotp-observability"><span>OBSERVABILITY</span><p>System status, campaign activity and performance remain visible to operators.</p><div><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></article>
-    </div>
-  </section>
-
-  <section class="aotp-section aotp-engines" aria-labelledby="aotp-engines-title">
-    <div class="aotp-wrap aotp-split aotp-split--engines">
-      <div class="aotp-section-copy">
-        <p class="aotp-kicker">CONTEXTUAL ENGINES</p>
-        <h2 id="aotp-engines-title">Context Makes the Agent Useful</h2>
-        <p>Agentic workflows become more capable when they receive domain-specific methodology, action vocabulary, validation logic, evidence expectations and reporting context.</p>
-        <p class="aotp-qualifier">Coverage and acceptance maturity varies by contextual engine. Do not imply every engine has the same level of completed validation.</p>
-      </div>
-      <div class="aotp-engine-map" aria-label="Contextual engine areas">
-        <div class="aotp-engine-map__core"><span>AOTP</span><b>CONTEXT</b></div>
-        <span>Web &amp; API</span><span>AWS</span><span>Azure</span><span>GCP</span><span>Secure Code Review</span>
-      </div>
-    </div>
-  </section>
-
-  <section class="aotp-section aotp-value" aria-labelledby="aotp-value-title">
-    <div class="aotp-wrap">
-      <div class="aotp-section-head"><div><p class="aotp-kicker">TECHNICAL VALUE</p><h2 id="aotp-value-title">Why Technical Teams Choose AOTP</h2></div><p>Capacity with evidence, control and reviewability built into the workflow.</p></div>
-      <div class="aotp-value__grid">
-        <article><span>01</span><h3>More Capacity</h3><p>Automate repetitive analysis while preserving expert attention for judgment.</p></article>
-        <article><span>02</span><h3>Stronger Evidence</h3><p>Make conclusions traceable to retained and reviewable artifacts.</p></article>
-        <article><span>03</span><h3>Better Reviewability</h3><p>Results stay connected to authority, evidence, validation and reporting.</p></article>
-        <article><span>04</span><h3>Private Deployment Patterns</h3><p>Sensitive campaign state can remain under operator or organizational control.</p></article>
-        <article><span>05</span><h3>Built for Real Security Work</h3><p>Campaigns, findings, retests and exports live in one governed workflow.</p></article>
-      </div>
-    </div>
-  </section>
-
-  <section class="aotp-section aotp-proof" aria-labelledby="aotp-proof-title">
-    <div class="aotp-wrap aotp-proof__grid">
-      <div><p class="aotp-kicker">PROOF TODAY</p><h2 id="aotp-proof-title">Proof Today. Clear Boundaries.</h2></div>
-      <ul>
-        <li>Engineering foundations and a local Operator Workspace MVP are implemented.</li>
-        <li>Controlled campaign execution has been proven against authorized local OWASP targets, including Juice Shop and crAPI.</li>
-        <li>AOTP does not currently claim production readiness, external acceptance, or senior-tester parity.</li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="aotp-closing" aria-labelledby="aotp-closing-title">
-    <div class="aotp-wrap aotp-closing__grid">
-      <div>
-        <p class="aotp-kicker">HUMAN AUTHORITY</p>
-        <h2 id="aotp-closing-title">AI should increase testing capability without weakening authority, evidence or accountability.</h2>
-        <p>AOTP is designed for teams that need offensive testing workflows with governance, auditability and security controls from day one.</p>
-        <a class="aotp-button aotp-button--primary" href="{{ '/about/#contact' | relative_url }}">DISCUSS AOTP <span aria-hidden="true">→</span></a>
-      </div>
-      <p class="aotp-closing__editorial"><span>SECURE BY DEFAULT</span><span>EVIDENCE BY DESIGN</span><span>HUMAN AUTHORITY</span></p>
-    </div>
+  <section class="v4-closing" aria-labelledby="closing-title">
+    <div><h2 id="closing-title">Ready to see what’s possible?</h2><p>Let’s discuss how AOTP can strengthen your security program.</p></div>
+    <a class="v4-button v4-button--primary" href="{{ '/about/#contact' | relative_url }}">Request a Demo <span aria-hidden="true">→</span></a>
+    <p class="v4-closing__editorial">PEOPLE<br>PERSPECTIVE<br>PROGRESS</p>
   </section>
 </div>
