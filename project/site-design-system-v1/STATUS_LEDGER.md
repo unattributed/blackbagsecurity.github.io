@@ -7,7 +7,7 @@ PRODUCTION_AUTHORIZED=no
 
 | Order | Slice | Status | Start SHA | Final SHA | Evidence | Notes |
 |---:|---|---|---|---|---|---|
-| 1 | S0.0A Baseline Inventory | IN_PROGRESS | 531968e6588ef611dc50d7e4dfdebf08ac5af280 |  | `/home/foo/Workspace/blackbagsecurity-design-system-v1-evidence/S0.0A/20260919T053459Z/` | Inventory complete; signed audit commit and evidence closure pending. |
+| 1 | S0.0A Baseline Inventory | PASS | 531968e6588ef611dc50d7e4dfdebf08ac5af280 | b92649f558252b92ebb339ecf84408bf0ba06fa5 | `/home/foo/Workspace/blackbagsecurity-design-system-v1-evidence/S0.0A/20260919T053459Z/` | Signed audit commit verified; ledger closure is the metadata-only successor recorded in slice evidence. |
 | 2 | S0.0B Design System Contract | NOT_STARTED |  |  |  |  |
 | 3 | S1.1A Global Tokens and Shell | NOT_STARTED |  |  |  |  |
 | 4 | S1.1B Header Navigation Favicon | NOT_STARTED |  |  |  |  |
