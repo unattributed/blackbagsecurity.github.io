@@ -8,7 +8,7 @@ PRODUCTION_AUTHORIZED=no
 | Order | Slice | Status | Start SHA | Final SHA | Evidence | Notes |
 |---:|---|---|---|---|---|---|
 | 1 | S0.0A Baseline Inventory | PASS | 531968e6588ef611dc50d7e4dfdebf08ac5af280 | b92649f558252b92ebb339ecf84408bf0ba06fa5 | `/home/foo/Workspace/blackbagsecurity-design-system-v1-evidence/S0.0A/20260919T053459Z/` | Signed audit commit verified; ledger closure is the metadata-only successor recorded in slice evidence. |
-| 2 | S0.0B Design System Contract | IN_PROGRESS | 8a196b81ef927236d6327e98557795454fc4b96c |  | `/home/foo/Workspace/blackbagsecurity-design-system-v1-evidence/S0.0B/20260919T061647Z/` | 22 global roles; 10 authority-grounded exceptions; four owner resolutions; signed governance checkpoint pending. |
+| 2 | S0.0B Design System Contract | PASS | 8a196b81ef927236d6327e98557795454fc4b96c | cef724a3ca7b458e7a235454520f80792af653f9 | `/home/foo/Workspace/blackbagsecurity-design-system-v1-evidence/S0.0B/20260919T061647Z/` | 22 global roles; 75 tokens; 10 exceptions; 33 routes; four authority findings resolved. Signed governance checkpoint and evidence verified; metadata-only ledger successor is recorded in slice evidence. No visual mutation or deployment. |
 | 3 | S1.1A Global Tokens and Shell | NOT_STARTED |  |  |  |  |
 | 4 | S1.1B Header Navigation Favicon | NOT_STARTED |  |  |  |  |
 | 5 | S1.1C Footer and Qualification | NOT_STARTED |  |  |  |  |
