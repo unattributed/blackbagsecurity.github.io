@@ -83,10 +83,12 @@
   <link rel="icon" href="{{ '/assets/img/logo-bag.svg' | relative_url }}" type="image/svg+xml" />
   <script type="application/ld+json" src="{{ '/assets/data/organization.json' | relative_url }}"></script>
   <script type="application/ld+json" src="{{ '/assets/data/website.json' | relative_url }}"></script>
+  <link rel="stylesheet" href="{{ '/assets/css/site-design-system-v1.css' | relative_url }}">
 </head>
 <body class="home-v2{% if page.services_v2 %} services-v2-body{% endif %}{% if page.methodology_v2 %} methodology-v2-body{% endif %}{% if page.arsenal_v2 %} arsenal-v2-body{% endif %}{% if page.supporting_v2 %} supporting-v2-body{% endif %}{% if page.marketing_v3 %} marketing-v3-body visual-site-v24{% endif %}{% if page.ref %} page-ref-{{ page.ref | slugify }}{% endif %}">
   <a class="skip" href="#content">Skip to content</a>
 
+  <div class="ds-v1-shell ds-v1-shell--new">
   <header class="site-header site-header--v2">
     <div class="wrap header-v2__inner">
       <a class="brand-v2" href="{{ '/' | relative_url }}" aria-label="Black Bag Security home">
@@ -130,6 +132,7 @@
       </nav>
     </div>
   </footer>
+  </div>
 
   <script src="{{ '/assets/js/app.js' | relative_url }}" defer></script>
 </body>

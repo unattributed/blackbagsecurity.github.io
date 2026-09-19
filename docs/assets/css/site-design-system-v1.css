@@ -1,0 +1,70 @@
+/* Site Design System V1 — S1.1A token foundation and outer shell only.
+ * Accepted values: project/site-design-system-v1/generated/TOKEN_TABLE.md.
+ * Namespaced tokens do not replace page-local palettes, fonts or focus rules.
+ * Header, footer and all internal composition remain owned by their layouts.
+ */
+:root {
+  --ds-shell-max: 1320px;
+  --ds-shell-desktop-width: min(92vw, var(--ds-shell-max));
+  --ds-shell-bottom-gap: 30px;
+  --ds-border-frame: #294656;
+  --ds-shell-frame: 1px solid var(--ds-border-frame);
+  --ds-shell-radius: 0 0 7px 7px;
+
+  /* Foundation only: no non-shell visual consumers in this slice. */
+  --ds-color-page: #06111a;
+  --ds-surface-base: #07131c;
+  --ds-surface-raised: #091823;
+  --ds-surface-emphasis: #0b1c28;
+  --ds-surface-chrome: #06121b;
+  --ds-color-text: #f2f5f5;
+  --ds-color-muted: #a8b5bd;
+  --ds-color-micro: #8ca0ac;
+  --ds-color-lime: #d7ff22;
+  --ds-color-cyan: #39c9ff;
+  --ds-color-on-lime: #071016;
+  --ds-border-structural: #244150;
+  --ds-border-strong: #315466;
+  --ds-border-control: #577180;
+  --ds-border-hover: #5e8497;
+  --ds-font-serif: Georgia, "Times New Roman", Times, serif;
+  --ds-font-sans: Arial, Helvetica, sans-serif;
+  --ds-focus-ring: 2px solid var(--ds-color-lime);
+  --ds-focus-offset: 3px;
+}
+
+/* The explicit shell hook outranks historical per-page shell overrides.
+ * No descendant selectors: adding the chassis cannot normalize its contents.
+ * Keep existing overflow, shadows and container-query contexts on old shells.
+ */
+body > .ds-v1-shell[class] {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+  margin: 0 auto;
+  border: var(--ds-shell-frame);
+  border-right-width: 0;
+  border-bottom-width: 0;
+  border-left-width: 0;
+  border-radius: 0;
+}
+
+/* Only the two formerly unframed layouts need a new containment boundary.
+ * clip preserves the marketing header's existing viewport-sticky behavior;
+ * it does not establish the scroll container that overflow:hidden would.
+ */
+body > .ds-v1-shell--new {
+  overflow: clip;
+}
+
+/* TOKEN_TABLE breakpoint.desktop; custom properties cannot drive media tests. */
+@media (min-width: 1100px) {
+  body > .ds-v1-shell[class] {
+    width: var(--ds-shell-desktop-width);
+    max-width: var(--ds-shell-max);
+    margin-bottom: var(--ds-shell-bottom-gap);
+    border: var(--ds-shell-frame);
+    border-radius: var(--ds-shell-radius);
+  }
+}
