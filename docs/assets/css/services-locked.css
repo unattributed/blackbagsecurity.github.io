@@ -30,7 +30,7 @@ img { display: block; max-width: 100%; }
 
 .services-hero { position: relative; height: 317px; overflow: hidden; border-bottom: 1px solid var(--services-line); background: linear-gradient(90deg, #041016 0 72%, #0b151d 100%); }
 .services-hero::before { content: ""; position: absolute; inset: 0 auto 0 0; width: 228px; background: url("../img/services-locked/services-hero.webp") center 49% / 856px 483px no-repeat; opacity: .7; }
-.services-hero__media { position: absolute; top: 7px; left: 227px; width: 629px; height: 304px; max-width: none; object-fit: fill; }
+.services-hero__media { position: absolute; top: 7px; left: 227px; width: 601px; height: 304px; max-width: none; object-fit: fill; }
 .services-hero__media:not(.services-hero__media--terminal) { transform: scaleX(.9); transform-origin: right center; }
 .services-hero__media--terminal { clip-path: inset(0 0 0 75%); }
 .services-hero::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(90deg, rgba(3,14,22,.98) 0%, rgba(4,15,23,.93) 25%, rgba(4,15,23,.68) 39%, rgba(4,15,23,.17) 56%, rgba(4,15,23,.02) 72%), linear-gradient(180deg, rgba(0,0,0,.03), rgba(0,0,0,.08)); }
@@ -203,7 +203,7 @@ a:focus-visible { outline: 2px solid var(--services-lime); outline-offset: 2px; 
   .services-hero__media {
     top: 0.819672cqw;
     left: 26.580796cqw;
-    width: 73.419204cqw;
+    width: 70.374707cqw;
     height: 35.597190cqw;
   }
   .services-hero__copy {
