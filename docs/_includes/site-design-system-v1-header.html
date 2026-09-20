@@ -25,9 +25,7 @@
           <a href="{{ ds_urls[forloop.index0] | relative_url }}"{% if ds_current == ds_label %} aria-current="{{ ds_current_kind }}"{% endif %}>{{ ds_label }}</a>
           {% endfor %}
         </nav>
-        {% if page.url == '/about/' %}
-        <div class="ds-header__descriptor ds-header__descriptor--default">SECURITY ENGINEERING<br>FOR A MORE RESILIENT WORLD</div>
-        {% elsif page.url == '/capability/' or page.url == '/services/secure-engineering/' %}
+        {% if page.url == '/services/secure-engineering/' %}
         <div class="ds-header__descriptor ds-header__descriptor--default">RESEARCH | ENGINEERING | OPERATIONS</div>
         {% else %}
         <div class="ds-header__descriptor ds-header__descriptor--default">PEOPLE / PERSPECTIVE / PROGRESS</div>
