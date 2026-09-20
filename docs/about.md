@@ -62,7 +62,7 @@ social_image_alt: A security practitioner working in a professional offensive se
       <div class="about-accountability__copy">
         <p class="about-eyebrow">SENIOR ACCOUNTABILITY</p>
         <h2 id="accountability-title">Led by a practitioner.<br>Focused on what matters.</h2>
-        <p>I'm Duncan Stirling, founder of Black Bag Security. I believe security should be practical, transparent, and geared toward real outcomes. The goal is not just to find problems, but to help organizations build stronger, more resilient systems, teams, and decisions.</p>
+        <p>I believe security should be practical, transparent, and geared toward real outcomes. The goal is not just to find problems, but to help organizations build stronger, more resilient systems, teams, and decisions.</p>
         <p class="about-signature">—&nbsp; Duncan Stirling</p>
         <p class="about-role">FOUNDER, BLACK BAG SECURITY</p>
       </div>
