@@ -79,5 +79,4 @@ social_image_alt: A secure systems path progressing through layered controls to 
   <h2 id="closing-title">Need the right engagement, <br>not just the loudest one?</h2>
   <p>Talk to our team about your goals, constraints <br>and risk. We’ll recommend the right approach.</p>
   <a class="services-button services-button--primary" href="{{ '/about/#contact' | relative_url }}">Request Engagement Review <span aria-hidden="true">→</span></a>
-  <p class="services-closing__stack">Discreet <br>Expert <br>Objective <br>Together</p>
 </section>
