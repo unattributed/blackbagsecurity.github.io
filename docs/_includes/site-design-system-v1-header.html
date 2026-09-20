@@ -1,4 +1,4 @@
-{% comment %}G02-G07: one whole-site header; only registered descriptor content varies.{% endcomment %}
+{% comment %}One default header treatment; preserve page-specific descriptor copy.{% endcomment %}
 {% assign ds_parts = page.url | split: '/' %}
 {% assign ds_current = '' %}
 {% assign ds_current_kind = 'location' %}
@@ -11,20 +11,11 @@
     {% if ds_parts[1] == 'services' %}{% assign ds_current = 'Services' %}{% endif %}
     {% if ds_parts[1] == 'arsenal' %}{% assign ds_current = 'Capability' %}{% endif %}
 {% endcase %}
-{% assign ds_descriptor = 'default' %}
-{% if page.url == '/about/' %}{% assign ds_descriptor = 'compound' %}{% endif %}
-{% if page.url == '/capability/' or page.url == '/services/secure-engineering/' %}{% assign ds_descriptor = 'supporting' %}{% endif %}
-{% if page.url == '/arsenal/aotp/' %}{% assign ds_descriptor = 'absent' %}{% endif %}
 <header class="ds-header">
   <div class="ds-header__container">
     <div class="ds-header__inner">
-      <div class="ds-header__lead ds-header__lead--{{ ds_descriptor }}">
+      <div class="ds-header__lead ds-header__lead--default">
         <a class="ds-header__brand" href="{{ '/' | relative_url }}" aria-label="Black Bag Security home">BLACK BAG SECURITY</a>
-        {% if ds_descriptor == 'compound' %}
-        <div class="ds-header__descriptor ds-header__descriptor--compound">SECURITY ENGINEERING<br>FOR A MORE RESILIENT WORLD</div>
-        {% elsif ds_descriptor == 'supporting' %}
-        <div class="ds-header__descriptor ds-header__descriptor--supporting">RESEARCH | ENGINEERING | OPERATIONS</div>
-        {% endif %}
       </div>
       <div class="ds-header__rest">
         <nav class="ds-nav" aria-label="Primary navigation">
@@ -34,10 +25,12 @@
           <a href="{{ ds_urls[forloop.index0] | relative_url }}"{% if ds_current == ds_label %} aria-current="{{ ds_current_kind }}"{% endif %}>{{ ds_label }}</a>
           {% endfor %}
         </nav>
-        {% if ds_descriptor == 'default' %}
-        <div class="ds-header__descriptor ds-header__descriptor--default">PEOPLE / PERSPECTIVE / PROGRESS</div>
+        {% if page.url == '/about/' %}
+        <div class="ds-header__descriptor ds-header__descriptor--default">SECURITY ENGINEERING<br>FOR A MORE RESILIENT WORLD</div>
+        {% elsif page.url == '/capability/' or page.url == '/services/secure-engineering/' %}
+        <div class="ds-header__descriptor ds-header__descriptor--default">RESEARCH | ENGINEERING | OPERATIONS</div>
         {% else %}
-        <div class="ds-header__empty" aria-hidden="true"></div>
+        <div class="ds-header__descriptor ds-header__descriptor--default">PEOPLE / PERSPECTIVE / PROGRESS</div>
         {% endif %}
       </div>
     </div>
