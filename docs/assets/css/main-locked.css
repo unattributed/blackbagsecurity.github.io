@@ -92,14 +92,14 @@ a{color:inherit;text-decoration:none}
   width:366px;margin:16px 0 0;color:#cbd3d7;font-size:13px;line-height:1.33
 }
 .actions{display:flex;gap:15px;margin-top:20px}
-.actions .btn{justify-content:center;gap:9px}
+.actions .btn{justify-content:flex-start;gap:9px;min-width:0}
 .btn{
   height:38px;min-width:181px;padding:0 18px;display:flex;align-items:center;justify-content:space-between;
   border-radius:2px;border:1px solid #557082;font-size:10.5px;font-weight:800
 }
 .btn.primary{background:var(--lime);border-color:var(--lime);color:#071016}
 .btn.secondary{background:rgba(4,14,22,.65);color:#f5f7f8}
-.actions .btn.secondary{min-width:166px}
+.actions .btn.secondary{min-width:0}
 .arrow{font-size:16px;line-height:1}
 .trust-row{
   margin-top:22px;width:408px;display:grid;grid-template-columns:1fr 1fr 1.16fr
@@ -190,7 +190,7 @@ a{color:inherit;text-decoration:none}
 .contact-panel{padding-right:150px}
 .contact-visual{position:absolute;right:162px;top:18px;width:132px;height:132px;object-fit:contain}
 .contact-panel .lower-copy{padding-left:34px}
-.contact-panel .btn{margin-top:12px;width:189px;min-width:0;height:36px;justify-content:center;gap:9px}
+.contact-panel .btn{margin-top:12px;width:max-content;min-width:0;height:36px;justify-content:flex-start;gap:9px}
 .side-trust{position:absolute;right:86px;top:91px;color:#8297a3;font-size:6.5px;line-height:1.55;letter-spacing:.16em;text-transform:uppercase}
 .footer{
   height:64px;display:grid;grid-template-columns:1fr 1fr 1fr;align-items:center;padding:0 20px;background:#06121b
@@ -242,7 +242,7 @@ a:focus-visible{outline:2px solid var(--lime);outline-offset:3px}
   .hero-copy{padding-left:18px;padding-right:18px}
   .hero h1{font-size:42px}
   .hero-lead{width:auto}
-  .actions{flex-direction:column}.btn{width:100%}
+  .actions{flex-direction:column}.actions .btn{width:100%}
   .trust-row{grid-template-columns:1fr;gap:8px}.trust{border-left:0;padding-left:0}
   .assurance{grid-template-columns:1fr}.assurance-item{border-right:0}
   .service-grid,.cap-grid{grid-template-columns:1fr}
@@ -300,7 +300,7 @@ a:focus-visible{outline:2px solid var(--lime);outline-offset:3px}
   .hero-lead{width:490px;margin-top:18px;font-size:17px;line-height:1.4}
   .actions{gap:16px;margin-top:22px}
   .btn{height:46px;min-width:220px;padding:0 20px;font-size:13px}
-  .actions .btn.secondary{min-width:202px}
+  .actions .btn.secondary{min-width:0}
   .trust-row{width:515px;margin-top:22px}
   .trust{min-height:36px;padding:0 15px;font-size:10px;line-height:1.45;letter-spacing:.1em}
   .trust:first-child{padding-left:13px}
@@ -359,7 +359,7 @@ a:focus-visible{outline:2px solid var(--lime);outline-offset:3px}
   .contact-panel{padding-right:170px}
   .contact-panel .lower-copy{padding-left:42px}
   .contact-visual{right:165px;top:30px;width:170px;height:170px}
-  .contact-panel .btn{width:230px;height:44px;margin-top:17px}
+  .contact-panel .btn{width:max-content;height:44px;margin-top:17px}
   .side-trust{right:82px;top:120px;font-size:10px}
 
   .footer{height:82px;padding:0 30px}
