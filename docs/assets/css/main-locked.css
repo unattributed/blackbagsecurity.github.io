@@ -188,7 +188,7 @@ a{color:inherit;text-decoration:none}
 .lower p{margin:10px 0 0;color:#acb8c0;font-size:8.8px;line-height:1.35}
 .story{display:inline-block;margin-top:13px;color:var(--lime);font-size:7px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
 .contact-panel{padding-right:150px}
-.contact-visual{position:absolute;right:162px;top:18px;width:132px;height:132px;object-fit:contain}
+.contact-visual{position:absolute;right:82px;top:18px;width:132px;height:132px;object-fit:contain}
 .contact-panel .lower-copy{padding-left:34px}
 .contact-panel .btn{margin-top:12px;width:max-content;min-width:0;height:36px;justify-content:flex-start;gap:9px}
 .side-trust{position:absolute;right:86px;top:91px;color:#8297a3;font-size:6.5px;line-height:1.55;letter-spacing:.16em;text-transform:uppercase}
@@ -358,7 +358,7 @@ a:focus-visible{outline:2px solid var(--lime);outline-offset:3px}
   .story{margin-top:18px;font-size:11px}
   .contact-panel{padding-right:170px}
   .contact-panel .lower-copy{padding-left:42px}
-  .contact-visual{right:165px;top:30px;width:170px;height:170px}
+  .contact-visual{right:82px;top:30px;width:170px;height:170px}
   .contact-panel .btn{width:max-content;height:44px;margin-top:17px}
   .side-trust{right:82px;top:120px;font-size:10px}
 
