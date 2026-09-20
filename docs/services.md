@@ -25,8 +25,6 @@ social_image_alt: A secure systems path progressing through layered controls to 
       <p role="listitem">Real-World Impact <br>Measurable Outcomes</p>
     </div>
   </div>
-  <p class="services-hero__editorial services-hero__editorial--visibility">Deeper <br>Visibility <br>Stronger <br>Defenses</p>
-  <p class="services-hero__editorial services-hero__editorial--adversary">Adversaries <br>Exist. <br>Better <br>Defenses <br>Too.</p>
 </section>
 
 <section class="services-band services-offerings" aria-labelledby="offerings-title">
