@@ -1,8 +1,8 @@
 /* Owner-approved CAPABILITY V3 composition. Scoped to the dedicated page layout. */
 :root{--cap-bg:#06111a;--cap-panel:#07131c;--cap-line:#244150;--cap-text:#f2f5f5;--cap-muted:#a8b5bd;--cap-cyan:#39c9ff;--cap-lime:#d7ff22;--cap-serif:Georgia,"Times New Roman",Times,serif;--cap-sans:Arial,Helvetica,sans-serif}
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;background:var(--cap-bg)}
-body.capability-v3-site{margin:0;background:radial-gradient(circle at 50% 14%,#123044 0,#081824 42%,#061019 100%);color:var(--cap-text);font:16px/1.35 var(--cap-sans);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+html{scroll-behavior:smooth;background:#050f15}
+body.capability-v3-site{margin:0;background:#050f15;color:var(--cap-text);font:16px/1.35 var(--cap-sans);overflow-x:hidden;-webkit-font-smoothing:antialiased}
 .capability-v3-site::before,.capability-v3-site::after{display:none}
 .capability-v3-site a{color:inherit;text-decoration:none}
 .capability-v3-site img{display:block;max-width:100%}
