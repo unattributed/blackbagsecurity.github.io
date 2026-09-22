@@ -1,20 +1,80 @@
 ---
-layout: home-v2
-title: Security Engagement Platform | Black Bag Security
-description: Engineering proof of Black Bag Security standardizing authorized, isolated, evidence-ready security engagement delivery from authorization through retest.
+layout: sep-v1
+title: Secure Engagement Platform (SEP) | Black Bag Security
+description: Secure Engagement Platform (SEP) standardizes how Black Bag Security prepares, executes, evidences, reports, and retests security engagements across the full assessment portfolio.
 permalink: /arsenal/security-engagement-platform/
 lang: en
 ref: arsenal-security-engagement-platform
-marketing_v3: true
+social_image: /assets/img/sep-v1/sep-v1-hero.webp
+social_image_alt: A professional security engagement operations workstation with controlled workflow and evidence views
 ---
-<div class="v24-page">
-  <section class="v24-hero" aria-labelledby="sep-title"><div class="wrap v24-hero__grid"><div class="v24-copy"><p class="v24-kicker">Proof / Security Engagement Platform</p><h1 id="sep-title">One standard.<br><span class="v24-accent">Every engagement.</span></h1><p class="v24-lead">SEP is the Black Bag Security delivery system for creating authorized, isolated, evidence-ready engagement workspaces with the same operating discipline from kickoff through retest.</p><div class="v24-actions"><a class="v24-btn v24-btn--accent" href="{{ '/contact/#assessment' | relative_url }}">Discuss an engagement →</a><a class="v24-btn" href="{{ '/arsenal/' | relative_url }}">Back to Proof →</a></div></div><div class="v24-canvas" aria-label="Security Engagement Platform standardized delivery"><span class="v24-canvas__label">Repeatable security engagement delivery</span><div class="v24-process"><div class="v24-process-step"><div class="v24-process-step__icon">▣</div><strong>Authority</strong><span>Written · current · exact</span></div><div class="v24-process-step"><div class="v24-process-step__icon">◇</div><strong>Workspace</strong><span>Private · isolated</span></div><div class="v24-process-step"><div class="v24-process-step__icon">◎</div><strong>Testing</strong><span>Browser · API · tools</span></div><div class="v24-process-step"><div class="v24-process-step__icon">□</div><strong>Evidence</strong><span>Structured · attributable</span></div><div class="v24-process-step"><div class="v24-process-step__icon">▤</div><strong>Report</strong><span>Connected to proof</span></div><div class="v24-process-step"><div class="v24-process-step__icon">✓</div><strong>Retest</strong><span>Current authority · closure</span></div></div></div></div></section>
+<section class="sep-hero" aria-labelledby="sep-title">
+  <img class="sep-hero__media" src="{{ '/assets/img/sep-v1/sep-v1-hero.webp' | relative_url }}" alt="A security engagement workstation with workflow checklists and supporting monitoring displays." width="2000" height="731" fetchpriority="high" decoding="async">
+  <div class="sep-hero__copy">
+    <p class="sep-eyebrow">TOOLS FOR REAL WORK</p>
+    <h1 id="sep-title">Secure Engagement<br>Platform (SEP)</h1>
+    <p class="sep-hero__tagline">ONE STANDARD. EVERY ENGAGEMENT.</p>
+    <p class="sep-body">A practical, repeatable platform for security testing, evidence generation, and reporting. SEP standardizes the way we engage, so complex assessments are delivered securely, efficiently, and with clear, defensible results.</p>
+    <a class="sep-button" href="#what-is-sep">Explore SEP <span aria-hidden="true">→</span></a>
+  </div>
+</section>
 
-  <section class="v24-section" aria-labelledby="sep-why-title"><div class="wrap v24-section__grid"><div class="v24-copy"><p class="v24-kicker">Why it exists</p><h2 class="v24-title" id="sep-why-title">Professional delivery should not depend on <span class="v24-accent">operator memory.</span></h2><p>SEP turns the client, contract, exact authorized targets, written authority, private browser and proxy runtime, evidence, findings, communications, reports, and retest state into one repeatable engagement workspace.</p></div><div class="v24-canvas" aria-label="SEP engagement delivery standard"><span class="v24-canvas__label">Different engagements. Same operating discipline.</span><div class="v24-linked-grid"><article class="v24-linked-card"><div class="v24-linked-card__icon">▣</div><strong>Known authority</strong><p>Who authorized the work, what is permitted, where, and for how long.</p></article><article class="v24-linked-card"><div class="v24-linked-card__icon">◇</div><strong>Private runtime</strong><p>Engagement-specific browser, proxy, logs, planning, and working state.</p></article><article class="v24-linked-card"><div class="v24-linked-card__icon">□</div><strong>Structured evidence</strong><p>Evidence, findings, limitations, reports, and communications stay tied to the engagement.</p></article><article class="v24-linked-card"><div class="v24-linked-card__icon">✓</div><strong>Retest continuity</strong><p>Historical context is preserved without silently reusing expired authority.</p></article></div></div></div></section>
+<section class="sep-overview" id="what-is-sep" aria-labelledby="sep-overview-title" tabindex="-1">
+  <p class="sep-eyebrow">WHAT IS SEP</p>
+  <h2 id="sep-overview-title">A complete engagement lifecycle, built for security professionals.</h2>
+  <div class="sep-overview__grid">
+    <article class="sep-principle"><svg class="sep-icon" viewBox="0 0 40 40" aria-hidden="true"><use href="{{ '/assets/img/sep-v1/sep-v1-icons.svg' | relative_url }}#shield"></use></svg><h3>STANDARDIZED WORKFLOWS</h3><p class="sep-body">Proven methodology, consistent structure, repeatable results.</p></article>
+    <article class="sep-principle"><svg class="sep-icon" viewBox="0 0 40 40" aria-hidden="true"><use href="{{ '/assets/img/sep-v1/sep-v1-icons.svg' | relative_url }}#evidence"></use></svg><h3>SECURE BY DESIGN</h3><p class="sep-body">Hardened environments, controlled access, protection of client data and evidence.</p></article>
+    <article class="sep-principle"><svg class="sep-icon" viewBox="0 0 40 40" aria-hidden="true"><use href="{{ '/assets/img/sep-v1/sep-v1-icons.svg' | relative_url }}#document"></use></svg><h3>EVIDENCE FOCUSED</h3><p class="sep-body">Capture, organize, and package evidence for clear, defensible reporting.</p></article>
+    <article class="sep-principle"><svg class="sep-icon" viewBox="0 0 40 40" aria-hidden="true"><use href="{{ '/assets/img/sep-v1/sep-v1-icons.svg' | relative_url }}#team"></use></svg><h3>BUILT FOR TEAMS</h3><p class="sep-body">Enables collaboration across testers, reviewers, and stakeholders.</p></article>
+  </div>
+</section>
 
-  <section class="v24-section" aria-labelledby="sep-standard-title"><div class="wrap v24-section__grid"><div class="v24-copy"><p class="v24-kicker">Standardized delivery</p><h2 class="v24-title" id="sep-standard-title">The target changes.<br><span class="v24-accent">The delivery standard does not.</span></h2><p>Each engagement can have different clients, technologies, VPNs, accounts, scopes, and objectives. SEP keeps the operating foundation consistent so setup, evidence, reporting, and closure do not have to be reinvented every time.</p></div><div class="v24-canvas" aria-label="Different engagement inputs become repeatable delivery"><span class="v24-canvas__label">One operating standard</span><div class="v24-linked-grid"><article class="v24-linked-card"><div class="v24-linked-card__icon">01</div><strong>Client &amp; contract</strong><p>Named engagement identity and accountable operator.</p></article><article class="v24-linked-card"><div class="v24-linked-card__icon">02</div><strong>Targets &amp; rules</strong><p>Exact authorized systems, allowed actions, prohibited actions, and stop conditions.</p></article><article class="v24-linked-card"><div class="v24-linked-card__icon">03</div><strong>Runtime &amp; evidence</strong><p>Private workspace, browser, proxy, planning, evidence, findings, and logs.</p></article><article class="v24-linked-card"><div class="v24-linked-card__icon">04</div><strong>Reporting &amp; retest</strong><p>Connected deliverables, remediation state, and verified closure.</p></article></div><div class="v24-outcome"><strong>Repeatability is engineered into the delivery system.</strong></div></div></div></section>
+<section class="sep-flow" aria-labelledby="sep-flow-title">
+  <p class="sep-eyebrow">THE ENGAGEMENT FLOW</p>
+  <h2 id="sep-flow-title">From kickoff to measurable outcomes.</h2>
+  <ol class="sep-flow__steps">
+    <li><svg class="sep-icon" viewBox="0 0 40 40" aria-hidden="true"><use href="{{ '/assets/img/sep-v1/sep-v1-icons.svg' | relative_url }}#document"></use></svg><h3>1. AUTHORIZE</h3><p class="sep-body">Define scope, rules of engagement, and access.</p></li>
+    <li><svg class="sep-icon" viewBox="0 0 40 40" aria-hidden="true"><use href="{{ '/assets/img/sep-v1/sep-v1-icons.svg' | relative_url }}#policy"></use></svg><h3>2. PREPARE</h3><p class="sep-body">Provision secure environments and tools.</p></li>
+    <li><svg class="sep-icon" viewBox="0 0 40 40" aria-hidden="true"><use href="{{ '/assets/img/sep-v1/sep-v1-icons.svg' | relative_url }}#map"></use></svg><h3>3. TEST</h3><p class="sep-body">Execute manual and automated testing.</p></li>
+    <li><svg class="sep-icon" viewBox="0 0 40 40" aria-hidden="true"><use href="{{ '/assets/img/sep-v1/sep-v1-icons.svg' | relative_url }}#evidence"></use></svg><h3>4. CAPTURE</h3><p class="sep-body">Collect and validate evidence in real time.</p></li>
+    <li><svg class="sep-icon" viewBox="0 0 40 40" aria-hidden="true"><use href="{{ '/assets/img/sep-v1/sep-v1-icons.svg' | relative_url }}#document"></use></svg><h3>5. REPORT</h3><p class="sep-body">Clear, actionable findings and recommendations.</p></li>
+    <li><svg class="sep-icon" viewBox="0 0 40 40" aria-hidden="true"><use href="{{ '/assets/img/sep-v1/sep-v1-icons.svg' | relative_url }}#retest"></use></svg><h3>6. RETEST</h3><p class="sep-body">Validate fixes and measure improvement.</p></li>
+  </ol>
+</section>
 
-  <section class="v24-section" aria-labelledby="sep-proof-title"><div class="wrap v24-section__grid"><div class="v24-copy"><p class="v24-kicker">What this proves</p><h2 class="v24-title" id="sep-proof-title">We engineer the system around <span class="v24-accent">how security work is delivered.</span></h2><p>SEP demonstrates that authorization, execution safety, private workspaces, evidence quality, reporting consistency, and retest can be treated as one technical delivery system rather than disconnected administrative tasks.</p></div><div class="v24-canvas" aria-label="Security Engagement Platform client value"><span class="v24-canvas__label">Delivery capability</span><div class="v24-linked-grid"><article class="v24-linked-card"><div class="v24-linked-card__icon">◇</div><strong>Less setup drift</strong><p>Known engagement foundations replace one-off workspace improvisation.</p></article><article class="v24-linked-card"><div class="v24-linked-card__icon">▰</div><strong>Better protection</strong><p>Private runtime and sensitive material boundaries are part of the standard.</p></article><article class="v24-linked-card"><div class="v24-linked-card__icon">□</div><strong>Better evidence</strong><p>Artifacts remain attributable to the authorized engagement and testing state.</p></article><article class="v24-linked-card"><div class="v24-linked-card__icon">✓</div><strong>Better closure</strong><p>Reporting and retest remain connected to the work that established the finding.</p></article></div></div></div></section>
+<section class="sep-practice" aria-labelledby="sep-practice-title">
+  <p class="sep-eyebrow">ACROSS THE PRACTICE</p>
+  <h2 id="sep-practice-title">Built for the full assessment portfolio.</h2>
+  <div class="sep-practice__grid">
+    <article class="sep-domain"><svg class="sep-icon" viewBox="0 0 40 40" aria-hidden="true"><use href="{{ '/assets/img/sep-v1/sep-v1-icons.svg' | relative_url }}#globe"></use></svg><div><h3>WEB APPLICATIONS &amp; APIS</h3><p class="sep-body">Modern web platforms, APIs, authentication, and business logic testing.</p></div></article>
+    <article class="sep-domain"><svg class="sep-icon" viewBox="0 0 40 40" aria-hidden="true"><use href="{{ '/assets/img/sep-v1/sep-v1-icons.svg' | relative_url }}#cloud"></use></svg><div><h3>CLOUD, INFRASTRUCTURE &amp; IDENTITY</h3><p class="sep-body">Cloud configuration, IAM, network exposure, and supporting services.</p></div></article>
+    <article class="sep-domain"><svg class="sep-icon" viewBox="0 0 40 40" aria-hidden="true"><use href="{{ '/assets/img/sep-v1/sep-v1-icons.svg' | relative_url }}#laptop"></use></svg><div><h3>THICK CLIENT, DESKTOP &amp; BROWSER</h3><p class="sep-body">Installed applications, desktop workflows, browsers, and update mechanisms.</p></div></article>
+    <article class="sep-domain"><svg class="sep-icon" viewBox="0 0 40 40" aria-hidden="true"><use href="{{ '/assets/img/sep-v1/sep-v1-icons.svg' | relative_url }}#mobile"></use></svg><div><h3>MOBILE &amp; EMERGING TECH</h3><p class="sep-body">Mobile applications, device interactions, and AI-enabled systems.</p></div></article>
+    <article class="sep-domain"><svg class="sep-icon" viewBox="0 0 40 40" aria-hidden="true"><use href="{{ '/assets/img/sep-v1/sep-v1-icons.svg' | relative_url }}#code"></use></svg><div><h3>SECURE CODE REVIEW</h3><p class="sep-body">Source-assisted analysis of security controls, flaws, and defect patterns.</p></div></article>
+    <article class="sep-domain"><svg class="sep-icon" viewBox="0 0 40 40" aria-hidden="true"><use href="{{ '/assets/img/sep-v1/sep-v1-icons.svg' | relative_url }}#target"></use></svg><div><h3>REVERSE ENGINEERING &amp; RED TEAMING</h3><p class="sep-body">Binaries, protocols, attack paths, and adversary emulation.</p></div></article>
+  </div>
+</section>
 
-  <section class="v24-close" aria-labelledby="sep-close-title"><div class="wrap v24-close__grid"><div class="v24-copy"><p class="v24-kicker">Why a client should care</p><h2 class="v24-title" id="sep-close-title">The same engineering discipline that builds the platform <span class="v24-accent">governs the engagement.</span></h2><p>Every engagement starts with explicit authority and a repeatable private delivery foundation designed to carry through evidence, reporting, remediation, and retest.</p><div class="v24-actions"><a class="v24-btn v24-btn--accent" href="{{ '/contact/#assessment' | relative_url }}">Discuss the work →</a></div></div><div class="v24-canvas" aria-label="Security Engagement Platform outcome"><span class="v24-canvas__label">Security Engagement Platform</span><div class="v24-linked-grid"><article class="v24-linked-card"><div class="v24-linked-card__icon">▣</div><strong>Authorized</strong><p>Explicit from the start.</p></article><article class="v24-linked-card"><div class="v24-linked-card__icon">◇</div><strong>Isolated</strong><p>Private engagement runtime.</p></article><article class="v24-linked-card"><div class="v24-linked-card__icon">□</div><strong>Evidence-ready</strong><p>Proof stays connected.</p></article><article class="v24-linked-card"><div class="v24-linked-card__icon">✓</div><strong>Retestable</strong><p>Closure is part of delivery.</p></article></div></div></div></section>
-</div>
+<section class="sep-standard" aria-labelledby="sep-standard-title">
+  <img class="sep-standard__media" src="{{ '/assets/img/sep-v1/sep-v1-mountains.webp' | relative_url }}" alt="" width="1947" height="808" loading="lazy" decoding="async">
+  <div class="sep-standard__copy">
+    <p class="sep-eyebrow">A HIGHER STANDARD</p>
+    <h2 id="sep-standard-title">Security testing that<br>builds stronger organizations.</h2>
+    <p class="sep-body">SEP helps turn security testing from a one-off activity into a repeatable capability, reducing risk, improving security maturity, and supporting long-term success.</p>
+    <a class="sep-button" href="#ready-to-engage">See How SEP Helps <span aria-hidden="true">→</span></a>
+  </div>
+  <p class="sep-editorial">PRACTICAL<br>SECURE<br>REPEATABLE<br>GREATER CONFIDENCE</p>
+</section>
+
+<section class="sep-closing" id="ready-to-engage" aria-labelledby="sep-closing-title" tabindex="-1">
+  <div class="sep-closing__copy">
+    <p class="sep-eyebrow">READY TO ENGAGE?</p>
+    <h2 id="sep-closing-title">Let’s build a more resilient tomorrow.</h2>
+    <div class="sep-closing__action"><p class="sep-body">Tell us about your environment, your challenges, and what better looks like. We'll find the right way to engage.</p><a class="sep-button" href="/about/#contact">Start the Conversation <span aria-hidden="true">→</span></a></div>
+  </div>
+  <div class="sep-closing__right">
+    <div class="sep-contact-symbols" aria-hidden="true"><span><svg class="sep-icon" viewBox="0 0 40 40" aria-hidden="true"><use href="{{ '/assets/img/sep-v1/sep-v1-icons.svg' | relative_url }}#mail"></use></svg></span><span><svg class="sep-icon" viewBox="0 0 40 40" aria-hidden="true"><use href="{{ '/assets/img/sep-v1/sep-v1-icons.svg' | relative_url }}#calendar"></use></svg></span><span><svg class="sep-icon" viewBox="0 0 40 40" aria-hidden="true"><use href="{{ '/assets/img/sep-v1/sep-v1-icons.svg' | relative_url }}#chat"></use></svg></span></div>
+    <p class="sep-editorial">DISCREET<br>EXPERT<br>OBJECTIVE<br>TOGETHER</p>
+  </div>
+</section>
