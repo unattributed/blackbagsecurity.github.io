@@ -3,7 +3,12 @@
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
+  "@id": {{ site.url | append: '/#website' | jsonify }},
   "name": {{ site.title | jsonify }},
   "url": {{ site.url | jsonify }},
-  "description": {{ site.description | strip | jsonify }}
+  "description": {{ site.description | strip | jsonify }},
+  "publisher": {
+    "@id": {{ site.url | append: '/#organization' | jsonify }}
+  },
+  "inLanguage": "en"
 }

@@ -1,21 +1,41 @@
 # Black Bag Security
 
 Site: https://www.blackbagsecurity.com
-Description: Offensive security, adversary simulation, and vulnerability research for high-consequence systems.
+Canonical domain: https://www.blackbagsecurity.com
 
-## Primary pages
+Black Bag Security provides security testing and engineering for high-consequence systems. The practice combines senior-led penetration testing, red teaming, secure code review, reverse engineering, AI security, secure systems engineering, defensible evidence, protected client context, and verified closure.
+
+## Primary buyer pages
+- https://www.blackbagsecurity.com/
 - https://www.blackbagsecurity.com/services/
-- https://www.blackbagsecurity.com/methodology/
-- https://www.blackbagsecurity.com/industries/
-- https://www.blackbagsecurity.com/trust/
-- https://www.blackbagsecurity.com/research/
+- https://www.blackbagsecurity.com/capability/
 - https://www.blackbagsecurity.com/about/
-- https://www.blackbagsecurity.com/contact/
 
-## Security and disclosure
-- https://www.blackbagsecurity.com/.well-known/security.txt
-- https://www.blackbagsecurity.com/security.txt
+## Core services
+- Penetration Testing
+- Red Teaming
+- Secure Code Review
+- Reverse Engineering
+- Secure Engineering
 
-## Notes
+AI security is a cross-cutting specialization spanning models, agents, browsers, tools, identities, data boundaries, local/private execution, and human approval.
+
+## Key capability and engineering systems
+- Agentic Offensive Testing Platform (AOTP): local agentic offensive security, AI powered, human governed, private by design, evidence first.
+- AI Browser Security Test Suite: repeatable security testing for browser-based AI systems and trust boundaries.
+- Security Engagement Platform (SEP): evidence-led engagement control from scope and authority through verified closure.
+- OSMAP + OpenBSD Mailstack: secure mail operations and hardened mail infrastructure for high-consequence systems.
+- Custom Engineering: purpose-built security tooling, controls, automation, and infrastructure used when standard tooling is insufficient.
+
+## Contact
+- Engagement enquiries: hello@blackbagsecurity.com
+- Security disclosure: security@blackbagsecurity.com
+- Security policy: https://www.blackbagsecurity.com/.well-known/security.txt
+
+## Operating principles
+- Senior technical judgment stays close to the work.
+- Evidence before assertion.
+- Sensitive client context stays deliberately controlled.
+- Testing and engineering reinforce each other.
+- Remediation is followed through verified closure.
 - No third-party tracking or analytics.
-- Canonical domain: https://www.blackbagsecurity.com

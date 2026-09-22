@@ -1,0 +1,36 @@
+{% comment %}One default header treatment; preserve page-specific descriptor copy.{% endcomment %}
+{% assign ds_parts = page.url | split: '/' %}
+{% assign ds_current = '' %}
+{% assign ds_current_kind = 'location' %}
+{% case page.url %}
+  {% when '/' %}{% assign ds_current = 'Home' %}{% assign ds_current_kind = 'page' %}
+  {% when '/services/' %}{% assign ds_current = 'Services' %}{% assign ds_current_kind = 'page' %}
+  {% when '/capability/' %}{% assign ds_current = 'Capability' %}{% assign ds_current_kind = 'page' %}
+  {% when '/about/' %}{% assign ds_current = 'About' %}{% assign ds_current_kind = 'page' %}
+  {% else %}
+    {% if ds_parts[1] == 'services' %}{% assign ds_current = 'Services' %}{% endif %}
+    {% if ds_parts[1] == 'arsenal' %}{% assign ds_current = 'Capability' %}{% endif %}
+{% endcase %}
+<header class="ds-header">
+  <div class="ds-header__container">
+    <div class="ds-header__inner">
+      <div class="ds-header__lead ds-header__lead--default">
+        <a class="ds-header__brand" href="{{ '/' | relative_url }}" aria-label="Black Bag Security home">BLACK BAG SECURITY</a>
+      </div>
+      <div class="ds-header__rest">
+        <nav class="ds-nav" aria-label="Primary navigation">
+          {% assign ds_labels = 'Home,Services,Capability,About,Contact' | split: ',' %}
+          {% assign ds_urls = '/,/services/,/capability/,/about/,/about/#contact' | split: ',' %}
+          {% for ds_label in ds_labels %}
+          <a href="{{ ds_urls[forloop.index0] | relative_url }}"{% if ds_current == ds_label %} aria-current="{{ ds_current_kind }}"{% endif %}>{{ ds_label }}</a>
+          {% endfor %}
+        </nav>
+        {% if page.url == '/services/secure-engineering/' %}
+        <div class="ds-header__descriptor ds-header__descriptor--default">RESEARCH | ENGINEERING | OPERATIONS</div>
+        {% else %}
+        <div class="ds-header__descriptor ds-header__descriptor--default">PEOPLE / PERSPECTIVE / PROGRESS</div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</header>

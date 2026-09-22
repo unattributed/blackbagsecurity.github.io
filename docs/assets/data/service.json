@@ -2,14 +2,53 @@
 ---
 {
   "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "Offensive security services",
-  "serviceType": "Offensive security, red team operations, penetration testing, vulnerability research, application security, and agentic engineering for cybersecurity operations",
-  "description": "Objective-based offensive security engagements for high-consequence systems, delivered with operator-verified evidence, human-directed agentic workflows, and strict client data safeguards.",
+  "@type": "OfferCatalog",
+  "@id": {{ site.url | append: '/services/#catalog' | jsonify }},
+  "name": "Black Bag Security services",
+  "url": {{ site.url | append: '/services/' | jsonify }},
   "provider": {
-    "@type": "Organization",
-    "name": {{ site.title | jsonify }},
-    "url": {{ site.url | jsonify }}
+    "@id": {{ site.url | append: '/#organization' | jsonify }}
   },
-  "areaServed": "Global"
+  "itemListElement": [
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Penetration Testing",
+        "description": "Evidence-led testing of applications, APIs, identity, infrastructure, and business logic to establish exploitable conditions and practical remediation priorities."
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Red Teaming",
+        "description": "Realistic adversary operations that test whether preventive, detective, and response controls materially change the attacker path."
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Secure Code Review",
+        "description": "Security-focused source review that determines exploitability, root cause, and engineering remediation rather than relying on scanner output alone."
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Reverse Engineering",
+        "description": "Analysis of binaries, firmware, protocols, and devices when source code, vendor documentation, or conventional testing is insufficient."
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Secure Engineering",
+        "description": "Design, hardening, and purpose-built security engineering for systems where assessment alone does not solve the problem."
+      }
+    }
+  ]
 }

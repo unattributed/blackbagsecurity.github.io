@@ -1,0 +1,197 @@
+/* G02-G07 only. Keep the accepted S1.1A shell and all body/footer rules intact. */
+.ds-header,
+.ds-header * {
+  box-sizing: border-box;
+}
+.ds-header {
+  position: relative;
+  z-index: 1;
+  min-height: 64px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-bottom: 1px solid var(--ds-border-structural);
+  background: var(--ds-surface-chrome);
+  color: var(--ds-color-text);
+  font-family: var(--ds-font-sans);
+}
+/* Same inline size as the shell; containment stays inside the header so body
+   container-relative typography is unaffected. */
+.ds-header__container {
+  container-type: inline-size;
+}
+.ds-header__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 63px;
+  padding-inline: 32px;
+}
+.ds-header__lead {
+  display: flex;
+  align-items: center;
+  flex: 0 0 230px;
+  min-width: max-content;
+  min-height: 44px;
+}
+.ds-header .ds-header__brand {
+  display: block;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--ds-color-text);
+  font: 700 14px/1.2 var(--ds-font-sans);
+  letter-spacing: .16em;
+  text-decoration: none;
+  text-transform: none;
+  white-space: nowrap;
+  overflow-wrap: anywhere;
+  transform: none;
+}
+.ds-header__rest {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 280px;
+  align-items: center;
+  flex: 1 1 max-content;
+  min-width: 0;
+  max-width: 100%;
+}
+.ds-header__descriptor {
+  margin: 0;
+  color: var(--ds-color-micro);
+  font: 700 10px/1.4 var(--ds-font-sans);
+  letter-spacing: .15em;
+  overflow-wrap: anywhere;
+}
+.ds-header__descriptor--default {
+  text-align: right;
+}
+.ds-header__lead--compound {
+  gap: 14px;
+}
+.ds-header__descriptor--compound {
+  padding-inline-start: 14px;
+  border-inline-start: 2px solid var(--ds-color-lime);
+}
+.ds-header__lead--supporting {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 3px;
+  min-width: 230px;
+}
+.ds-header .ds-header__lead--supporting .ds-header__brand {
+  white-space: normal;
+}
+.ds-header .ds-nav {
+  display: flex;
+  align-items: center;
+  justify-self: end;
+  gap: clamp(22px, 2.2cqw, 34px);
+  min-width: 0;
+  max-width: 100%;
+  min-height: 63px;
+  margin: 0;
+  padding: 9px 6px 10px;
+  border: 0;
+  transform: none;
+  overflow-x: auto;
+}
+.ds-header .ds-nav a {
+  position: relative;
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  min-height: 44px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  color: var(--ds-color-text);
+  font: 700 12px/1.4 var(--ds-font-sans);
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  transform: none;
+}
+.ds-header .ds-nav a::before,
+.ds-header .ds-header__brand::before,
+.ds-header .ds-header__brand::after {
+  content: none;
+}
+.ds-header .ds-nav a::after {
+  content: none;
+}
+.ds-header .ds-nav a[aria-current]::after {
+  content: "";
+  position: absolute;
+  inset: auto -6px -10px;
+  height: 2px;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: var(--ds-color-lime);
+  transform: none;
+}
+.ds-header .ds-nav a:hover,
+.ds-header .ds-header__brand:hover {
+  color: var(--ds-color-lime);
+}
+.ds-header .ds-nav a:focus-visible,
+.ds-header .ds-header__brand:focus-visible {
+  outline: var(--ds-focus-ring);
+  outline-offset: var(--ds-focus-offset);
+}
+@media (max-width: 1099px) {
+  .ds-header__inner {
+    padding-inline: 16px;
+  }
+  .ds-header__lead {
+    flex: 1 1 50%;
+    min-width: 0;
+    min-height: 48px;
+  }
+  .ds-header .ds-header__brand {
+    font-size: 13px;
+    white-space: normal;
+  }
+  .ds-header__rest {
+    display: contents;
+  }
+  .ds-header__descriptor--default {
+    flex: 1 1 50%;
+    min-width: 0;
+  }
+  .ds-header__lead--compound,
+  .ds-header__lead--supporting,
+  .ds-header__lead--absent {
+    flex-basis: 100%;
+  }
+  .ds-header__lead--compound > * {
+    min-width: 0;
+  }
+  .ds-header__empty {
+    display: none;
+  }
+  .ds-header .ds-nav {
+    order: 2;
+    flex: 0 0 100%;
+    width: 100%;
+    min-height: 40px;
+    gap: 18px;
+    padding-block: 5px;
+    overflow-x: auto;
+  }
+  .ds-header .ds-nav a {
+    min-height: 30px;
+    font-size: 11px;
+  }
+  .ds-header .ds-nav a[aria-current]::after {
+    bottom: -5px;
+  }
+}

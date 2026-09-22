@@ -1,3 +1,21 @@
 User-agent: *
-Disallow:
+Allow: /
+
+# Search and agentic discovery crawlers. These explicit rules do not replace
+# the general allow above; they document intentional discoverability.
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
 Sitemap: https://www.blackbagsecurity.com/sitemap.xml
