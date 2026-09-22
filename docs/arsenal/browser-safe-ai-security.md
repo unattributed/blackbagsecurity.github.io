@@ -1,20 +1,94 @@
 ---
-layout: home-v2
-title: Browser-Safe AI Security | Black Bag Security
-description: Engineering proof of reproducible browser-AI security research using local synthetic targets, browser observation, network capture, structured evidence, manifests, and deterministic hashing.
+layout: ai-browser-security-v1
+title: AI Browser Security Test Suite | Black Bag Security
+description: A practical methodology and open test suite for validating AI solutions that operate through web browsers with controlled inputs, multi-view evidence, deterministic policy and replayable proof.
 permalink: /arsenal/browser-safe-ai-security/
 lang: en
 ref: arsenal-browser-safe-ai-security
-marketing_v3: true
+social_image: /assets/img/ai-browser-security-v1/ai-browser-security-v1-hero.webp
+social_image_alt: Browser-based AI security validation shown as a controlled evidence and policy workflow
 ---
-<div class="v24-page">
-  <section class="v24-hero" aria-labelledby="browser-ai-title"><div class="wrap v24-hero__grid"><div class="v24-copy"><p class="v24-kicker">Proof / Browser-Safe AI Security</p><h1 id="browser-ai-title">The browser is part of the <span class="v24-accent">AI trust boundary.</span></h1><p class="v24-lead">Controlled local research makes prompt injection, source confusion, hidden browser state, frame boundaries, visual deception, and tool behavior observable without relying on real customer data or third-party production systems.</p><div class="v24-actions"><a class="v24-btn v24-btn--accent" href="{{ '/services/ai-security/' | relative_url }}">See AI Security →</a><a class="v24-btn" href="{{ '/arsenal/' | relative_url }}">Back to Proof →</a></div></div><div class="v24-canvas" aria-label="Browser and AI trust path"><span class="v24-canvas__label">Observe the whole browser-AI path</span><div class="v24-process"><div class="v24-process-step"><div class="v24-process-step__icon">?</div><strong>Page</strong><span>HTML · text · hidden content</span></div><div class="v24-process-step"><div class="v24-process-step__icon">◎</div><strong>Browser</strong><span>DOM · frames · navigation</span></div><div class="v24-process-step"><div class="v24-process-step__icon">◉</div><strong>AI</strong><span>Visible context · interpretation</span></div><div class="v24-process-step"><div class="v24-process-step__icon">⚙</div><strong>Tool</strong><span>Browser · API · action</span></div><div class="v24-process-step"><div class="v24-process-step__icon">⌁</div><strong>Network</strong><span>Requests · responses · pivots</span></div><div class="v24-process-step"><div class="v24-process-step__icon">□</div><strong>Evidence</strong><span>State · manifest · hash</span></div></div></div></div></section>
+<section class="abs-hero" aria-labelledby="abs-title">
+  <img class="abs-hero__media" src="{{ '/assets/img/ai-browser-security-v1/ai-browser-security-v1-hero.webp' | relative_url }}" alt="A security workstation with a browser validation workflow and evidence checks on a laptop screen." width="2000" height="766" fetchpriority="high" decoding="async">
+  <div class="abs-hero__copy">
+    <p class="abs-eyebrow">AI Research to Practice</p>
+    <h1 id="abs-title">AI Browser<br>Security Test Suite</h1>
+    <p class="abs-hero__subline">Test browser-based AI controls. Build safer systems.</p>
+    <p class="abs-body">A practical methodology and open test suite for validating AI solutions that operate through web browsers. Turn research into repeatable security testing, measurable outcomes, and stronger, safer deployments.</p>
+    <div class="abs-actions"><a class="abs-button" href="https://github.com/unattributed/ai-browser-security-test-suite">View on GitHub <span aria-hidden="true">→</span></a><a class="abs-button abs-button--secondary" href="https://unattributed.blog/ai-security/browser-security/security-operations/red-team/2026/05/09/browser-safe-ai-systems-00-series-index.html">Read the Research <span aria-hidden="true">→</span></a></div>
+  </div>
+  <p class="abs-editorial">BROWSER<br>AI SECURITY<br>REAL THREATS<br>REAL TESTS<br>SAFER OUTCOMES</p>
+</section>
 
-  <section class="v24-section" aria-labelledby="browser-threat-title"><div class="wrap v24-section__grid"><div class="v24-copy"><p class="v24-kicker">The security problem</p><h2 class="v24-title" id="browser-threat-title">The browser changes what AI can <span class="v24-accent">see, trust, and act on.</span></h2><p>A browser-integrated AI system inherits trust decisions from HTML, rendered content, frames, navigation, authenticated state, tools, screenshots, hidden DOM, and delayed transitions. The model is only one component in that larger attack surface.</p></div><div class="v24-canvas" aria-label="Browser AI security failure modes"><span class="v24-canvas__label">Emerging trust failures</span><div class="v24-linked-grid v24-linked-grid--3"><article class="v24-linked-card"><div class="v24-linked-card__icon">?</div><strong>Indirect injection</strong><p>Untrusted page content can become instruction without being an explicit user command.</p></article><article class="v24-linked-card"><div class="v24-linked-card__icon">⌁</div><strong>Source confusion</strong><p>What the machine can read may differ from what the user believes they are viewing.</p></article><article class="v24-linked-card"><div class="v24-linked-card__icon">↻</div><strong>State transitions</strong><p>The attack path can span navigation, delayed content, frames, and off-browser handoffs.</p></article></div></div></div></section>
+<section class="abs-principles" aria-labelledby="abs-principles-title">
+  <p class="abs-eyebrow">Core Principles</p>
+  <h2 id="abs-principles-title">A structured approach to browser-based AI security.</h2>
+  <div class="abs-principles__grid">
+    <article class="abs-principle"><svg class="abs-icon" aria-hidden="true" viewBox="0 0 40 40"><use href="{{ '/assets/img/ai-browser-security-v1/ai-browser-security-v1-icons.svg' | relative_url }}#shield"></use></svg><h3>CONTROLLED INPUTS</h3><p class="abs-body">Test with realistic, adversarial browser content in a safe, repeatable environment.</p></article>
+    <article class="abs-principle"><svg class="abs-icon" aria-hidden="true" viewBox="0 0 40 40"><use href="{{ '/assets/img/ai-browser-security-v1/ai-browser-security-v1-icons.svg' | relative_url }}#document"></use></svg><h3>MULTI-VIEW EVIDENCE</h3><p class="abs-body">Capture DOM, rendered content, network, model context, and decisions.</p></article>
+    <article class="abs-principle"><svg class="abs-icon" aria-hidden="true" viewBox="0 0 40 40"><use href="{{ '/assets/img/ai-browser-security-v1/ai-browser-security-v1-icons.svg' | relative_url }}#policy"></use></svg><h3>POLICY OUTSIDE THE MODEL</h3><p class="abs-body">Validate outputs with deterministic security policy, not model trust.</p></article>
+    <article class="abs-principle"><svg class="abs-icon" aria-hidden="true" viewBox="0 0 40 40"><use href="{{ '/assets/img/ai-browser-security-v1/ai-browser-security-v1-icons.svg' | relative_url }}#bars"></use></svg><h3>REPLAYABLE PROOF</h3><p class="abs-body">Produce evidence packages that can be independently reviewed and reproduced.</p></article>
+  </div>
+</section>
 
-  <section class="v24-section" aria-labelledby="browser-evidence-title"><div class="wrap v24-section__grid"><div class="v24-copy"><p class="v24-kicker">Evidence-first research</p><h2 class="v24-title" id="browser-evidence-title">Make dynamic browser state <span class="v24-accent">reviewable after the test.</span></h2><p>AI and browser behavior can change between runs. The research captures multiple views of the same event so a reviewer can understand what content existed, what the browser exposed, what network activity occurred, and what result followed.</p></div><div class="v24-canvas" aria-label="Browser AI evidence views"><span class="v24-canvas__label">Independent evidence views</span><div class="v24-linked-grid"><article class="v24-linked-card"><div class="v24-linked-card__icon">◎</div><strong>Browser</strong><p>DOM, frame trees, rendered text, screenshots, navigation, and timing.</p></article><article class="v24-linked-card"><div class="v24-linked-card__icon">⌁</div><strong>Network</strong><p>HTTP requests, responses, proxy captures, and relevant navigation metadata.</p></article><article class="v24-linked-card"><div class="v24-linked-card__icon">◉</div><strong>Model &amp; target</strong><p>Model-visible context, local target state, response, and resulting action.</p></article><article class="v24-linked-card"><div class="v24-linked-card__icon">□</div><strong>Integrity</strong><p>Structured records, manifests, deterministic hashes, reports, and archive sidecars.</p></article></div><div class="v24-outcome"><strong>Evidence is designed for reproduction, not demonstration alone.</strong></div></div></div></section>
+<section class="abs-methodology abs-split" aria-labelledby="abs-methodology-title">
+  <div>
+    <p class="abs-eyebrow">The Methodology</p>
+    <h2 id="abs-methodology-title">From browser content to<br>measurable security outcomes.</h2>
+    <p class="abs-body">Execute a complete security pipeline - from hostile browser content, through model interaction and validation, to enforceable security decisions with repeatable evidence.</p>
+    <a class="abs-button" href="#abs-process">Explore the Methodology <span aria-hidden="true">→</span></a>
+  </div>
+  <div class="abs-process" id="abs-process" tabindex="-1" role="group" aria-label="Browser-AI security pipeline">
+    <ol>
+      <li><svg class="abs-icon" aria-hidden="true" viewBox="0 0 40 40"><use href="{{ '/assets/img/ai-browser-security-v1/ai-browser-security-v1-icons.svg' | relative_url }}#browser"></use></svg><span>Browser<br>Artifact</span></li>
+      <li><svg class="abs-icon" aria-hidden="true" viewBox="0 0 40 40"><use href="{{ '/assets/img/ai-browser-security-v1/ai-browser-security-v1-icons.svg' | relative_url }}#evidence"></use></svg><span>Evidence<br>Capture</span></li>
+      <li><svg class="abs-icon" aria-hidden="true" viewBox="0 0 40 40"><use href="{{ '/assets/img/ai-browser-security-v1/ai-browser-security-v1-icons.svg' | relative_url }}#context"></use></svg><span>Model<br>Context</span></li>
+      <li><svg class="abs-icon" aria-hidden="true" viewBox="0 0 40 40"><use href="{{ '/assets/img/ai-browser-security-v1/ai-browser-security-v1-icons.svg' | relative_url }}#validation"></use></svg><span>Output<br>Validation</span></li>
+      <li><svg class="abs-icon" aria-hidden="true" viewBox="0 0 40 40"><use href="{{ '/assets/img/ai-browser-security-v1/ai-browser-security-v1-icons.svg' | relative_url }}#document"></use></svg><span>Deterministic<br>Policy</span></li>
+      <li><svg class="abs-icon" aria-hidden="true" viewBox="0 0 40 40"><use href="{{ '/assets/img/ai-browser-security-v1/ai-browser-security-v1-icons.svg' | relative_url }}#review"></use></svg><span>Analyst<br>Review</span></li>
+    </ol>
+    <p class="abs-process__outcome"><span>EVIDENCE</span><span aria-hidden="true">&gt;</span><span>VALIDATION</span><span aria-hidden="true">&gt;</span><span>POLICY</span><span aria-hidden="true">&gt;</span><span>CONFIDENCE</span></p>
+  </div>
+</section>
 
-  <section class="v24-section" aria-labelledby="browser-proof-title"><div class="wrap v24-section__grid"><div class="v24-copy"><p class="v24-kicker">What this proves</p><h2 class="v24-title" id="browser-proof-title">Emerging AI risk can become <span class="v24-accent">a controlled test system.</span></h2><p>The project combines browser automation, local AI behavior, network observation, synthetic data, structured evidence, and safe experimentation into one repeatable research workflow.</p></div><div class="v24-canvas" aria-label="Browser-Safe AI Security capability demonstrated"><span class="v24-canvas__label">Capability demonstrated</span><div class="v24-linked-grid"><article class="v24-linked-card"><div class="v24-linked-card__icon">▰</div><strong>Synthetic sensitive data</strong><p>Study leakage and handling behavior without introducing real client secrets.</p></article><article class="v24-linked-card"><div class="v24-linked-card__icon">◎</div><strong>Visual deception</strong><p>Compare what the human sees with what the browser and model can read.</p></article><article class="v24-linked-card"><div class="v24-linked-card__icon">⚙</div><strong>Controlled tooling</strong><p>Browser automation, direct HTTP, proxy observation, and local targets provide independent evidence.</p></article><article class="v24-linked-card"><div class="v24-linked-card__icon">◇</div><strong>Safe research boundary</strong><p>Explore the mechanics in local synthetic environments rather than attacking production SaaS by default.</p></article></div></div></div></section>
+<section class="abs-labs abs-split" aria-labelledby="abs-labs-title">
+  <div>
+    <p class="abs-eyebrow">Practical Lab Track</p>
+    <h2 id="abs-labs-title">Hands-on. Repeatable. Realistic.</h2>
+    <p class="abs-body">Step through 13 practical labs, from environment setup to a full target-backed evaluation, using real-world browser attack techniques and defensible validation methods.</p>
+    <a class="abs-button" href="https://github.com/unattributed/ai-browser-security-test-suite/tree/main/docs/workshop">Explore the Lab Track <span aria-hidden="true">→</span></a>
+  </div>
+  <div class="abs-labs__grid">
+    <article class="abs-lab"><svg class="abs-icon" aria-hidden="true" viewBox="0 0 40 40"><use href="{{ '/assets/img/ai-browser-security-v1/ai-browser-security-v1-icons.svg' | relative_url }}#labs"></use></svg><h3>13 LABS</h3><p class="abs-body">Progressive, hands-on exercises (00 - 12)</p></article>
+    <article class="abs-lab"><svg class="abs-icon" aria-hidden="true" viewBox="0 0 40 40"><use href="{{ '/assets/img/ai-browser-security-v1/ai-browser-security-v1-icons.svg' | relative_url }}#globe"></use></svg><h3>REAL-WORLD</h3><p class="abs-body">Attack techniques and AI browser scenarios</p></article>
+    <article class="abs-lab"><svg class="abs-icon" aria-hidden="true" viewBox="0 0 40 40"><use href="{{ '/assets/img/ai-browser-security-v1/ai-browser-security-v1-icons.svg' | relative_url }}#document"></use></svg><h3>ACTIONABLE</h3><p class="abs-body">Evidence and findings you can apply</p></article>
+  </div>
+</section>
 
-  <section class="v24-close" aria-labelledby="browser-close-title"><div class="wrap v24-close__grid"><div class="v24-copy"><p class="v24-kicker">Why a client should care</p><h2 class="v24-title" id="browser-close-title">AI findings should be grounded in observable attack paths, <span class="v24-accent">not speculative prompt examples.</span></h2><p>Black Bag Security can instrument the new trust boundaries created when AI meets browsers, tools, authenticated state, and untrusted content.</p><div class="v24-actions"><a class="v24-btn v24-btn--accent" href="{{ '/contact/#assessment' | relative_url }}">Discuss an AI system →</a></div></div><div class="v24-canvas" aria-label="Browser-Safe AI Security value"><span class="v24-canvas__label">Browser-Safe AI Security</span><div class="v24-linked-grid"><article class="v24-linked-card"><div class="v24-linked-card__icon">?</div><strong>Influence</strong><p>Untrusted content is observable.</p></article><article class="v24-linked-card"><div class="v24-linked-card__icon">◎</div><strong>State</strong><p>Browser context is captured.</p></article><article class="v24-linked-card"><div class="v24-linked-card__icon">⌁</div><strong>Consequence</strong><p>Actions and network effects are recorded.</p></article><article class="v24-linked-card"><div class="v24-linked-card__icon">□</div><strong>Proof</strong><p>Evidence can be replayed and reviewed.</p></article></div></div></div></section>
-</div>
+<section class="abs-built" aria-labelledby="abs-built-title">
+  <img class="abs-built__media" src="{{ '/assets/img/ai-browser-security-v1/ai-browser-security-v1-mountains.webp' | relative_url }}" alt="" width="1947" height="808" loading="lazy" decoding="async">
+  <div class="abs-built__copy">
+    <p class="abs-eyebrow">Built For</p>
+    <h2 id="abs-built-title">Security teams. Product builders.<br>A safer AI ecosystem.</h2>
+    <p class="abs-body">A practical resource for red teams, product security, SOC analysts, AI security researchers, and organizations deploying AI solutions that interact with web content.</p>
+    <a class="abs-button" href="https://github.com/unattributed/ai-browser-security-test-suite#who-this-is-for">Who It's For <span aria-hidden="true">→</span></a>
+  </div>
+  <p class="abs-editorial">HIGHER<br>STANDARDS<br>A MORE<br>RESILIENT WORLD</p>
+</section>
+
+<section class="abs-research abs-split" aria-labelledby="abs-research-title">
+  <div class="abs-research__copy">
+    <p class="abs-eyebrow">Research Origin</p>
+    <h2 id="abs-research-title">Grounded in research.<br>Built for practice.</h2>
+    <p class="abs-body">The AI Browser Security Test Suite implements the Browser-Safe AI Systems research series, turning methodology into a practical, open test suite.</p>
+    <a class="abs-button" href="https://unattributed.blog/ai-security/browser-security/security-operations/red-team/2026/05/09/browser-safe-ai-systems-00-series-index.html">Read the Research Series <span aria-hidden="true">→</span></a>
+  </div>
+  <div class="abs-research__right">
+    <div class="abs-research__cards">
+      <a class="abs-research-card" href="https://unattributed.blog/ai-security/browser-security/security-operations/red-team/2026/05/09/browser-safe-ai-systems-24-red-team-testing-methodology-for-ai-browser-controls.html" aria-label="Part 24: Red Team Testing Methodology for AI Browser Controls"><svg class="abs-icon" aria-hidden="true" viewBox="0 0 40 40"><use href="{{ '/assets/img/ai-browser-security-v1/ai-browser-security-v1-icons.svg' | relative_url }}#document"></use></svg><strong>Part 24</strong><span>Red Team Testing Methodology</span></a>
+      <a class="abs-research-card" href="https://unattributed.blog/ai-security/browser-security/security-operations/red-team/2026/05/09/browser-safe-ai-systems-25-building-a-practical-python-test-harness.html" aria-label="Part 25: Building a Practical Python Test Harness"><svg class="abs-icon" aria-hidden="true" viewBox="0 0 40 40"><use href="{{ '/assets/img/ai-browser-security-v1/ai-browser-security-v1-icons.svg' | relative_url }}#document"></use></svg><strong>Part 25</strong><span>Practical Lab Track</span></a>
+      <a class="abs-research-card" href="https://unattributed.blog/ai-security/browser-security/security-operations/red-team/2026/05/09/browser-safe-ai-systems-26-evidence-collection-what-must-be-logged-and-verified.html" aria-label="Part 26: Evidence Collection: What Must Be Logged and Verified"><svg class="abs-icon" aria-hidden="true" viewBox="0 0 40 40"><use href="{{ '/assets/img/ai-browser-security-v1/ai-browser-security-v1-icons.svg' | relative_url }}#document"></use></svg><strong>Part 26</strong><span>Evidence and Validation</span></a>
+    </div>
+    <p class="abs-editorial">OPEN METHODS<br>PRACTICAL TOOLS<br>SAFER AI<br>TOGETHER</p>
+  </div>
+</section>
