@@ -9,7 +9,7 @@ const output = process.env.QA_OUTPUT;
 assert(output, 'QA_OUTPUT must identify an evidence directory');
 fs.mkdirSync(output, { recursive: true });
 const records = [];
-const route = '/review/service-transparency-modals/';
+const route = process.env.QA_ROUTE || '/review/service-transparency-modals/';
 const sizes = [[1920,1080],[1440,900],[1280,800],[768,1024],[390,844],[320,640]];
 (async () => {
   for (const [engine, type] of Object.entries({chromium,firefox})) {
@@ -17,8 +17,9 @@ const sizes = [[1920,1080],[1440,900],[1280,800],[768,1024],[390,844],[320,640]]
     for (const [width,height] of (process.env.QA_VISUAL_ONLY ? [] : sizes)) {
       const page = await browser.newPage({viewport:{width,height},hasTouch:width<600,reducedMotion:'reduce'});
       const errors = [];
+      const baselineWarnings = [];
       page.on('pageerror', e => errors.push(e.message));
-      page.on('console', m => { if(m.type()==='error') errors.push(m.text()); });
+      page.on('console', m => { if(m.type()==='error') { if(route==='/methodology/' && m.text().includes("directive 'frame-ancestors' is ignored")) baselineWarnings.push(m.text()); else errors.push(m.text()); } });
       await page.goto(base+route);
       await page.addScriptTag({url:base+'/assets/js/service-transparency-modals-v1.js'});
       const modal = page.locator('dialog');
@@ -106,7 +107,7 @@ const sizes = [[1920,1080],[1440,900],[1280,800],[768,1024],[390,844],[320,640]]
         errors.length=0;
         await page.goto(base+route);
         assert.deepEqual(errors,[]);
-        records.push({engine,width,height,variant:model.id,status:'pass',contactWarnings,checks:['hover','focus','click/tap','enter','space','exact-copy','semantics','x','close','escape','backdrop','inside-click','focus-trap','focus-return','native-inert','scroll-lock','sticky-close','scroll-reset','replace-open','no-stale-content','unique-ids','reduced-motion','no-overflow','contact-navigation','no-console-errors']});
+        records.push({engine,width,height,variant:model.id,status:'pass',baselineWarnings:[...baselineWarnings],contactWarnings,checks:['hover','focus','click/tap','enter','space','exact-copy','semantics','x','close','escape','backdrop','inside-click','focus-trap','focus-return','native-inert','scroll-lock','sticky-close','scroll-reset','replace-open','no-stale-content','unique-ids','reduced-motion','no-overflow','contact-navigation','no-console-errors']});
         fs.writeFileSync(path.join(output,'results.json'),JSON.stringify(records,null,2));
       }
       await page.close();

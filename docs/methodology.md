@@ -5,6 +5,7 @@ description: An evidence-led security methodology that keeps authority, executio
 permalink: /methodology/
 lang: en
 ref: methodology
+service_transparency_modals: true
 ---
 <div class="m-page">
   <section class="m-hero" aria-labelledby="method-title">
@@ -102,6 +103,23 @@ ref: methodology
         <article class="m-card"><h3>Known limitations</h3><p>Coverage gaps and access constraints are stated explicitly instead of being hidden by a polished report.</p></article>
         <article class="m-card"><h3>Early escalation</h3><p>Conditions that threaten safety, coverage, evidence quality, or schedule are raised promptly.</p></article>
         <article class="m-card"><h3>Decision-ready reporting</h3><p>Technical depth is preserved while the consequence and required action remain clear.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="m-section" id="service-transparency" aria-labelledby="service-transparency-title">
+    <div class="marketing-wrap">
+      <div class="m-section__intro">
+        <p class="m-eyebrow">Service transparency</p>
+        <h2 id="service-transparency-title">What you receive.</h2>
+      </div>
+      <div class="bbs-method-trigger-grid">
+        {% for modal in site.data.service_transparency_modals_v1 %}
+        <button class="bbs-method-trigger" type="button" data-method-modal="{{ modal.id }}">
+          <span class="bbs-method-trigger-copy"><strong>{{ modal.title }}</strong><span>{{ modal.subtitle }}</span></span>
+          <span class="bbs-method-trigger-arrow" aria-hidden="true">→</span>
+        </button>
+        {% endfor %}
       </div>
     </div>
   </section>

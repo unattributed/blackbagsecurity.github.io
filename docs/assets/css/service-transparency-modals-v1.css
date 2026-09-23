@@ -1,6 +1,9 @@
 /* Component-scoped, readable reconstruction of the four approved modal views. */
 .bbs-method-modal, .bbs-method-modal * { box-sizing: border-box; }
 html.bbs-method-modal-open, body.bbs-method-modal-open { overflow: hidden; overscroll-behavior: none; }
+/* Legacy hosts set body height:100%; expand it before hiding overflow so the
+   document retains its scroll extent and the backdrop stays over the trigger. */
+body.bbs-method-modal-open { height: auto; min-height: 100%; }
 .bbs-method-modal {
   --modal-lime: #e7ff16;
   --modal-line: #14617a;
@@ -109,4 +112,21 @@ html.bbs-method-modal-open, body.bbs-method-modal-open { overflow: hidden; overs
 @media (prefers-reduced-motion: reduce) {
   .bbs-method-modal[open] { animation: none; }
   [data-method-modal] { transition: none; }
+}
+/* Methodology host cards: approved for dev-context review on 2026-09-23. */
+#service-transparency { scroll-margin-top: 100px; }
+.bbs-method-trigger-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.bbs-method-trigger {
+  display: flex; align-items: center; justify-content: space-between; gap: 22px;
+  width: 100%; padding: 26px; border: 1px solid #355466; border-radius: 5px;
+  background: #061823; color: #f5f7f8; font: inherit; text-align: left; cursor: pointer;
+}
+.bbs-method-trigger-copy { display: grid; gap: 10px; }
+.bbs-method-trigger-copy strong { font: 400 27px/1.15 Georgia, serif; }
+.bbs-method-trigger-copy > span { color: #c3d8e7; font: 16px/1.45 Arial, sans-serif; }
+.bbs-method-trigger-arrow { display: grid; place-items: center; flex: 0 0 36px; width: 36px; height: 36px; border: 1px solid #7595a7; border-radius: 50%; color: #e7ff16; font: 24px/1 Arial, sans-serif; }
+.bbs-method-trigger:hover, .bbs-method-trigger:focus-visible { border-color: #e7ff16; background-color: #143444; }
+@media (max-width: 600px) {
+  .bbs-method-trigger-grid { grid-template-columns: minmax(0, 1fr); }
+  .bbs-method-trigger { padding: 20px; gap: 15px; }
 }

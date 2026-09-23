@@ -13,22 +13,19 @@ visual system implement the supplied workflows. Canonical text is in
 `docs/_data/service_transparency_modals_v1.json`; it was parsed from the supplied
 content specification rather than transcribed from images.
 
-**Host integration is deferred.** The accepted `docs/methodology.md` blob is
-`1a87619daad41ccdf0d86718d1e39fdf987f327b`. It has none of the four approved
-trigger cards. No approved methodology host implementation package was found.
-The supplied context image is expressly not a host design authority.
+**Host integration authorized for dev review on 2026-09-23.** After reviewing the component delivery, the owner explicitly directed publication in the context of `dev.blackbagsecurity.com`, declining a separate review page. This supersedes the bundle's earlier host prerequisite/deployment restriction for dev only.
 
-The review harness lives outside `docs/`, so the normal Jekyll build publishes
-no review route. `build_review.py` copies source to a temporary directory and
-adds the isolated harness there. Its required destination is an evidence
-directory outside the source checkout. The generated route is
-`/review/service-transparency-modals/`. It has strict CSP and noindex metadata.
+The accepted methodology content is preserved and extended with four workflow
+cards in a Service transparency section after Client visibility. Each whole
+card is a native button. The marketing layout loads the component only when
+`service_transparency_modals: true`, and places the dialog outside the page shell.
+Production publication remains unauthorized.
 
-The bundle requires leaving the accepted public dev pointer unchanged while
-host integration is deferred. This component branch does not authorize
-production publication or imply acceptance of a host-page redesign.
+The standalone harness remains outside `docs/` for isolated testing. The normal
+site build now includes the component on `/methodology/`. Public review starts
+at `/methodology/#service-transparency`.
 
-## Later approved host integration
+## Host integration contract
 
 Load `service-transparency-modals-v1.css` and the deferred
 `service-transparency-modals-v1.js` through the host's head. Include
@@ -65,8 +62,8 @@ top, replacement while open, duplicate initialization, unique live IDs,
 reduced motion, layout overflow and actual contact navigation.
 
 Fourteen existing routes are compared against the accepted baseline in both
-browsers at desktop and mobile sizes, including methodology and all current
-service pages. The existing About CSP `frame-ancestors` meta warning is recorded
+browsers at desktop and mobile sizes, including all current service pages. Methodology is now checked as the
+integration host; its earlier pre-integration baseline remains in the evidence. The existing About CSP `frame-ancestors` meta warning is recorded
 separately from the component, which must have no console errors.
 
 ## Visual review notes
@@ -83,3 +80,7 @@ as a separate asset. Remediation retains the minimal header. Icons are real,
 decorative inline SVG; workflow and panel text remain selectable HTML.
 These artwork, icon and font-rendering differences are disclosed for owner
 review; the implementation is not claimed to be pixel-identical to the mockups.
+
+## Integrated qualification
+
+The same modal matrix supports `QA_ROUTE=/methodology/` and `QA_BASE_URL` for local and deployed QA. Existing marketing-layout CSP warnings are recorded as baseline observations. Integration build comparison permits only `methodology/index.html` to change among the 256 previously accepted outputs.

@@ -35,7 +35,9 @@
   <script src="{{ '/assets/js/site-design-system-v1-header.js' | relative_url }}" defer></script>
   <link rel="stylesheet" href="{{ '/assets/css/site-design-system-v1-footer.css' | relative_url }}">
   <script src="{{ '/assets/js/site-design-system-v1-footer.js' | relative_url }}" defer></script>
-</head>
+{% if page.service_transparency_modals %}  <link rel="stylesheet" href="{{ '/assets/css/service-transparency-modals-v1.css' | relative_url }}">
+  <script src="{{ '/assets/js/service-transparency-modals-v1.js' | relative_url }}" defer></script>
+{% endif %}</head>
 <body class="marketing-site page-{{ page.ref | default: 'general' | slugify }}">
   <a class="skip" href="#content">Skip to content</a>
 
@@ -47,6 +49,7 @@
     {% include site-design-system-v1-footer.html legal="marketing" %}
   </div>
 
-  <script src="{{ '/assets/js/app.js' | relative_url }}" defer></script>
+{% if page.service_transparency_modals %}  {% include service-transparency-modals-v1.html %}
+{% endif %}  <script src="{{ '/assets/js/app.js' | relative_url }}" defer></script>
 </body>
 </html>
