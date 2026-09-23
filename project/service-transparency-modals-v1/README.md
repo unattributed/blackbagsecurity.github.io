@@ -84,3 +84,9 @@ review; the implementation is not claimed to be pixel-identical to the mockups.
 ## Integrated qualification
 
 The same modal matrix supports `QA_ROUTE=/methodology/` and `QA_BASE_URL` for local and deployed QA. Existing marketing-layout CSP warnings are recorded as baseline observations. Integration build comparison permits only `methodology/index.html` to change among the 256 previously accepted outputs.
+
+## Services cards — direct popup integration
+
+The owner's follow-up clarified that the visible site cards must open the popups directly. The Services page's Executive Brief, Remediation Guidance and Retest Support cards previously linked to Contact; they now activate their matching dialogs across the entire card. An Engagement Plan card is added to the same What You Receive section. The existing Evidence Pack remains available. Review all four at `/services/#service-deliverables`; Methodology also retains its working triggers.
+
+The Services layout loads the existing shared modal component outside its page shell. Dedicated component CSS scopes the five-card responsive grid and accessible full-card button overlays to Services, preserving unrelated service offerings and sibling pages.
