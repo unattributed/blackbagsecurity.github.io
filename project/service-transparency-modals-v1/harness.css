@@ -1,0 +1,11 @@
+html { background: #06111b; }
+body { margin: 0; color: #eff5f7; background: radial-gradient(ellipse at 50% 20%, #102b3a, #030c12); font: 17px/1.5 Arial, sans-serif; min-height: 180vh; }
+.bbs-method-review { max-width: 1120px; margin: auto; padding: 80px 24px; }
+.bbs-method-review-eyebrow { color: #c2d7e6; font-size: 12px; letter-spacing: .2em; }
+.bbs-method-review h1 { font: 400 clamp(38px, 6vw, 64px)/1.1 Georgia, serif; }
+.bbs-method-review-cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; margin: 40px 0; }
+.bbs-method-review-cards button { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 30px; min-height: 120px; border: 1px solid #356579; border-radius: 4px; background: #04151e; color: #fff; text-align: left; font: inherit; cursor: pointer; }
+.bbs-method-review-cards strong { font-weight: 400; font-size: 22px; }
+.bbs-method-review-cards span { font-size: 30px; color: #e7ff16; }
+.bbs-method-review a { color: #c3dbe8; }
+@media (max-width: 600px) { .bbs-method-review-cards { grid-template-columns: 1fr; } }

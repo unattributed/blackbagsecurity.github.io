@@ -1,0 +1,322 @@
+[
+  {
+    "id": "engagement-plan",
+    "eyebrow": "SEP WORKFLOW",
+    "title": "Engagement Plan",
+    "subtitle": "How we scope, propose, refine, award, and prepare an engagement.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Client Request",
+        "body": "Receive the inquiry, objective, target environment, timing, and constraints.",
+        "icon": "chat"
+      },
+      {
+        "number": "02",
+        "title": "Qualification & Scoping",
+        "body": "Clarify scope, assumptions, rules of engagement, dependencies, and required access.",
+        "icon": "document"
+      },
+      {
+        "number": "03",
+        "title": "Proposal Drafting",
+        "body": "Draft the approach, estimate effort, identify deliverables, and define communication cadence.",
+        "icon": "list"
+      },
+      {
+        "number": "04",
+        "title": "Proposal Delivery",
+        "body": "Present the statement of work, pricing model, schedule, and expected client responsibilities.",
+        "icon": "team"
+      },
+      {
+        "number": "05",
+        "title": "Refinement",
+        "body": "Resolve questions, adjust scope, confirm testing model, and capture agreed revisions.",
+        "icon": "sliders"
+      },
+      {
+        "number": "06",
+        "title": "Award & Contracting",
+        "body": "Record approval, finalize terms, align start date, and confirm billing / legal path.",
+        "icon": "shield"
+      },
+      {
+        "number": "07",
+        "title": "SEP Preparation",
+        "body": "Create the secure workspace, prepare tooling, define evidence handling, and stage the test plan.",
+        "icon": "laptop"
+      },
+      {
+        "number": "08",
+        "title": "Kickoff & Access Readiness",
+        "body": "Confirm contacts, credentials, communication channels, and pre-flight prerequisites.",
+        "icon": "gear"
+      },
+      {
+        "number": "09",
+        "title": "Engagement Plan Issued",
+        "body": "Deliver the structured plan covering scope, methodology, schedule, reporting, and retest path.",
+        "icon": "flag"
+      }
+    ],
+    "inputs": [
+      "Targets and environments",
+      "Objectives and risk priorities",
+      "Constraints and blackout windows",
+      "Contacts and escalation path",
+      "Access prerequisites",
+      "Compliance or evidence requirements"
+    ],
+    "outputs": [
+      "Defined scope",
+      "Methodology and workflow",
+      "Testing schedule",
+      "Communication cadence",
+      "Evidence model",
+      "Reporting and retest plan"
+    ],
+    "cta": "Request Engagement Review",
+    "artwork": true
+  },
+  {
+    "id": "executive-brief",
+    "eyebrow": "SEP WORKFLOW",
+    "title": "Executive Brief",
+    "subtitle": "How we distill results into clear decisions for technical and business stakeholders.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Scope & Context",
+        "body": "Reconfirm the engagement objective, tested surface, constraints, and operating assumptions.",
+        "icon": "document"
+      },
+      {
+        "number": "02",
+        "title": "Evidence Review",
+        "body": "Consolidate validated evidence, affected assets, and proof supporting each finding.",
+        "icon": "search"
+      },
+      {
+        "number": "03",
+        "title": "Findings Summary",
+        "body": "Present the most important findings, severity distribution, and the story of what matters.",
+        "icon": "bars"
+      },
+      {
+        "number": "04",
+        "title": "Risk Themes",
+        "body": "Group issues into patterns such as access control, exposure, configuration, or process weakness.",
+        "icon": "network"
+      },
+      {
+        "number": "05",
+        "title": "Business Impact",
+        "body": "Translate technical issues into operational, financial, and decision-making consequences.",
+        "icon": "database"
+      },
+      {
+        "number": "06",
+        "title": "Technical Impact",
+        "body": "Explain exploitability, attack paths, dependencies, and likely remediation effort.",
+        "icon": "gear"
+      },
+      {
+        "number": "07",
+        "title": "Priority Actions",
+        "body": "Identify immediate actions, near-term remediation, and longer-term program improvements.",
+        "icon": "checklist"
+      },
+      {
+        "number": "08",
+        "title": "Stakeholder Alignment",
+        "body": "Shape the message for executives, delivery leaders, technical owners, and procurement stakeholders.",
+        "icon": "team"
+      },
+      {
+        "number": "09",
+        "title": "Executive Brief Issued",
+        "body": "Deliver the structured brief covering outcomes, risk, priorities, and recommended next steps.",
+        "icon": "flag"
+      }
+    ],
+    "inputs": [
+      "Audience and stakeholders",
+      "Business priorities",
+      "Risk tolerance",
+      "Delivery constraints",
+      "Known dependencies",
+      "Questions requiring decisions"
+    ],
+    "outputs": [
+      "Executive-ready summary",
+      "Technical outcome overview",
+      "Risk priorities",
+      "Business impact view",
+      "Decision-focused next steps",
+      "Clear follow-on recommendations"
+    ],
+    "cta": "Request Executive Review",
+    "artwork": true
+  },
+  {
+    "id": "remediation-guidance",
+    "eyebrow": "SEP WORKFLOW",
+    "title": "Remediation Guidance",
+    "subtitle": "How we convert findings into practical, prioritized remediation guidance.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Finding Validation",
+        "body": "Confirm the issue, affected assets, evidence quality, and remediation trigger.",
+        "icon": "chat"
+      },
+      {
+        "number": "02",
+        "title": "Root Cause Review",
+        "body": "Identify whether the problem stems from design, configuration, implementation, process, or dependency.",
+        "icon": "document"
+      },
+      {
+        "number": "03",
+        "title": "Risk & Priority",
+        "body": "Align severity, exploitability, exposure, and business context into remediation priority.",
+        "icon": "bars"
+      },
+      {
+        "number": "04",
+        "title": "Fix Strategy",
+        "body": "Define the preferred corrective action, secure design approach, and expected target state.",
+        "icon": "gear"
+      },
+      {
+        "number": "05",
+        "title": "Compensating Controls",
+        "body": "Identify temporary safeguards or containment actions when immediate fix is not possible.",
+        "icon": "sliders"
+      },
+      {
+        "number": "06",
+        "title": "Engineering Guidance",
+        "body": "Provide implementation notes, secure coding or configuration direction, and ownership expectations.",
+        "icon": "shield"
+      },
+      {
+        "number": "07",
+        "title": "Validation Criteria",
+        "body": "Define what must be true for the issue to be considered remediated.",
+        "icon": "list"
+      },
+      {
+        "number": "08",
+        "title": "Coordination & Scheduling",
+        "body": "Align remediation owners, decision makers, testing windows, and communication cadence.",
+        "icon": "team"
+      },
+      {
+        "number": "09",
+        "title": "Guidance Issued",
+        "body": "Deliver the remediation package with priorities, rationale, and closure path.",
+        "icon": "check"
+      }
+    ],
+    "inputs": [
+      "Finding evidence",
+      "Architecture context",
+      "Operational constraints",
+      "Change windows",
+      "Ownership mapping",
+      "Existing controls"
+    ],
+    "outputs": [
+      "Prioritized remediation plan",
+      "Root-cause explanation",
+      "Practical fix guidance",
+      "Compensating controls",
+      "Validation criteria",
+      "Closure path"
+    ],
+    "cta": "Request Remediation Guidance",
+    "artwork": false
+  },
+  {
+    "id": "retest-support",
+    "eyebrow": "SEP WORKFLOW",
+    "title": "Retest Support",
+    "subtitle": "How we verify remediation, assess residual risk, and close the loop.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Remediation Notice",
+        "body": "Receive the client update describing fixes, environment changes, and retest scope.",
+        "icon": "chat"
+      },
+      {
+        "number": "02",
+        "title": "Scope Review",
+        "body": "Confirm what findings, assets, versions, or controls are in scope for retesting.",
+        "icon": "document"
+      },
+      {
+        "number": "03",
+        "title": "Readiness Check",
+        "body": "Verify access, credentials, timing, communications, and prerequisites before testing resumes.",
+        "icon": "checklist"
+      },
+      {
+        "number": "04",
+        "title": "Evidence Review",
+        "body": "Review remediation notes, change records, and supporting implementation evidence.",
+        "icon": "team"
+      },
+      {
+        "number": "05",
+        "title": "Focused Retesting",
+        "body": "Execute targeted validation against the original finding and affected pathways.",
+        "icon": "sliders"
+      },
+      {
+        "number": "06",
+        "title": "Residual Risk Review",
+        "body": "Determine whether risk remains, has shifted, or is fully addressed.",
+        "icon": "shield"
+      },
+      {
+        "number": "07",
+        "title": "Follow-on Findings",
+        "body": "Record any new observations, regressions, or related weaknesses exposed by remediation.",
+        "icon": "laptop"
+      },
+      {
+        "number": "08",
+        "title": "Closure Decision",
+        "body": "Confirm fixed, partially fixed, or not fixed status and align closure language.",
+        "icon": "gear"
+      },
+      {
+        "number": "09",
+        "title": "Retest Report Issued",
+        "body": "Deliver the retest outcome, verified status, residual risk view, and next steps.",
+        "icon": "flag"
+      }
+    ],
+    "inputs": [
+      "Remediation update",
+      "Supporting evidence",
+      "Access and credentials",
+      "Retest window",
+      "Target scope",
+      "Constraints or blackout periods"
+    ],
+    "outputs": [
+      "Verified retest result",
+      "Fixed / partial / not fixed status",
+      "Residual risk view",
+      "Follow-on observations",
+      "Updated evidence record",
+      "Clear closure statement"
+    ],
+    "cta": "Request Retest Support",
+    "artwork": true
+  }
+]

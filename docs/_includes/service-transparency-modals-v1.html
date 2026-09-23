@@ -1,0 +1,42 @@
+{% comment %}Include once, outside the host's main element. Load the dedicated CSS and deferred script in its head.{% endcomment %}
+<dialog class="bbs-method-modal" id="bbs-method-modal" aria-modal="true" aria-labelledby="bbs-method-modal-title" aria-describedby="bbs-method-modal-subtitle">
+  <button class="bbs-method-modal-x" type="button" data-method-close aria-label="Close dialog"><span aria-hidden="true">×</span></button>
+  <div class="bbs-method-modal-content"></div>
+</dialog>
+{% for modal in site.data.service_transparency_modals_v1 %}
+<template id="{{ modal.id }}">
+  <header class="bbs-method-modal-header{% if modal.artwork %} bbs-method-modal-header--art{% endif %}">
+    <p class="bbs-method-modal-eyebrow">{{ modal.eyebrow }}</p>
+    <h2 id="bbs-method-modal-title">{{ modal.title }}</h2>
+    <p id="bbs-method-modal-subtitle">{{ modal.subtitle }}</p>
+  </header>
+  <ol class="bbs-method-modal-workflow" aria-label="{{ modal.title }} workflow">
+    {% for step in modal.steps %}
+    <li class="bbs-method-modal-step">
+      <span class="bbs-method-modal-number" aria-hidden="true">{{ step.number }}</span>
+      {% include service-transparency-modal-icon.html name=step.icon %}
+      <h3>{{ step.title }}</h3>
+      <p>{{ step.body }}</p>
+      {% unless forloop.last %}<span class="bbs-method-modal-arrow" aria-hidden="true">→</span>{% endunless %}
+    </li>
+    {% endfor %}
+  </ol>
+  <div class="bbs-method-modal-panels">
+    <section class="bbs-method-modal-panel" aria-labelledby="bbs-method-modal-inputs">
+      {% include service-transparency-modal-icon.html name="document" %}
+      <h3 id="bbs-method-modal-inputs">Client Inputs</h3>
+      <ul>{% for item in modal.inputs %}<li>{{ item }}</li>{% endfor %}</ul>
+    </section>
+    <section class="bbs-method-modal-panel" aria-labelledby="bbs-method-modal-outputs">
+      {% include service-transparency-modal-icon.html name="bars" %}
+      <h3 id="bbs-method-modal-outputs">What the client receives</h3>
+      <ul>{% for item in modal.outputs %}<li>{{ item }}</li>{% endfor %}</ul>
+    </section>
+  </div>
+  <footer class="bbs-method-modal-footer">
+    <a class="bbs-method-modal-cta" href="{{ '/about/#contact' | relative_url }}">{{ modal.cta }}<span aria-hidden="true">→</span></a>
+    <button class="bbs-method-modal-close" type="button" data-method-close>Close</button>
+    <p>DISCIPLINE IN EVERY DETAIL</p>
+  </footer>
+</template>
+{% endfor %}
