@@ -195,3 +195,40 @@
     bottom: -5px;
   }
 }
+
+/* Keep every primary destination visible on phones. The previous horizontal
+   scroller clipped Contact at common 320-390px viewport widths and gave no
+   visual indication that more navigation was available. */
+@media (max-width: 600px) {
+  .ds-header__inner {
+    padding-inline: 14px;
+  }
+  .ds-header .ds-nav {
+    justify-content: space-between;
+    gap: clamp(9px, 2.8vw, 13px);
+    overflow-x: visible;
+  }
+  .ds-header .ds-nav a {
+    min-height: 34px;
+    font-size: 10px;
+    letter-spacing: .08em;
+  }
+}
+
+@media (max-width: 359px) {
+  .ds-header .ds-nav {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0;
+    min-height: 80px;
+    padding: 2px 0 6px;
+  }
+  .ds-header .ds-nav a {
+    justify-content: center;
+    width: 100%;
+    min-height: 38px;
+  }
+  .ds-header .ds-nav a[aria-current]::after {
+    inset: auto 12px 2px;
+  }
+}
