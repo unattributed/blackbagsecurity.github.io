@@ -22,3 +22,232 @@
 @media(max-width:1050px){.marketing-brand small{display:none}.v-service-grid{grid-template-columns:repeat(3,1fr)}.v-product-grid{grid-template-columns:repeat(3,1fr)}.v-product-intro{grid-column:1/-1}.v-deliver-grid,.v-products4,.v-about-principles{grid-template-columns:repeat(2,1fr)}.v-buyer-strip{grid-template-columns:repeat(2,1fr)}.v-close__grid{grid-template-columns:1fr auto}.v-close__grid>p{grid-column:1/-1}.v-about-principles .v-principle{border-bottom:1px solid var(--line)}}
 @media(max-width:760px){.marketing-wrap,.v-wrap{width:min(calc(100% - 28px),var(--max))}.marketing-header__inner{min-height:64px}.marketing-brand strong{font-size:.78rem}.marketing-nav{gap:14px}.marketing-nav a{font-size:.7rem;padding:23px 0 20px}.v-hero,.v-hero__content{min-height:610px}.v-hero__copy{width:100%;padding:48px 0 160px}.v-hero__bg:after{background:linear-gradient(180deg,rgba(6,16,25,.35) 0%,rgba(6,16,25,.82) 45%,#061019 82%)}.v-title{font-size:clamp(2.7rem,13vw,4.3rem)}.v-strip{grid-template-columns:repeat(2,1fr)}.v-strip>div{border-bottom:1px solid var(--line)}.v-service-grid,.v-deliver-grid,.v-products4,.v-models,.v-about-principles{grid-template-columns:1fr 1fr}.v-product-grid{grid-template-columns:1fr 1fr}.v-bento,.v-feature-product,.v-about-feature{grid-template-columns:1fr}.v-about-feature__visual{min-height:280px}.v-close__grid{grid-template-columns:1fr}.v-contact-icons{margin-top:4px}.marketing-footer__inner{grid-template-columns:1fr;padding:24px 0}.marketing-footer nav{flex-wrap:wrap}.marketing-footer__brand{display:block}.marketing-footer__brand span{display:block;margin-top:8px}}
 @media(max-width:520px){.marketing-brand{display:none}.marketing-header__inner{justify-content:center}.v-service-grid,.v-product-grid,.v-deliver-grid,.v-products4,.v-models,.v-about-principles,.v-buyer-strip{grid-template-columns:1fr}.v-strip{grid-template-columns:1fr}.v-card__image{height:210px}.v-kickers{gap:14px;flex-wrap:wrap}.v-section-head{display:block}.v-section-note{margin-top:10px}.v-about-principles .v-principle{border-right:0}}
+
+/* The current Method page uses the m-* composition. Give that composition a
+   deliberate phone layout instead of falling back to unstyled inline flow. */
+@media (max-width: 760px) {
+  .marketing-site.page-methodology .marketing-main {
+    overflow: clip;
+  }
+  .marketing-site.page-methodology .m-page {
+    background: #061019;
+    overflow-wrap: anywhere;
+  }
+  .marketing-site.page-methodology .marketing-wrap {
+    width: min(calc(100% - 32px), var(--max));
+  }
+  .marketing-site.page-methodology .m-hero,
+  .marketing-site.page-methodology .m-section,
+  .marketing-site.page-methodology .m-close {
+    border-bottom: 1px solid var(--line);
+  }
+  .marketing-site.page-methodology .m-hero {
+    padding: 38px 0 44px;
+    background:
+      linear-gradient(rgba(22, 54, 72, .12) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(22, 54, 72, .12) 1px, transparent 1px),
+      radial-gradient(circle at 80% 10%, rgba(30, 117, 151, .17), transparent 38%),
+      #061019;
+    background-size: 22px 22px, 22px 22px, auto, auto;
+  }
+  .marketing-site.page-methodology .m-hero__grid,
+  .marketing-site.page-methodology .m-split,
+  .marketing-site.page-methodology .m-close__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
+  }
+  .marketing-site.page-methodology .m-eyebrow {
+    margin: 0 0 14px;
+    color: #aab7c2;
+    font-size: .74rem;
+    font-weight: 700;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+  }
+  .marketing-site.page-methodology .m-hero h1,
+  .marketing-site.page-methodology .m-section h2,
+  .marketing-site.page-methodology .m-close h2 {
+    margin: 0;
+    color: #f5f7f7;
+    font-family: var(--serif);
+    font-weight: 400;
+    letter-spacing: -.03em;
+  }
+  .marketing-site.page-methodology .m-hero h1 {
+    font-size: clamp(2.35rem, 12vw, 3.15rem);
+    line-height: 1.01;
+  }
+  .marketing-site.page-methodology .m-section h2,
+  .marketing-site.page-methodology .m-close h2 {
+    font-size: clamp(1.9rem, 9vw, 2.45rem);
+    line-height: 1.06;
+  }
+  .marketing-site.page-methodology .m-accent {
+    color: var(--lime);
+  }
+  .marketing-site.page-methodology .m-lead,
+  .marketing-site.page-methodology .m-copy > p:not(.m-eyebrow),
+  .marketing-site.page-methodology .m-section__intro > p:not(.m-eyebrow),
+  .marketing-site.page-methodology .m-close p {
+    margin: 17px 0 0;
+    color: #c3cdd5;
+    font-size: .98rem;
+    line-height: 1.65;
+  }
+  .marketing-site.page-methodology .m-actions {
+    margin-top: 23px;
+  }
+  .marketing-site.page-methodology .m-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    min-height: 48px;
+    padding: 12px 18px;
+    border: 1px solid var(--lime);
+    border-radius: 3px;
+    background: var(--lime);
+    color: #061019;
+    font-size: .82rem;
+    font-weight: 800;
+    text-decoration: none;
+  }
+  .marketing-site.page-methodology .m-button::after {
+    content: "→";
+  }
+  .marketing-site.page-methodology .m-panel,
+  .marketing-site.page-methodology .m-contact-box {
+    overflow: hidden;
+    border: 1px solid #345064;
+    border-radius: 12px;
+    background: rgba(8, 25, 36, .92);
+  }
+  .marketing-site.page-methodology .m-panel__head {
+    padding: 15px 18px;
+    border-bottom: 1px solid #345064;
+    color: #e9eef1;
+    font-size: .72rem;
+    font-weight: 700;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+  }
+  .marketing-site.page-methodology .m-panel__body {
+    padding: 8px 18px 10px;
+  }
+  .marketing-site.page-methodology .m-checks {
+    display: grid;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .marketing-site.page-methodology .m-checks li {
+    position: relative;
+    padding: 15px 0 15px 22px;
+    border-bottom: 1px solid rgba(52, 80, 100, .65);
+  }
+  .marketing-site.page-methodology .m-checks li:last-child {
+    border-bottom: 0;
+  }
+  .marketing-site.page-methodology .m-checks li::before {
+    content: "✓";
+    position: absolute;
+    top: 16px;
+    left: 0;
+    color: var(--lime);
+    font-weight: 800;
+  }
+  .marketing-site.page-methodology .m-checks strong,
+  .marketing-site.page-methodology .m-checks span {
+    display: block;
+  }
+  .marketing-site.page-methodology .m-checks strong {
+    color: #f1f4f5;
+    font-size: .9rem;
+    line-height: 1.35;
+  }
+  .marketing-site.page-methodology .m-checks span {
+    margin-top: 5px;
+    color: #aebbc5;
+    font-size: .84rem;
+    line-height: 1.55;
+  }
+  .marketing-site.page-methodology .m-section,
+  .marketing-site.page-methodology .m-close {
+    padding: 44px 0;
+  }
+  .marketing-site.page-methodology .m-section--soft {
+    background: #08141d;
+  }
+  .marketing-site.page-methodology .m-section__intro {
+    max-width: 62ch;
+    margin-bottom: 26px;
+  }
+  .marketing-site.page-methodology .m-grid,
+  .marketing-site.page-methodology .m-process {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+    margin-top: 26px;
+  }
+  .marketing-site.page-methodology .m-card,
+  .marketing-site.page-methodology .m-process article {
+    padding: 20px 18px;
+    border: 1px solid #2f485a;
+    border-radius: 8px;
+    background: #091721;
+  }
+  .marketing-site.page-methodology .m-card h3,
+  .marketing-site.page-methodology .m-process strong {
+    display: block;
+    margin: 0;
+    color: #f1f4f5;
+    font-size: .92rem;
+    line-height: 1.35;
+  }
+  .marketing-site.page-methodology .m-card p,
+  .marketing-site.page-methodology .m-process span {
+    display: block;
+    margin: 7px 0 0;
+    color: #aebbc5;
+    font-size: .84rem;
+    line-height: 1.55;
+  }
+  .marketing-site.page-methodology .m-card__label {
+    display: block;
+    margin-bottom: 9px;
+    color: var(--lime);
+    font-size: .68rem;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+  }
+  .marketing-site.page-methodology .m-quote {
+    margin: 0;
+    padding: 22px 20px;
+    border-left: 3px solid var(--lime);
+    background: #0a1a25;
+    color: #e5eaed;
+    font: 400 1.05rem/1.6 var(--serif);
+  }
+  .marketing-site.page-methodology .m-contact-box {
+    padding: 22px 20px;
+  }
+  .marketing-site.page-methodology .m-contact-box strong {
+    color: #f1f4f5;
+    font-size: .9rem;
+    letter-spacing: .08em;
+  }
+  .marketing-site.page-methodology .m-contact-box p {
+    margin-top: 9px;
+    font-size: .86rem;
+    line-height: 1.55;
+  }
+}
+
+@media (max-width: 520px) {
+  .marketing-site.page-methodology .m-button {
+    width: 100%;
+  }
+}
